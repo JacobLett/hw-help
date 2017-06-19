@@ -1,0 +1,1202 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Entities supported by the STEP reader. Free points Free curves Surfaces Quilt bodies Solid bodies Facets/triangles Assemblies Entities with non-latin characters in their names are supported. The STEP ..." /><meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="STEP Reader" /><meta name="indexterms" content="step supported entities, step import options, step supported metadata" /><meta name="DC.subject" content="step supported entities, step import options, step supported metadata" /><meta name="keywords" content="step supported entities, step import options, step supported metadata" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="cad_reader_step_r" /><title>STEP Reader</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <div>
+    <script type="text/javascript" src="MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+</div>
+    <link rel="stylesheet" type="text/css" href="skin_2017.css" /></head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" data-target="#toc" data-spy="scroll">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.htm" class=" wh_logo hidden-xs "><img src="hw_logo_2017.png" alt="User's Guide" /></a>
+                    <div class=" wh_publication_title "><a href="index.htm"><span class="title">User's Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm" data-id="reference_xd2_syf_xt">What's New</a></span><ul><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_2017_1x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x.1 Release Notes</a></span></li><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_2017x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x Release Notes</a></span></li><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_14x120_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 14x.120 Release Notes</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/get_started_r.htm" data-id="reference_rnl_kny_5x">Get Started</a></span><ul><li><span class="topicref"><a href="http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/tutorials_r.htm" data-id="reference_xd2_syf_xt">Tutorials</a></span><ul><li><span class="topicref"><a href="http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/workspace_r.htm" data-id="workspace">Workspace</a></span><ul><li><span class="topicref"><a href="topics/user_interface/browser_model_overview_c.htm" data-id="concept_u5d_z3c_zq">Model Browser</a></span></li><li><span class="topicref"><a href="topics/user_interface/property_editor_overview_c.htm" data-id="concept_wh5_jlf_vq"><span class="keyword">Entity Editor</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/ribbon_r.htm" data-id="reference_h1r_zrz_qr"><span class="keyword">Ribbons</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/menubar_overview_r.htm" data-id="reference_hnb_lrz_qr">Menu Bar</a></span></li><li><span class="topicref"><a href="topics/user_interface/modeling_window_overview_r.htm" data-id="reference_tnn_rrz_qr">Modeling Window</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm" data-id="file_management">File Management</a></span><ul><li><span class="topicref"><a href="topics/file_management/model_create_t.htm" data-id="task_mfy_wfc_zq"><span class="ph" id="ph_zzg_pkt_xv">Creating Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/model_open_t.htm" data-id="task_cjn_vwb_zq"><span class="ph" id="ph_mcq_clt_xv">Opening Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/file_import_t.htm" data-id="task_rsz_4hg_tt">Importing Files</a></span></li><li><span class="topicref"><a href="topics/file_management/analysis_results_load_t.htm" data-id="task_qgs_ht3_rz">Loading Results</a></span></li><li><span class="topicref"><a href="topics/file_management/script_command_file_run_t.htm" data-id="task_hdx_jw3_rz">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="topics/file_management/model_save_t.htm" data-id="task_uhq_szb_zq"><span class="ph" id="ph_p34_rlt_xv">Saving Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/fe_export_t.htm" data-id="task_oh5_shg_tt">Exporting FE Data</a></span></li><li><span class="topicref"><a href="topics/file_management/solver_interface_change_t.htm" data-id="task_st5_syw_tz">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="topics/file_management/screen_capture_save_t.htm" data-id="task_j2t_kfj_rz">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="topics/file_management/file_formats_supported_r.htm" data-id="reference_mfd_4k2_jr">Supported File Formats</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm" data-id="reference_esg_qwq_35">Supported CAD Readers</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/view_controls_r.htm" data-id="view_controls">View Controls</a></span><ul><li><span class="topicref"><a href="topics/user_interface/view_show_hide_isolate_t.htm#task_kmb_v5d_sw" data-id="task_kmb_v5d_sw">Showing, Hiding, Isolating <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="view_store_recall_t.htm#view_store_recall_t" data-id="view_store_recall_t">Storing and Recalling Custom Views</a></span></li><li><span class="topicref"><a href="view_adjust_t.htm#view_adjust_t" data-id="view_adjust_t">Rotate, Pan, Zoom, Fit, Center</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/settings_display_geometry_r.htm" data-id="reference_wv5_1kg_tt">Geometry Display Settings</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/settings_display_mesh_r.htm" data-id="reference_wgp_vjg_tt">Mesh Display Settings</a></span></li><li><span class="topicref"><a href="topics/preferences/settings_display_color_r.htm">Model Color Settings</a></span></li><li><span class="topicref"><a href="Chunk2086168889.htm#Chunk2086168889" data-id="Chunk2086168889">Creating and Viewing Section Cuts</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/find_search_r.htm" data-id="reference_n2r_sl4_vv">Find and Search</a></span><ul><li><span class="topicref"><a href="topics/user_interface/entity_search_t.htm" data-id="search">Finding and Searching for <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/tools_search_t.htm" data-id="task_n2k_p1k_rz">Searching for Tools and Panels</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span><ul><li><span class="topicref"><a href="topics/user_interface/context_menu_modeling_window_select_options.htm#reference_mvx_jdz_wt">Window Selection Settings</a></span></li></ul></li><li><span class="topicref"><a href="topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt" data-id="task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr" data-id="task_g1x_m2d_lr">Measure</a></span></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/geometry_create_r.htm" data-id="reference_m5g_ryf_xt">Create Geometry</a></span><ul><li><span class="topicref"><a href="point_t.htm#point_t" data-id="point_t">Creating and Editing Points</a></span></li><li><span class="topicref"><a href="line_t.htm#line_t" data-id="line_t">Creating and Editing Lines</a></span></li><li><span class="topicref"><a href="point_extract_t.htm#point_extract_t" data-id="point_extract_t">Interpolating Points and Finding Curve Center</a></span></li><li><span class="topicref"><a href="circle_t.htm#circle_t" data-id="circle_t">Creating and Editing Circles</a></span></li><li><span class="topicref"><a href="surface_t.htm#surface_t" data-id="surface_t">Patching, Extending, and Offsetting Surfaces</a></span></li><li><span class="topicref"><a href="geometry_solid_create_t.htm#geometry_solid_create_t" data-id="geometry_solid_create_t">Creating Solid Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/geometry_cleanup_r.htm" data-id="geometry_cleanup">Geometry Cleanup</a></span><ul><li><span class="topicref"><a href="topics/pre_processing/geometry/surface_imprint_t.htm#task_eyh_r1h_kr" data-id="task_eyh_r1h_kr">Imprinting Surfaces</a></span></li><li><span class="topicref"><a href="split_t.htm#split_t" data-id="split_t">Splitting Surface Edges and Surfaces</a></span></li><li><span class="topicref"><a href="stitch_t.htm#stitch_t" data-id="stitch_t">Stitching Surfaces and Suppressing Edges</a></span></li><li><span class="topicref"><a href="defeature_t.htm#defeature_t" data-id="defeature_t">Removing Rounds, Fillets, Cutouts, Holes</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/geometry_auto_cleanup_t.htm" data-id="task_wz5_jbs_rz">Automatically Cleaning Up Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/midsurface_r.htm" data-id="midsurface">Midsurface</a></span><ul><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_extract_t.htm#task_uhh_cd1_mr" data-id="task_uhh_cd1_mr">Extracting Midsurfaces</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_plate_edit_t.htm#task_lwn_gjg_tt" data-id="task_lwn_gjg_tt">Editing Midsurface Plates</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_thickness_apply_t.htm#task_mw2_5kv_ty" data-id="task_mw2_5kv_ty">Applying Thickness to Midsurface</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_plate_types_r.htm" data-id="reference_ujg_ksm_j5">Plate &amp; Surface Types</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/mesh_r.htm" data-id="mesh">Mesh</a></span><ul><li><span class="topicref"><a href="surface_mesh_t.htm#surface_mesh_t" data-id="surface_mesh_t">Creating and Editing 2D Surface Mesh</a></span></li><li><span class="tool"><a href="edit_elements_t.htm#edit_elements_t" data-id="edit_elements_t">Editing Elements</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/mesh_morph_t.htm#task_ikm_hyj_wy" data-id="task_ikm_hyj_wy">Morphing Mesh</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/2d_element_quality_review_t.htm#task_ar1_hb3_tz">Reviewing Element Quality</a></span></li></ul></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm">File Management</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span></li><li class="active"><span class="topicref">STEP Reader</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">What's New</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/get_started_r.htm">Get Started</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/tutorials_r.htm">Tutorials</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/workspace_r.htm">Workspace</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm">File Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="topics/file_management/model_create_t.htm">Creating Models</a></span></li><li><span class="topicref"><a href="topics/file_management/model_open_t.htm">Opening Models</a></span></li><li><span class="topicref"><a href="topics/file_management/file_import_t.htm">Importing Files</a></span></li><li><span class="topicref"><a href="topics/file_management/analysis_results_load_t.htm">Loading Results</a></span></li><li><span class="topicref"><a href="topics/file_management/script_command_file_run_t.htm">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="topics/file_management/model_save_t.htm">Saving Models</a></span></li><li><span class="topicref"><a href="topics/file_management/fe_export_t.htm">Exporting FE Data</a></span></li><li><span class="topicref"><a href="topics/file_management/solver_interface_change_t.htm">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="topics/file_management/screen_capture_save_t.htm">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="topics/file_management/file_formats_supported_r.htm">Supported File Formats</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="cad_reader_acis_r.htm#cad_reader_acis_r">ACIS Reader</a></span></li><li><span class="topicref"><a href="cad_reader_catia_r.htm#cad_reader_catia_r">CATIA Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_catia_composite_link_r.htm">CATIA Composites Link Reader</a></span></li><li><span class="topicref"><a href="cad_reader_creo_r.htm#cad_reader_creo_r">Creo Reader</a></span></li><li><span class="topicref"><a href="cad_reader_dxf_r.htm#cad_reader_dxf_r">DXF Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_fibersim_r.htm#reference_c32_tzq_35">FiberSim Reader</a></span></li><li><span class="topicref"><a href="cad_reader_iges_r.htm#cad_reader_iges_r">IGES Reader</a></span></li><li><span class="topicref"><a href="cad_reader_inspire_r.htm#cad_reader_inspire_r">Inspire Reader</a></span></li><li><span class="topicref"><a href="cad_reader_intergraph_r.htm#cad_reader_intergraph_r">Intergraph Reader</a></span></li><li><span class="topicref"><a href="cad_reader_jt_r.htm#cad_reader_jt_r">JT Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_nx_r.htm">NX Reader</a></span></li><li><span class="topicref"><a href="cad_reader_parasolid_r.htm#cad_reader_parasolid_r">Parasolid Reader</a></span></li><li><span class="topicref"><a href="cad_reader_pdgs_r.htm#cad_reader_pdgs_r">PDGS Reader</a></span></li><li><span class="topicref"><a href="cad_reader_solidworks_r.htm#cad_reader_solidworks_r">SolidWorks Reader</a></span></li><li class="active"><span class="topicref">STEP Reader</span></li><li><span class="topicref"><a href="cad_reader_tribon_r.htm#cad_reader_tribon_r">Tribon Reader</a></span></li><li><span class="topicref"><a href="cad_reader_vdafs_r.htm#cad_reader_vdafs_r">VDAFS Reader</a></span></li></ul></li></ul></li><li><span class="topicref"><a href="topics/chapter_heads/view_controls_r.htm">View Controls</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/find_search_r.htm">Find and Search</a></span></li><li><span class="topicref"><a href="topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr">Measure</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/geometry_create_r.htm">Create Geometry</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/geometry_cleanup_r.htm">Geometry Cleanup</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/midsurface_r.htm">Midsurface</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/mesh_r.htm">Mesh</a></span></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="cad_reader_step_r"><h1 class="title topictitle1" id="ariaid-title1">STEP Reader</h1>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title2" id="reference_cvw_znr_35">
+  <h2 class="title topictitle2" id="ariaid-title2"><span class="keyword">STEP</span> Supported Entities</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Entities supported by the <span class="keyword">STEP</span> reader.</p>
+
+    <section class="section">
+      <div class="p">
+        <ul class="ul" id="reference_cvw_znr_35__ul_pzw_tsx_35">
+          <li class="li">Free points</li>
+
+          <li class="li">Free curves</li>
+
+          <li class="li">Surfaces</li>
+
+          <li class="li">Quilt bodies</li>
+
+          <li class="li">Solid bodies</li>
+
+          <li class="li">Facets/triangles</li>
+
+          <li class="li">Assemblies</li>
+
+        </ul>
+
+      </div>
+
+      <p class="p">Entities with non-latin characters in their names are supported.</p>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title3" id="reference_q41_f4r_35">
+  <h2 class="title topictitle2" id="ariaid-title3"><span class="keyword">STEP</span> Import Options</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="keyword">STEP</span> reader uses the
+      <span class="ph filepath">ct_reader.ini</span> file.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_aqm_s3z_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@AttributesAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e83">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e86">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e83 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e86 ">
+                <p class="lines">Import all generic attributes (global and related to single entities) as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">&lt;name&gt;</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e83 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e86 ">Do not import generic attributes.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e83 "><code class="ph codeph">part</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e86 ">
+                <p class="lines">Import just the global attributes (the attributes related to the part as a whole) as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">&lt;name&gt;</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e83 "><code class="ph codeph">entity</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e86 ">
+                <p class="lines">Import just the entity attributes (the attributes related to single entities) as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">&lt;name&gt;</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e83 "><code class="ph codeph">%attribute1%attribute2%attribute3</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e86 ">
+                <p class="lines">Import specified generic attributes as metadata.</p>
+
+                <p class="lines">The attribute names are listed, separated by a character that you choose, and inserted as the first element of the string. The example uses '%' as a separator. You can choose another character as a separator, in case one of the listed attribute names contains '%'. <span class="keyword">HyperWorks</span> will recognize it as it is the first character of the string.</p>
+
+                <p class="lines"><code class="ph codeph">&lt;name&gt;</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_b32_t3z_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@AvoidThirdPartyConversion</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e294">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e297">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e294 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e297 ">Avoid using the conversion functions provided by third party (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e294 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e297 ">Use the conversion functions provided by third party.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_j3r_1jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ColorsAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e321">Value</th>
+
+              <th class="entry nocellnorowborder" id="d28683e324">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e321 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e324 ">
+                <p class="lines">Read color attributes of geometric entities as metadata with integer values.</p>
+
+                <p class="lines"><code class="ph codeph">COLOR_RGB</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e321 "><code class="ph codeph">real</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e324 ">
+                <p class="lines">Read color attributes of geometric entities as metadata with real values.</p>
+
+                <p class="lines"><code class="ph codeph">COLOR_RGB</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e321 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e324 ">
+                <p class="lines">Same as <code class="ph codeph">integer</code>.</p>
+
+                <p class="lines"><code class="ph codeph">COLOR_RGB</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e321 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e324 ">Do not read color attributes (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_qrs_bjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@DensityAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e999">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1002">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e999 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1002 ">
+                <p class="lines">Read density value as metadata (default).</p>
+
+                <p class="lines"><code class="ph codeph">DENSITY</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e999 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1002 ">Do not read density value.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_u43_cjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@FullNameAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e470">Value</th>
+
+              <th class="entry nocellnorowborder" id="d28683e473">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e470 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e473 ">
+                <p class="lines">Generate the full CAD name, as retrieved from the CAD part, as metadata. This consists of assembly name/part name/feature name/entity name.</p>
+
+                <p class="lines"><code class="ph codeph">FULL_IDENTIFIER</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e470 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e473 ">Do not generate full name metadata (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_wf1_2jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportBlanked</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e527">Value</th>
+
+              <th class="entry nocellnorowborder" id="d28683e530">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e527 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e530 ">
+                <p class="lines">Enable the import of invisible (blanked/NO SHOW) components.</p>
+
+                <p class="lines">This option, when used, takes priority over any other similar options/settings.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e527 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e530 ">
+                <p class="lines">Disable the import of invisible (blanked/NO SHOW) components (default). </p>
+
+                <p class="lines">This option, when used, takes priority over any other similar options/settings.</p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_mkt_2jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportForVisualizationOnly</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1568">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1571">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">
+                <p class="lines">Import the model for visualization purposes only.</p>
+
+                <p class="lines">This skips many of the import steps (cleanup, stitching, solid creation, and so on) to provide a faster import. The resulting model may not be suitable for other uses.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">Import the model in the normal fashion (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_hch_fjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportFreeCurves</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1623">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1626">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1623 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1626 ">Import free curves (wireframe entities) into the model (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1623 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1626 ">Do not import free curves.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_vhn_fjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportFreePoints</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1673">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1676">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1673 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1676 ">Import free points into the model (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1673 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1676 ">Do not import free points.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_zcr_gjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@MaterialName</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2543">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2546">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2543 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2546 ">Name of the CAD attribute containing the material name info of the current
+                part. Default is "Material"; meaningful only if <code class="ph codeph">@AttributesAsMetadata =
+                  "part"</code>. It only generates temporary data used by the ExtAPI cadassm
+                tool.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_kk4_hjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@MetadataPrefix</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2686">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2689">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2686 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2689 ">The string is prefixed to all metadata names. No prefix is used by
+                default.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_zpj_3jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@OriginalldAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2780">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2783">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2780 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2783 ">Import original CAD entity IDs as metadata.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2780 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2783 ">Do not import original CAD entity IDs as metadata (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_awx_3jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@PartNumber</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2918">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2921">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2918 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2921 ">Name of the CAD attribute containing the part number info of the current part.
+                Default is "PartNumber"; meaningful only if <code class="ph codeph">@AttributesAsMetadata =
+                  "part"</code>. It only generates temporary data used by the ExtAPI cadassm
+                tool.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_nky_jjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ReadAssemblyStructureOnly</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3278">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3281">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3278 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3281 ">Import assembly hierarchy only; do not load any geometry data.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3278 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3281 ">Import the geometry data also (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_v1r_kjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ShrinkSurfaces</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3539">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3542">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3539 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3542 ">For trimmed surfaces, shrink the corresponding base surfaces to only enclose
+                the extents of the external trimming contour, plus a narrow frame.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3539 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3542 ">Do not modify the base surfaces (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_fxg_ljz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SkipCreationOfSolid</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3643">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3646">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Read surfaces, but do not create solid entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Create solid entities (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_k1j_mjz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SplitComponentsByBody</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e1061">Value</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1064">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1061 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1064 ">
+                <p class="lines">Create one component per third party body. There might be one or more third party bodies per third party component. </p>
+
+                <p class="lines">This option cannot be used when <code class="ph codeph">@ReadCompositeData</code> is enabled, or in conjunction with <code class="ph codeph">@SplitComponentsByPart</code>.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1061 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1064 ">Do not consider the division of third party components into third party bodies
+                while creating components (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_tch_njz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@StitchingAcrossBodies</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e4110">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e4113">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4110 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4113 ">Stitch surfaces belonging to different components.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4110 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4113 ">Do not stitch surfaces belonging to different components (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_uhf_4jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TagsAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e1172">Value</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1175">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1172 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1175 ">
+                <p class="lines">Create entity name as metadata (default).</p>
+
+                <p class="lines"><code class="ph codeph">TAG</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1172 "><code class="ph codeph">FromBody</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1175 ">
+                <p class="lines">Take entity from its parent body and create as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">TAG</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1172 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1175 ">Do not read tags.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_eqy_4jz_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ThicknessName</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e4340">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e4343">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4340 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e4343 ">Name of the CAD attribute containing the thickness info of the current part.
+                Default is "Thickness"; meaningful only if <code class="ph codeph">@AttributesAsMetadata =
+                  "part"</code>. It only generates temporary data used by the ExtAPI cadassm
+                tool.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title4" id="reference_km2_k4r_35">
+  <h2 class="title topictitle2" id="ariaid-title4"><span class="keyword">STEP</span> Supported Metadata</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Metadata generated from the <span class="keyword">STEP</span> reader.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_s1x_x3g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">COLOR_RGB</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e230">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e233">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e236">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e230 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e233 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e236 ">
+                <p class="lines">Three RGB values, ranging from 0 to 255, indicating the color of the entity in the CAD model.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@ColorsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_lvj_y3g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">DENSITY</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e781">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e784">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e787">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e781 "><code class="ph codeph">double</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e784 ">solids</td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e787 ">
+                <p class="lines">The value of the density of a solid.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@DensityAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_q35_gjg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">FULL_IDENTIFIER</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e1461">Type</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1464">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1467">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1461 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1464 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+                <p class="lines">comps</p>
+
+                <p class="lines">assems</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1467 ">
+                <p class="lines">A string indicating the name in the following format:</p>
+
+                <p class="lines"><code class="ph codeph">"part_name/name"</code></p>
+
+                <p class="lines">Generated when <code class="ph codeph">@FullNameAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_r3x_y3g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">MODELUNIT</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1773">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1776">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1779">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1773 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1776 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1779 "> Model units specified in the CAD file.<ul class="sl simple">
+                  <li class="sli">1 = inches</li>
+
+                  <li class="sli">2 = millimeters</li>
+
+                  <li class="sli">4 = feet</li>
+
+                  <li class="sli">5 = miles</li>
+
+                  <li class="sli">6 = meters</li>
+
+                  <li class="sli">7 = kilometers</li>
+
+                  <li class="sli">8 = mils</li>
+
+                  <li class="sli">9 = microns</li>
+
+                  <li class="sli">10 = centimeters</li>
+
+                  <li class="sli">11 = microinches</li>
+
+                  <li class="sli">12 = decimeters</li>
+
+                  <li class="sli">13 = yards</li>
+
+                </ul>
+<p class="lines">This is always generated.</p>
+</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_gsz_4jg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">ORIGINAL_ID</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e1628">Type</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1631">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1634">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1628 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1631 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1634 ">
+                <p class="lines">The original CAD entity ID.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@OriginalIdAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_mxh_mjg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">TAG</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d28683e1696">Type</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1699">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d28683e1702">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d28683e1696 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1699 ">
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d28683e1702 ">
+                <p class="lines">The tag (name) of the entity as read from the CAD model, if one exists.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@TagsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_pxz_bjg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">&lt;name&gt;</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3896">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3899">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3902">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3896 ">
+                <p class="lines"><code class="ph codeph">integer</code></p>
+
+                <p class="lines"><code class="ph codeph">double</code></p>
+
+                <p class="lines"><code class="ph codeph">string</code></p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3899 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+                <p class="lines">comps</p>
+
+                <p class="lines">assems</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3902 ">
+                <p class="lines">The <code class="ph codeph">&lt;name&gt;</code> field is the attribute name and the integer/double/string is the value of the attribute.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@AttributesAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+</article>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

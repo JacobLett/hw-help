@@ -1,0 +1,884 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="2D/3D Properties In HyperMesh v10.0, solver group #2 ( RADIOSS , ANSYS , LS-DYNA , PAM-CRASH , Permas) solvers have converted from using attributes to assign properties components to using core HM ..." /><meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="10.0 API Programmer's Guide" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/api_programmers_guide_10_sa1_100_r.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/api_programmers_guide_10_sa1_110_r.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/api_programmers_guide_10_sa1_120_r.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/api_programmers_guide_10_sa1_130_r.htm" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="api_programmers_guide_10_r" /><title>10.0 API Programmer's Guide</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" onload="highlightSearchTerm()" id="api_programmers_guide_10_r" data-target="#toc" data-spy="scroll">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li class="active"><span class="topicref">10.0 API Programmer's Guide</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm">11.0 API Programmer's Guide</a></span></li><li class="active"><span class="topicref">10.0 API Programmer's Guide</span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_100_r.htm">10.0-SA1-100 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_110_r.htm">10.0-SA1-110 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_120_r.htm">10.0-SA1-120 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_130_r.htm">10.0-SA1-130 API Programmer's Guide</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm">9.0 API Programmer's Guide</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">10.0 API Programmer's Guide</h1>
+
+  <div class="body refbody">
+    <section class="section"><h2 class="title sectiontitle">2D/3D Properties</h2>
+      
+      <p class="p">In <span class="keyword">HyperMesh</span> v10.0, solver group #2 (<span class="keyword">RADIOSS</span>, <span class="keyword">ANSYS</span>, <span class="keyword">LS-DYNA</span>, <span class="keyword">PAM-CRASH</span>, Permas) solvers have
+        converted from using attributes to assign properties components to using core HM references.
+        This completes the 2D/3D properties project started in 9.0 for both solver groups.</p>
+
+      <p class="p">For solver group #1 (<span class="keyword">OptiStruct</span>, <span class="keyword">Abaqus</span>, <span class="keyword">Nastran</span>) the following diagram and
+        rules apply for property assignment to components and elements:</p>
+
+      <figure class="fig fignone" id="api_programmers_guide_10_r__fig_ovd_wjk_zw">
+        <img class="image" id="api_programmers_guide_10_r__image_ekt_zjk_zw" src="../../../images/2d_3d_properties2.bmp" />
+      </figure>
+
+      <ul class="ul" id="api_programmers_guide_10_r__ul_cw2_bkk_zw">
+        <li class="li">If property assigned to the element, that element is assigned the element property.</li>
+
+        <li class="li">If no property is assigned to the element, that element is assigned its component
+          property.</li>
+
+        <li class="li">If no property is assigned to the element or component, that element is assigned no
+          property.</li>
+
+        <li class="li">Materials are always assigned to properties and each element is assigned the material of
+          its property.</li>
+
+      </ul>
+
+      <p class="p">For solver group #2 (<span class="keyword">RADIOSS</span>, <span class="keyword">ANSYS</span>, <span class="keyword">LS-DYNA</span>, <span class="keyword">PAM-CRASH</span>, PERMAS) the
+        following diagram and rules apply for property assignment to components and elements:</p>
+
+      <figure class="fig fignone" id="api_programmers_guide_10_r__fig_tpb_hkk_zw">
+        <img class="image" id="api_programmers_guide_10_r__image_umb_3kk_zw" src="../../../images/2d_3d_properties2.bmp" />
+      </figure>
+
+      <ul class="ul" id="api_programmers_guide_10_r__ul_scq_3kk_zw">
+        <li class="li">Property and materials are assigned to components only. Ignores any property assigned to
+          elements.</li>
+
+        <li class="li">All elements within a component are assigned the component property and the component
+          material.</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New and Updated Tcl Commands for 2D/3D Properties</h2>
+      
+      <ul class="ul" id="api_programmers_guide_10_r__ul_r5n_kkk_zw">
+        <li class="li">Elements and components now have data names for referenced properties:<ol class="ol" id="api_programmers_guide_10_r__ol_xnk_4kk_zw">
+            <li class="li">a) property (pointer) </li>
+
+            <li class="li">b) propertyid</li>
+
+          </ol>
+</li>
+
+        <li class="li">To query the property and material assigned to a component or an element for solver
+          group #1:<ol class="ol" id="api_programmers_guide_10_r__ol_qhz_nkk_zw">
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id property.id 0</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id property.id 0</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id property.material.id 0</li>
+
+          </ol>
+</li>
+
+        <li class="li">To query the property and material assigned to a component or an element for solver
+          group #2:<ol class="ol" id="api_programmers_guide_10_r__ol_fqr_xkk_zw">
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id material.id 0</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id property.id 0</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id collector.material.id 0</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id collector.property.id 0</li>
+
+          </ol>
+<div class="note note"><span class="notetitle">Note:</span> If an element has been assigned a property directly it is still possible to
+            query these values even though the solver group is not using them.</div>
+</li>
+
+        <li class="li"><a class="xref" href="_propertyupdate.htm" title="Updates the property assigned to the mark of entities.">*propertyupdate</a> entity_type mark_id property_name<ul class="sl simple">
+            <li class="sli">This command assigns/updates/unassigns the property associated with components and
+              elements. This same command is used by the <var class="keyword varname">assign</var> subpanel in both
+              the <var class="keyword varname">Comps</var> and <var class="keyword varname">Properties</var> panels.</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a><ul class="ul" id="api_programmers_guide_10_r__ul_qgc_3mk_zw">
+            <li class="li">These options are available for components and elements:<ul class="sl simple">
+                <li class="sli">"by property" </li>
+
+                <li class="sli">"by property id" </li>
+
+                <li class="sli">"by property name"</li>
+
+              </ul>
+</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a><ul class="ul" id="api_programmers_guide_10_r__ul_f1k_mmk_zw">
+            <li class="li">These options are available for components, elements, and properties:<ul class="sl simple">
+                <li class="sli">"by material" </li>
+
+                <li class="sli">"by material id" </li>
+
+                <li class="sli">"by material name"</li>
+
+              </ul>
+</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a> entity_type entity_id ?ply_id?\<ul class="ul" id="api_programmers_guide_10_r__ul_rqd_qmk_zw">
+            <li class="li">This command returns the thickness associated with the passed components and
+              elements. The optional <var class="keyword varname">ply_id</var> argument allows for additional
+              control for querying the thickness of individual plies of composites. The thicknesses
+              returned by this command follow the specific solver interface rules described
+              above.</li>
+
+          </ul>
+</li>
+
+        <li class="li">hm_getcompthickness<ul class="ul" id="api_programmers_guide_10_r__ul_fw5_cnk_zw">
+            <li class="li">This command will return the same values as in 8.0, the thickness assigned to the
+              property assigned to the component for both solver groups #1 and #2. However, these
+              may not be the expected values as properties for solver group #1 can be assigned to
+              the elements as of 9.0. The continuing usage is of this command is not recommended,
+              instead, use the command <span class="keyword cmdname">hm_getthickness</span> with the appropriate
+              options. This command will be deprecated.</li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Scripting Considerations</h2>
+      
+      <ul class="ul" id="api_programmers_guide_10_r__ul_dsh_2nk_zw">
+        <li class="li">Card images on components have been moved to properties for solver group #1.<p class="p">For
+            example, the <span class="keyword">OptiStruct</span> PSHELL card image is now a property
+            card image instead of a component card image. Any scripts that create components and
+            assign these card images must now create a property and assign the property to the
+            component or to the elements.</p>
+</li>
+
+        <li class="li">Both elements and components can have property references for solver group #1.<ul class="sl simple">
+            <li class="sli">Scripts that either set or query properties (thickness for example) must now
+              consider that elements within the component can also have properties assigned directly
+              to them.</li>
+
+            <li class="sli">Properties on components are now core references instead of template attributes for
+              solver group #2. Instead of using the template attributes, scripts must now be updated
+              to use the core data reference.</li>
+
+          </ul>
+</li>
+
+        <li class="li">Scripts using <span class="keyword cmdname">hm_getcompthickness</span>.<ul class="sl simple">
+            <li class="sli">This command is no longer supported and continuing usage is not recommended.
+              Instead, use the command <a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a> with the appropriate
+              options.</li>
+
+          </ul>
+</li>
+
+      </ul>
+
+      <p class="p">When converting or switching between solver interfaces it is possible to have some
+        “mixture” between the two methods shown above. It is important to know what the correct
+        practice is for each solver interface in order to know when modifications are required. It
+        is also important to know these practices in order to understand the values being returned
+        from relevant <span class="keyword">Tcl</span> commands.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New Commands</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_10_r__ul_us5_p4k_zw">
+          <li class="li">Analysis<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_updateblocks.htm" title="Update simple blocks entity on the specified mark.">*updateblocks</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Connectors<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_ce_getprojnodeid.htm" title="Returns the node ID for the projection data layer of interest.">hm_ce_getprojnodeid</a></li>
+
+              <li class="sli"><a class="xref" href="hm_ce_projecthexaface.htm" title="Controls the creation of hexa elements for the ACM realization.">hm_ce_projecthexaface</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">General/Core<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_bag_getconfigfromgenericname.htm" title="Returns the bag configuration for the specified generic name.">hm_bag_getconfigfromgenericname</a></li>
+
+              <li class="sli"><a class="xref" href="hm_bag_getentitylistall.htm" title="Returns the type and IDs of all entities contained in a bag.">hm_bag_getentitylistall</a></li>
+
+              <li class="sli"><a class="xref" href="hm_bag_getentitylistmax.htm" title="Returns the number of entities of a specific type in a bag.">hm_bag_getentitylistmax</a></li>
+
+              <li class="sli"><a class="xref" href="hm_bag_getentitytypes.htm" title="Returns the types of entities inside a bag.">hm_bag_getentitytypes</a></li>
+
+              <li class="sli"><a class="xref" href="hm_bag_getgenericnamefromconfig.htm" title="Returns the generic bag name for the specified configuration.">hm_bag_getgenericnamefromconfig</a></li>
+
+              <li class="sli"><a class="xref" href="hm_bag_getsupportedconfiglist.htm" title="Returns a list of supported bag configurations.">hm_bag_getsupportedconfiglist</a></li>
+
+              <li class="sli"><a class="xref" href="hm_baglist.htm" title="Get a list of bag names or IDs for the current model.">hm_baglist</a></li>
+
+              <li class="sli"><a class="xref" href="hm_baglist_byconfig.htm" title="Get a list of bag names or IDs of the specified bag configuration.">hm_baglist_byconfig</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getangle.htm" title="Returns the angle between three nodes/points.">hm_getangle</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="hm_getconfigtypecountincol.htm" title="Returns a list indicating the entity config, type and count values that are contained in a collector.">hm_getconfigtypecountincol</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getdistance.htm" title="Returns the distance between two nodes/points relative to a local coordinate system.">hm_getdistance</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="hm_getinputoffsetid.htm" title="Returns the current import offset ID value for the specified entity type.">hm_getinputoffsetid</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="hm_getmass.htm" title="Returns the mass, volume and area of the selected elements or components.">hm_getmass</a></li>
+
+              <li class="sli"><a class="xref" href="_bagcreate.htm" title="Creates a bag entity.">*bagcreate</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_bagdeleteall.htm" title="Deletes bags on a mark and all of the child entities within each bag.">*bagdeleteall</a></li>
+
+              <li class="sli"><a class="xref" href="_bagentityupdate.htm" title="Updates a bag entity.">*bagentityupdate</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_copymarkgroup.htm" title="Copies master/slave elements from one group to another.">*copymarkgroup</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_editmarkpanel.htm" title="Provides a panel to add or remove entities to a mark.">*editmarkpanel</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_markercreate.htm" title="Creates an MBD marker.">*markercreate</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_markersupdate.htm" title="Updates multiple MBD markers.">*markersupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_movemarkgroup.htm" title="Organizes master/slave elements into groups.">*movemarkgroup</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Geometry<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_getbestcirclecenter.htm" title="Returns the center and radius of the best fit circle from the input nodes, points or lines.">hm_getbestcirclecenter</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getmoiofsolid.htm" title="Calculate and return the 3 moment of inertia (Ixx, Iyy, Izz) and 3 product of inertia (Ixy/Iyx, Iyz/Izy, Ixz/Izx) values (MOI) for a single solid geometric entity.">hm_getmoiofsolid</a></li>
+
+              <li class="sli"><a class="xref" href="_createbestcirclecenternode.htm" title="Creates a node or a point at the center of the circle that best approximates the input set of lines or points.">*createbestcirclecenternode</a></li>
+
+              <li class="sli"><a class="xref" href="_fillet_surface_edges.htm" title="Create a fillet surface of a constant radius between two surfaces at the selected edges.">*fillet_surface_edges</a></li>
+
+              <li class="sli"><a class="xref" href="_geomvectorcreate.htm" title="From input nodes and geometries, create vectors tangent to lines or normal to surfaces.">*geomvectorcreate</a></li>
+
+              <li class="sli"><a class="xref" href="_geomvectorupdate.htm" title="Updates vector entities using input geometries to set vector directions tangent to lines or normal to surfaces.">*geomvectorupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreateatplanesintersection.htm" title="Create a line at the intersection of two planes.">*linecreateatplanesintersection</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreateatsurfparams.htm" title="Create lines at parametric locations on a surface.">*linecreateatsurfparams</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreateconic.htm" title="Create a conic section curve segment.">*linecreateconic</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatedragnodealongvector.htm" title="Create lines by dragging nodes or points along a direction.">*linecreatedragnodealongvector</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatefromnodesonsurface.htm" title="Create a line on a surface from nodes or points on the surface.">*linecreatefromnodesonsurface</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatenormal2d.htm" title="Create a line in a plane normal to geometry.">*linecreatenormal2d</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatenormalfromgeom.htm" title="Create straight segment lines from a node or point normal to the respective geometry.">*linecreatenormalfromgeom</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatenormaltogeom.htm" title="Create a straight segment from a point normal to a geometry.">*linecreatenormaltogeom</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatenurbs.htm" title="Create a NURBS line using input parameters.">*linecreatenurbs</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreateoffsetalongcurvature.htm" title="Creates a line by offsetting the input lines along their curvature direction.">*linecreateoffsetalongcurvature</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatespline.htm" title="Create a cubic spline curve by interpolating input points.">*linecreatespline</a></li>
+
+              <li class="sli"><a class="xref" href="_linecreatestraight.htm" title="Create a straight segment curve from coordinates.">*linecreatestraight</a></li>
+
+              <li class="sli"><a class="xref" href="_linereverse.htm" title="Reverse line direction.">*linereverse</a></li>
+
+              <li class="sli"><a class="xref" href="_midsurface_extract_10.htm" title="Extracts mid-surfaces from a selection of surfaces or solids.">*midsurface_extract_10</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_nodecreateatintersection.htm" title="Create nodes or points at locations of intersection between the input geometric entities.">*nodecreateatintersection</a></li>
+
+              <li class="sli"><a class="xref" href="_nodecreateatlineparams.htm" title="Create nodes or points at parametric locations on a line.">*nodecreateatlineparams</a></li>
+
+              <li class="sli"><a class="xref" href="_nodecreateatplanesintersection.htm" title="Create nodes or points at locations of intersection between the input geometric entities and a plane or vector.">*nodecreateatplanesintersection</a></li>
+
+              <li class="sli"><a class="xref" href="_nodecreateatsurfparams.htm" title="Create nodes or points at parametric locations on a surface.">*nodecreateatsurfparams</a></li>
+
+              <li class="sli"><a class="xref" href="_nodecreateatvectorplaneintersection.htm" title="Create node or point at location of intersection between two vectors or a plane and a vector.">*nodecreateatvectorplaneintersection</a></li>
+
+              <li class="sli"><a class="xref" href="_nodecreatebetweennodes.htm" title="Create nodes or points on line or surface between given list of nodes.">*nodecreatebetweennodes</a></li>
+
+              <li class="sli"><a class="xref" href="_prepare_solid_holes_for_meshing.htm" title="Detects holes in a 3D model and prepares them for meshing.">*prepare_solid_holes_for_meshing</a></li>
+
+              <li class="sli"><a class="xref" href="_separate_fillets.htm" title="Detects fillets in 3D models, groups them by radius and width, and moves the fillet surfaces to separate components created for the fillet groups.">*separate_fillets</a></li>
+
+              <li class="sli"><a class="xref" href="_separate_holes_in_3d_body_new.htm" title="Detects holes in 3D models, groups them by diameter and moves the surfaces defining the holes to separate components created for each hole diameter group.">*separate_holes_in_3d_body_new</a>
+              </li>
+
+              <li class="sli"><a class="xref" href="_solidcreatedragsurfalongline.htm" title="Create one or more solids by dragging one or more surfaces along a line.">*solidcreatedragsurfalongline</a></li>
+
+              <li class="sli"><a class="xref" href="_solidcreatespinsurfwithoffsetangle.htm" title="Create solids by rotating a set of selected surfaces around a given axis.">*solidcreatespinsurfwithoffsetangle</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatedraglinealongline.htm" title="Create one or more surfaces by dragging one or more lines along a line.">*surfacecreatedraglinealongline</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatedraglinealongnormal.htm" title="Creates one or more surface by dragging the input lines along their curvature direction.">*surfacecreatedraglinealongnormal</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatedraglinealongvector.htm" title="Create surface(s) by extruding line(s) along a vector.">*surfacecreatedraglinealongvector</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatedragnodesalongline.htm" title="Create one or more surfaces by dragging a line which is created by a set of input nodes along another line.">*surfacecreatedragnodesalongline</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatenurbs.htm" title="Create a NURBS surface using input parameters.">*surfacecreatenurbs</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatespinlinewithoffsetangle.htm" title="Spins lines to create surfaces by specifying a start and end angle.">*surfacecreatespinlinewithoffsetangle</a></li>
+
+              <li class="sli"><a class="xref" href="_surfacecreatespinnodeswithoffsetangle.htm" title="Spins a list of nodes to create a surface, and optionally, prepares it for immediate use within the automesher.">*surfacecreatespinnodeswithoffsetangle</a></li>
+
+              <li class="sli"><a class="xref" href="_surfaceprimitivefromlines.htm" title="Create a primitive type surface from selected lines.">*surfaceprimitivefromlines</a></li>
+
+              <li class="sli"><a class="xref" href="_surfaceprimitivefrompoints.htm" title="Create a primitive type surface from selected nodes or points.">*surfaceprimitivefrompoints</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Graphics<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a> detailed_elements </li>
+
+              <li class="sli"><a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a> show_line_dir </li>
+
+              <li class="sli"><a class="xref" href="_detailedelements.htm" title="Sets the display mode for 3D visualization of 1D/2D elements.">*detailedelements</a></li>
+
+              <li class="sli"><a class="xref" href="_showgeomlinedir.htm" title="Turn on or off display of line direction symbols.">*showgeomlinedir</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">GUI<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_setpanelheight.htm" title="Sets the height, in pixels, of the panel area for use with custom Tk panels.">hm_setpanelheight</a></li>
+
+              <li class="sli"><a class="xref" href="hm_winfo.htm" title="Returns the value of certain HyperMesh window settings.">hm_winfo</a> menucharheight </li>
+
+              <li class="sli">hwbrowsermanager (new options)</li>
+
+            </ul>
+</li>
+
+          <li class="li">hm.cfg file<ul class="sl simple">
+              <li class="sli">*ce_fe_proj_hexa_face() </li>
+
+              <li class="sli">*registertemplexfunction()</li>
+
+            </ul>
+</li>
+
+          <li class="li">Manufacturing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_hf_addsectionhandle.htm" title="Add a handle on a section. The section is automatically identified.">*hf_AddSectionHandle</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_clearfromworkingsection.htm" title="Clears the model from the working section and handles, used to edit the binder.">*hf_ClearFromWorkingSection</a></li>
+
+              <li class="sli">*hf_CreateAutomaticTL </li>
+
+              <li class="sli"><a class="xref" href="_hf_createbindersectionandhandles.htm" title="Create a section on a binder surface and create five handles on it. The binder section can be identifying by a cutting plane, by two nodes or selecting an existing line. The binder is automatically identified.">*hf_CreateBinderSectionAndHandles</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_deletesectionhandle.htm" title="Delete a handle of a section.">*hf_DeleteSectionHandle</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_featurefromsurfaces.htm" title="Creates the feature line from surfaces.">*hf_FeatureFromSurfaces</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_rotatebindersurf.htm" title="Rotate the binder around an axis in space. The binder is automatically identified.">*hf_RotateBinderSurf</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_scalebindersurf.htm" title="Scale the binder dimension. The binder is automatically identified.">*hf_ScaleBinderSurf</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_setformingdirection.htm" title="Sets the draw direction for 1-step solver.">*hf_setformingdirection</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_slidehandleptronsectionplane.htm" title="Updates the handle position. The binder and the section are automatically identified.">*hf_SlideHandleptrOnSectionPlane</a></li>
+
+              <li class="sli"><a class="xref" href="_hf_translatebbindersurf.htm" title="Translate the binder along an axis in space. The binder is automatically identified.">*hf_TranslateBinderSurf</a></li>
+
+              <li class="sli"><a class="xref" href="_modifysectionhandle.htm" title="Modify the section shape updating the handle position. The section is identifying automatically and the handle is identified by the old position.">*ModifySectionHandle</a></li>
+
+              <li class="sli"><a class="xref" href="_updatebindersections.htm" title="Update the binder shape using the current section. The binder and the section are identified automatically.">*UpdateBinderSections</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_getcleanupglobalflags.htm" title="Returns the global flags currently being used for switching of some default modes for geometry autocleanup, element cleanup and element QI smoothing.">hm_getcleanupglobalflags</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getelemcheckbounds.htm" title="Returns the lower and upper bound values of the specified element check from the selected elements.">hm_getelemcheckbounds</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getelemcheckelems.htm" title="Returns the elements from within a selection that match the specified element check criteria.">hm_getelemcheckelems</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getelemchecksummary3d.htm" title="Returns the 3D solid element quality summary.">hm_getelemchecksummary3d</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getelemcheckvalues.htm" title="Returns the check value for elements from within a selection.">hm_getelemcheckvalues</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getmeshedgeparams.htm" title="Returns all of the relevant automesh settings applied to that surface edge.">hm_getmeshedgeparams</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getmeshfaceparams.htm" title="Returns all of the relevant automesh settings applied to that surface face.">hm_getmeshfaceparams</a></li>
+
+              <li class="sli">*add_washer_elements </li>
+
+              <li class="sli"><a class="xref" href="_create_bead_elements.htm" title="Creates a bead on 2D elements.">*create_bead_elements</a></li>
+
+              <li class="sli"><a class="xref" href="_fill_circular_holes.htm" title="Fill flat circular holes on 2D elements.">*fill_circular_holes</a></li>
+
+              <li class="sli"><a class="xref" href="_linestoelementsaddelemsfixed.htm" title="Marks the specified lines as feature edges before using the command for remeshing elements.">*linestoelementsaddelemsfixed</a></li>
+
+              <li class="sli"><a class="xref" href="_penetrationchecksummary.htm" title="Generates a summary log file for last run penetration check.">*PenetrationCheckSummary</a></li>
+
+              <li class="sli"><a class="xref" href="_secondorderfix2.htm" title="Advanced fixing of middle nodes for 2nd order elements.">*secondorderfix2</a></li>
+
+              <li class="sli"><a class="xref" href="_setcleanupglobalflags.htm" title="Sets or clears global flags used for switching of some default modes for geometry autocleanup, element cleanup and element QI smoothing.">*setcleanupglobalflags</a></li>
+
+              <li class="sli"><a class="xref" href="_shrinkwrapmesh.htm" title="Generates a shrink wrap mesh of shell or solid elements.">*shrinkwrapmesh</a></li>
+
+              <li class="sli"><a class="xref" href="_slivertetrafix.htm" title="Fixes sliver tetra and wedge elements and optimizes node positions based on certain quality criteria.">*slivertetrafix</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_begin.htm" title="Starts a multiple-solid solidmap command block.">*solidmap_solids_begin</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_end.htm" title="Ends a multiple-solid solidmap command block.">*solidmap_solids_end</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_set_density.htm" title="Sets the per-edge element density within a multiple-solid solidmap command block.">*solidmap_solids_set_density</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_set_elemsize.htm" title="Sets the per-edge element size within a multiple-solid solidmap command block.">*solidmap_solids_set_elemsize</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_set_face_params.htm" title="Sets the per-surface mesh type and mesh flags within a multiple-solid solidmap command block.">*solidmap_solids_set_face_params</a></li>
+
+              <li class="sli"><a class="xref" href="_solidmap_solids_set_mapface.htm" title="Sets the surface shared by the 4 input points to the mapped type within a multiple-solid solidmap command block.">*solidmap_solids_set_mapface</a></li>
+
+              <li class="sli">*sphgenerate </li>
+
+              <li class="sli">*trim_elems_by_circular_hole</li>
+
+            </ul>
+</li>
+
+          <li class="li">Morphing<ul class="sl simple">
+              <li class="sli">hm_morph_domaintypecount </li>
+
+              <li class="sli"><a class="xref" href="_morphapplyfesolver.htm" title="Invokes the finite element solver solution for all perturbed domains with a limited number of elements.">*morphapplyfesolver</a></li>
+
+              <li class="sli"><a class="xref" href="_morphconstraintcreateeq.htm" title="Creates an equation type constraint for the specified nodes.">*morphconstraintcreateeq</a></li>
+
+              <li class="sli"><a class="xref" href="_morphconstraintupdateeq.htm" title="Updates an equation type constraint for the specified nodes.">*morphconstraintupdateeq</a></li>
+
+              <li class="sli"><a class="xref" href="_morphcreatemodelshape.htm" title="Creates an arbitrary shape that can be used with a model constraint.">*morphcreatemodelshape</a></li>
+
+              <li class="sli"><a class="xref" href="_morphdeletemvedgenodes.htm" title="Deletes the selected mid-edge nodes from the edges of morph volume.">*morphdeletemvedgenodes</a></li>
+
+              <li class="sli"><a class="xref" href="_morphdisplayconstraints.htm" title="Displays the vectors defining the constraints on the mark.">*morphdisplayconstraints</a></li>
+
+              <li class="sli"><a class="xref" href="_morphhandleprojectentity.htm" title="Morphs a mesh by projecting selected handles on to the selected surfaces or elements.">*morphhandleprojectentity</a></li>
+
+              <li class="sli"><a class="xref" href="_morphhandleprojectline.htm" title="Morphs a mesh by projecting selected handles on to the selected line list.">*morphhandleprojectline</a></li>
+
+              <li class="sli"><a class="xref" href="_morphhandleprojectplane.htm" title="Morphs a mesh by projecting selected handles on to the specified plane.">*morphhandleprojectplane</a></li>
+
+              <li class="sli"><a class="xref" href="_morphhandlescalexyz.htm" title="Morphs a mesh by scaling the distances between handles and a specified node according to the specified system.">*morphhandlescalexyz</a></li>
+
+              <li class="sli"><a class="xref" href="_morphinterpolatesurf.htm" title="Morphs a mesh on to a surface interpolated from the specified mark of nodes or lines.">*morphinterpolatesurf</a></li>
+
+              <li class="sli"><a class="xref" href="_morphkringmanual.htm" title="Set of commands to allow manual Kriging of the model.">*morphkringmanual</a></li>
+
+              <li class="sli"><a class="xref" href="_morphmanageedgemark.htm" title="Adds a morph volume edge, subtracts a morph volume edge, or clears all morph volume edges from a morph volume edge user mark.">*morphmanageedgemark</a></li>
+
+              <li class="sli">*morphmapedgestoequation </li>
+
+              <li class="sli">*morphmapedgestoline </li>
+
+              <li class="sli">*morphmapedgestonodes </li>
+
+              <li class="sli">*morphmapedgestoplane </li>
+
+              <li class="sli">*morphmapedgestosurface </li>
+
+              <li class="sli">*morphmapedgestotacit </li>
+
+              <li class="sli">*morphmaptoequationvec </li>
+
+              <li class="sli">*morphnodesequa </li>
+
+              <li class="sli"><a class="xref" href="_morphpositionshapemark.htm" title="Positions shapes from one part of the mesh to another, scales them, and applies them only to the nodes on the mark.">*morphpositionshapemark</a></li>
+
+              <li class="sli"><a class="xref" href="_morphreflectshapemark.htm" title="Reflects shapes in accordance with symmetries and applies them only to the nodes on the mark.">*morphreflectshapemark</a></li>
+
+              <li class="sli"><a class="xref" href="_morphsculptmeshfea.htm" title="Sculpts the affected elements according to the selected tools and parameters using a finite element solver to resolve the mesh stretching">*morphsculptmeshfea</a></li>
+
+              <li class="sli"><a class="xref" href="_morphtranslateshapemark.htm" title="Translates shapes to specified node positions and applies them only to the nodes on the mark.">*morphtranslateshapemark</a></li>
+
+              <li class="sli"><a class="xref" href="_morphupdateenbymvol.htm" title="Updates the end conditions of edges on selected morph volumes.">*morphupdateendbymvol</a></li>
+
+              <li class="sli"><a class="xref" href="_morphvolumecreateflex.htm" title="Creates a series of morph volumes using a selected profile (elements, morph volumes, lines, matrix) along a line, vector, through elements, or about an axis.">*morphvolumecreateflex</a></li>
+
+              <li class="sli"><a class="xref" href="_morphvolumeequivalence.htm" title="Joins morph volumes on a mark together which are within a specified tolerance.">*morphvolumeequivalence</a></li>
+
+              <li class="sli"><a class="xref" href="_morphvolumereflect.htm" title="Creates morph volumes by reflecting the selected morph volumes using reflective symmetries.">*morphvolumereflect</a></li>
+
+              <li class="sli"><a class="xref" href="_morphwritenodes.htm" title="Writes node positions and perturbations to a file.">*morphwritenodes</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Optimization<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_compositeshuffledesvarcreate.htm" title="Creates a composite shuffle design variable.">*compositeshuffledesvarcreate</a></li>
+
+              <li class="sli"><a class="xref" href="_compositeshuffledesvarupdate.htm" title="Updates a composite shuffle design variable.">*compositeshuffledesvarupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_compositeshufflepairingconstraintupdate.htm" title="Updates the pairing constraints of a composite shuffle design variable.">*compositeshufflepairingconstraintupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_compositesizedesvarcreate.htm" title="Creates a composite size design variable.">*compositesizedesvarcreate</a></li>
+
+              <li class="sli"><a class="xref" href="_compositesizedesvarupdate.htm" title="Updates a composite size design variable.">*compositesizedesvarupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_compositesizelaminatethicknessupdate.htm" title="Updates the minimum and maximum laminate thickness of a composite size design variable.">*compositesizelaminatethicknessupdate</a></li>
+
+              <li class="sli"><a class="xref" href="_exportuserdefinedshapes.htm" title="Exports shape design variables, shapes and nodal information in user-defined format for HyperStudy or Templex analysis codes.">*exportuserdefinedshapes</a></li>
+
+              <li class="sli"><a class="xref" href="_freeshapeparametersupdatewithsmoothing.htm" title="Updates the parameters of a free shape design variable.">*freeshapeparametersupdatewithsmoothing</a></li>
+
+              <li class="sli"><a class="xref" href="_freesizedesvarcreatewithstackoption.htm" title="Creates a free size design variable.">*freesizedesvarcreatewithstackoption</a></li>
+
+              <li class="sli"><a class="xref" href="_freesizedesvarupdatewithstackoption.htm" title="Updates a free size design variable.">*freesizedesvarupdatewithstackoption</a></li>
+
+              <li class="sli"><a class="xref" href="_freesizeparametersupdatewithfatigue.htm" title="Updates the parameters of a free size design variable.">*freesizeparametersupdatewithfatigue</a></li>
+
+              <li class="sli"><a class="xref" href="_ossmooth2.htm" title="This command extracts the final design geometry from OptiStruct topology, topography or shape optimization results.">*ossmooth2</a></li>
+
+              <li class="sli"><a class="xref" href="_topologyparametersupdatewithfatigue.htm" title="Updates the parameters of a topology design variable.">*topologyparametersupdatewithfatigue</a></li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Modified Commands</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_10_r__ul_cfx_wzk_zw">
+          <li class="li">General/Core<ul class="ul" id="api_programmers_guide_10_r__ul_hq3_xzk_zw">
+              <li class="li"><a class="xref" href="hm_getentityarray.htm" title="Returns a list containing template/data name values for a single entity.">hm_getentityarray</a> – Now properly returns entities contained in
+                all set types, including formula sets. </li>
+
+              <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a> – Have been updated
+                for the 2D/3D properties project to work correctly for the following options for
+                solver groups 1 and 2:<ul class="sl simple">
+                  <li class="sli">components "by material" </li>
+
+                  <li class="sli">components "by material id" </li>
+
+                  <li class="sli">components "by material name" </li>
+
+                  <li class="sli">components "by property" </li>
+
+                  <li class="sli">components "by property id" </li>
+
+                  <li class="sli">components "by property name"</li>
+
+                </ul>
+<ul class="sl simple">
+                  <li class="sli">elements "by material" </li>
+
+                  <li class="sli">elements "by material id" </li>
+
+                  <li class="sli">elements "by material name" </li>
+
+                  <li class="sli">elements "by property" </li>
+
+                  <li class="sli">elements "by property id" </li>
+
+                  <li class="sli">elements "by property name"</li>
+
+                </ul>
+<ul class="sl simple">
+                  <li class="sli">properties "by material" </li>
+
+                  <li class="sli">properties "by material id" </li>
+
+                  <li class="sli">properties "by material name"</li>
+
+                </ul>
+</li>
+
+              <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a> – The "by set", "by
+                set id" and "by set name" options now properly select entities contained in all set
+                types, including formula sets. </li>
+
+              <li class="li"><a class="xref" href="_feinputwithdata2.htm" title="Reads data from sources such as CAD files, connector files/MCF/MWF, and FE files, with additional input parameters.">*feinputwithdata2</a> – Now returns 0 when failing to import due
+                to invalid/incorrect arguments.</li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_replacenodes.htm" title="Replaces or moves a node with another node.">*replacenodes</a> – Now honors *answer and hm_answernext
+                yes/no/yestoall command and returns 0 upon a “no” answer.</li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Deprecated Commands</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_10_r__ul_jmj_p1l_zw">
+          <li class="li">Analysis<ul class="sl simple">
+              <li class="sli">*updateblock – use <a class="xref" href="_updateblocks.htm" title="Update simple blocks entity on the specified mark.">*updateblocks</a>
+              </li>
+
+              <li class="sli">*updateblockwithsystem – use <a class="xref" href="_updateblocks.htm" title="Update simple blocks entity on the specified mark.">*updateblocks</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Geometry<ul class="sl simple">
+              <li class="sli">*midsurface_extract_new – use <a class="xref" href="_midsurface_extract_10.htm" title="Extracts mid-surfaces from a selection of surfaces or solids.">*midsurface_extract_10</a></li>
+
+              <li class="sli">*separate_holes_in_3d_body – use <a class="xref" href="_separate_holes_in_3d_body_new.htm" title="Detects holes in 3D models, groups them by diameter and moves the surfaces defining the holes to separate components created for each hole diameter group.">*separate_holes_in_3d_body_new</a></li>
+
+              <li class="sli">*solid_spin_from_surfs – use <a class="xref" href="_solidcreatespinsurfwithoffsetangle.htm" title="Create solids by rotating a set of selected surfaces around a given axis.">*solidcreatespinsurfwithoffsetangle</a></li>
+
+              <li class="sli">*spinlinetoformsurface – use <a class="xref" href="_surfacecreatespinlinewithoffsetangle.htm" title="Spins lines to create surfaces by specifying a start and end angle.">*surfacecreatespinlinewithoffsetangle</a>
+              </li>
+
+              <li class="sli">*spinnodestoformsurface – use <a class="xref" href="_surfacecreatespinnodeswithoffsetangle.htm" title="Spins a list of nodes to create a surface, and optionally, prepares it for immediate use within the automesher.">*surfacecreatespinnodeswithoffsetangle</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli">*nodesassociatetosolid– use *nodesassociatetogeometry </li>
+
+              <li class="sli">*nodesassociatetosurface – use *nodesassociatetogeometry </li>
+
+              <li class="sli">*secondorderfix – use *secondorderfix2</li>
+
+            </ul>
+</li>
+
+          <li class="li">Morphing<ul class="sl simple">
+              <li class="sli">*morphpositionshape – use <a class="xref" href="_morphpositionshapemark.htm" title="Positions shapes from one part of the mesh to another, scales them, and applies them only to the nodes on the mark.">*morphpositionshapemark</a></li>
+
+              <li class="sli">*morphreflectshape – use <a class="xref" href="_morphreflectshapemark.htm" title="Reflects shapes in accordance with symmetries and applies them only to the nodes on the mark.">*morphreflectshapemark</a></li>
+
+              <li class="sli">*morphtranslateshape – use <a class="xref" href="_morphtranslateshapemark.htm" title="Translates shapes to specified node positions and applies them only to the nodes on the mark.">*morphtranslateshapemark</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Optimization<ul class="sl simple">
+              <li class="sli">*ossmooth – use <a class="xref" href="_ossmooth2.htm" title="This command extracts the final design geometry from OptiStruct topology, topography or shape optimization results.">*ossmooth2</a></li>
+
+              <li class="sli">*ossmooth_post – use <a class="xref" href="_ossmooth2.htm" title="This command extracts the final design geometry from OptiStruct topology, topography or shape optimization results.">*ossmooth2</a></li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Removed Commands</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_10_r__ul_stv_3cl_zw">
+          <li class="li">Geometry<ul class="sl simple">
+              <li class="sli"><span class="keyword cmdname">*topologycleanup</span></li>
+
+            </ul>
+</li>
+
+          <li class="li">Manufacturing<ul class="sl simple">
+              <li class="sli"><span class="keyword cmdname">*hf_AutoBinder</span></li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli"><span class="keyword cmdname">*hm_fillet_mesh_cleanup </span></li>
+
+              <li class="sli"><span class="keyword cmdname">*postmesh_element_cleanup </span></li>
+
+              <li class="sli"><span class="keyword cmdname">*try_hm_cleanup</span></li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        <div class=" wh_child_links "><nav role="navigation" class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_100_r.htm">10.0-SA1-100 API Programmer's Guide</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_110_r.htm">10.0-SA1-110 API Programmer's Guide</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_120_r.htm">10.0-SA1-120 API Programmer's Guide</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="../../../topics/reference/hm/api_programmers_guide_10_sa1_130_r.htm">10.0-SA1-130 API Programmer's Guide</a></strong><br />
+</li>
+</ul>
+</nav></div>
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

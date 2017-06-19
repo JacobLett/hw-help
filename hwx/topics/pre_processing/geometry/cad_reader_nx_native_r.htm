@@ -1,0 +1,1305 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="NX Native Reader" /><meta name="abstract" content="The NX Native reader utilizes the UGOpen library to read files from UG. The reader relies on a valid UG installation and license to access these libraries. Environment variables must be set appropriately to ensure proper access to these libraries. Any UG file formats not supported by the available UG installation are not supported." /><meta name="description" content="The NX Native reader utilizes the UGOpen library to read files from UG. The reader relies on a valid UG installation and license to access these libraries. Environment variables must be set appropriately to ensure proper access to these libraries. Any UG file formats not supported by the available UG installation are not supported." /><meta name="DC.Coverage" content="Geometry" /><meta name="indexterms" content="nx native reader, cad reader, nx native, nx native supported entities, nx native environment variables, nx native load options, nx native import options, nx native supported metadata" /><meta name="DC.subject" content="nx native reader, cad reader, nx native, nx native supported entities, nx native environment variables, nx native load options, nx native import options, nx native supported metadata" /><meta name="keywords" content="nx native reader, cad reader, nx native, nx native supported entities, nx native environment variables, nx native load options, nx native import options, nx native supported metadata" /><meta name="prodname" content="HyperWorks X" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_c32_tzq_35" /><title>NX Native Reader</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <div>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+</div>
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017.css" /></head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page anchorLinks" data-spy="scroll" data-target="#toc">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="User's Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">User's Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/whats_new_r.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/whats_new_r.htm" data-id="reference_xd2_syf_xt">What's New</a></span><ul><li><span class="topicref"><a href="../../../topics/release_notes/release_notes_hw_2017_1x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x.1 Release Notes</a></span></li><li><span class="topicref"><a href="../../../topics/release_notes/release_notes_hw_2017x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x Release Notes</a></span></li><li><span class="topicref"><a href="../../../topics/release_notes/release_notes_hw_14x120_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 14x.120 Release Notes</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/get_started_r.htm" data-id="reference_rnl_kny_5x">Get Started</a></span><ul><li><span class="topicref"><a href="../../../http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li><li><span class="topicref"><a href="../../../topics/preferences/keyboard_shortcuts_mouse_controls_global_r.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/tutorials_r.htm" data-id="reference_xd2_syf_xt">Tutorials</a></span><ul><li><span class="topicref"><a href="../../../http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/workspace_r.htm" data-id="workspace">Workspace</a></span><ul><li><span class="topicref"><a href="../../../topics/user_interface/browser_model_overview_c.htm" data-id="concept_u5d_z3c_zq">Model Browser</a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/property_editor_overview_c.htm" data-id="concept_wh5_jlf_vq"><span class="keyword">Entity Editor</span></a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/ribbon_r.htm" data-id="reference_h1r_zrz_qr"><span class="keyword">Ribbons</span></a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/menubar_overview_r.htm" data-id="reference_hnb_lrz_qr">Menu Bar</a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/modeling_window_overview_r.htm" data-id="reference_tnn_rrz_qr">Modeling Window</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/file_management_r.htm" data-id="file_management">File Management</a></span><ul><li><span class="topicref"><a href="../../../topics/file_management/model_create_t.htm" data-id="task_mfy_wfc_zq"><span class="ph" id="ph_zzg_pkt_xv">Creating Models</span></a></span></li><li><span class="topicref"><a href="../../../topics/file_management/model_open_t.htm" data-id="task_cjn_vwb_zq"><span class="ph" id="ph_mcq_clt_xv">Opening Models</span></a></span></li><li><span class="topicref"><a href="../../../topics/file_management/file_import_t.htm" data-id="task_rsz_4hg_tt">Importing Files</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/analysis_results_load_t.htm" data-id="task_qgs_ht3_rz">Loading Results</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/script_command_file_run_t.htm" data-id="task_hdx_jw3_rz">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/model_save_t.htm" data-id="task_uhq_szb_zq"><span class="ph" id="ph_p34_rlt_xv">Saving Models</span></a></span></li><li><span class="topicref"><a href="../../../topics/file_management/fe_export_t.htm" data-id="task_oh5_shg_tt">Exporting FE Data</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/solver_interface_change_t.htm" data-id="task_st5_syw_tz">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/screen_capture_save_t.htm" data-id="task_j2t_kfj_rz">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/file_formats_supported_r.htm" data-id="reference_mfd_4k2_jr">Supported File Formats</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_readers_supported_r.htm" data-id="reference_esg_qwq_35">Supported CAD Readers</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/view_controls_r.htm" data-id="view_controls">View Controls</a></span><ul><li><span class="topicref"><a href="../../../topics/user_interface/view_show_hide_isolate_t.htm#task_kmb_v5d_sw" data-id="task_kmb_v5d_sw">Showing, Hiding, Isolating <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="../../../view_store_recall_t.htm#view_store_recall_t" data-id="view_store_recall_t">Storing and Recalling Custom Views</a></span></li><li><span class="topicref"><a href="../../../view_adjust_t.htm#view_adjust_t" data-id="view_adjust_t">Rotate, Pan, Zoom, Fit, Center</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/settings_display_geometry_r.htm" data-id="reference_wv5_1kg_tt">Geometry Display Settings</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/meshing/settings_display_mesh_r.htm" data-id="reference_wgp_vjg_tt">Mesh Display Settings</a></span></li><li><span class="topicref"><a href="../../../topics/preferences/settings_display_color_r.htm">Model Color Settings</a></span></li><li><span class="topicref"><a href="../../../Chunk2086168889.htm#Chunk2086168889" data-id="Chunk2086168889">Creating and Viewing Section Cuts</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/find_search_r.htm" data-id="reference_n2r_sl4_vv">Find and Search</a></span><ul><li><span class="topicref"><a href="../../../topics/user_interface/entity_search_t.htm" data-id="search">Finding and Searching for <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/tools_search_t.htm" data-id="task_n2k_p1k_rz">Searching for Tools and Panels</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span><ul><li><span class="topicref"><a href="../../../topics/user_interface/context_menu_modeling_window_select_options.htm#reference_mvx_jdz_wt">Window Selection Settings</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt" data-id="task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr" data-id="task_g1x_m2d_lr">Measure</a></span></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/geometry_create_r.htm" data-id="reference_m5g_ryf_xt">Create Geometry</a></span><ul><li><span class="topicref"><a href="../../../point_t.htm#point_t" data-id="point_t">Creating and Editing Points</a></span></li><li><span class="topicref"><a href="../../../line_t.htm#line_t" data-id="line_t">Creating and Editing Lines</a></span></li><li><span class="topicref"><a href="../../../point_extract_t.htm#point_extract_t" data-id="point_extract_t">Interpolating Points and Finding Curve Center</a></span></li><li><span class="topicref"><a href="../../../circle_t.htm#circle_t" data-id="circle_t">Creating and Editing Circles</a></span></li><li><span class="topicref"><a href="../../../surface_t.htm#surface_t" data-id="surface_t">Patching, Extending, and Offsetting Surfaces</a></span></li><li><span class="topicref"><a href="../../../geometry_solid_create_t.htm#geometry_solid_create_t" data-id="geometry_solid_create_t">Creating Solid Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/geometry_cleanup_r.htm" data-id="geometry_cleanup">Geometry Cleanup</a></span><ul><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/surface_imprint_t.htm#task_eyh_r1h_kr" data-id="task_eyh_r1h_kr">Imprinting Surfaces</a></span></li><li><span class="topicref"><a href="../../../split_t.htm#split_t" data-id="split_t">Splitting Surface Edges and Surfaces</a></span></li><li><span class="topicref"><a href="../../../stitch_t.htm#stitch_t" data-id="stitch_t">Stitching Surfaces and Suppressing Edges</a></span></li><li><span class="topicref"><a href="../../../defeature_t.htm#defeature_t" data-id="defeature_t">Removing Rounds, Fillets, Cutouts, Holes</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/geometry_auto_cleanup_t.htm" data-id="task_wz5_jbs_rz">Automatically Cleaning Up Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/midsurface_r.htm" data-id="midsurface">Midsurface</a></span><ul><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/midsurface_extract_t.htm#task_uhh_cd1_mr" data-id="task_uhh_cd1_mr">Extracting Midsurfaces</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/midsurface_plate_edit_t.htm#task_lwn_gjg_tt" data-id="task_lwn_gjg_tt">Editing Midsurface Plates</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/midsurface_thickness_apply_t.htm#task_mw2_5kv_ty" data-id="task_mw2_5kv_ty">Applying Thickness to Midsurface</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/midsurface_plate_types_r.htm" data-id="reference_ujg_ksm_j5">Plate &amp; Surface Types</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/mesh_r.htm" data-id="mesh">Mesh</a></span><ul><li><span class="topicref"><a href="../../../surface_mesh_t.htm#surface_mesh_t" data-id="surface_mesh_t">Creating and Editing 2D Surface Mesh</a></span></li><li><span class="tool"><a href="../../../edit_elements_t.htm#edit_elements_t" data-id="edit_elements_t">Editing Elements</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/meshing/mesh_morph_t.htm#task_ikm_hyj_wy" data-id="task_ikm_hyj_wy">Morphing Mesh</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/meshing/2d_element_quality_review_t.htm#task_ar1_hb3_tz">Reviewing Element Quality</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/file_management_r.htm">File Management</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_reader_nx_r.htm">NX Reader</a></span></li><li class="active"><span class="topicref">NX Native Reader</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/chapter_heads/whats_new_r.htm">What's New</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/get_started_r.htm">Get Started</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/tutorials_r.htm">Tutorials</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/workspace_r.htm">Workspace</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/file_management_r.htm">File Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/file_management/model_create_t.htm">Creating Models</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/model_open_t.htm">Opening Models</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/file_import_t.htm">Importing Files</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/analysis_results_load_t.htm">Loading Results</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/script_command_file_run_t.htm">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/model_save_t.htm">Saving Models</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/fe_export_t.htm">Exporting FE Data</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/solver_interface_change_t.htm">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/screen_capture_save_t.htm">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="../../../topics/file_management/file_formats_supported_r.htm">Supported File Formats</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../cad_reader_acis_r.htm#cad_reader_acis_r">ACIS Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_catia_r.htm#cad_reader_catia_r">CATIA Reader</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_reader_catia_composite_link_r.htm">CATIA Composites Link Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_creo_r.htm#cad_reader_creo_r">Creo Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_dxf_r.htm#cad_reader_dxf_r">DXF Reader</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_reader_fibersim_r.htm#reference_c32_tzq_35">FiberSim Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_iges_r.htm#cad_reader_iges_r">IGES Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_inspire_r.htm#cad_reader_inspire_r">Inspire Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_intergraph_r.htm#cad_reader_intergraph_r">Intergraph Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_jt_r.htm#cad_reader_jt_r">JT Reader</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_reader_nx_r.htm">NX Reader</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">NX Native Reader</span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/cad_reader_nx_third_party_r.htm#reference_c32_tzq_35">NX Third Party Reader</a></span></li></ul></li><li><span class="topicref"><a href="../../../cad_reader_parasolid_r.htm#cad_reader_parasolid_r">Parasolid Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_pdgs_r.htm#cad_reader_pdgs_r">PDGS Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_solidworks_r.htm#cad_reader_solidworks_r">SolidWorks Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_step_r.htm#cad_reader_step_r">STEP Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_tribon_r.htm#cad_reader_tribon_r">Tribon Reader</a></span></li><li><span class="topicref"><a href="../../../cad_reader_vdafs_r.htm#cad_reader_vdafs_r">VDAFS Reader</a></span></li></ul></li></ul></li><li><span class="topicref"><a href="../../../topics/chapter_heads/view_controls_r.htm">View Controls</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/find_search_r.htm">Find and Search</a></span></li><li><span class="topicref"><a href="../../../topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="../../../topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr">Measure</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/geometry_create_r.htm">Create Geometry</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/geometry_cleanup_r.htm">Geometry Cleanup</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/midsurface_r.htm">Midsurface</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/mesh_r.htm">Mesh</a></span></li><li><span class="topicref"><a href="../../../topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="nested0" aria-labelledby="ariaid-title1" id="reference_c32_tzq_35">
+  <h1 class="title topictitle1" id="ariaid-title1"><span class="keyword">NX</span> Native Reader</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="keyword">NX</span> Native reader utilizes the UGOpen library to read
+    files from UG. The reader relies on a valid UG installation and license to access these
+    libraries. Environment variables must be set appropriately to ensure proper access to these
+    libraries. Any UG file formats not supported by the available UG installation are not
+    supported.</p>
+
+    <section class="section">
+      <p class="p toc"></p>
+
+    </section>
+
+  </div>
+
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title2" id="reference_cvw_znr_35">
+  <h2 class="title topictitle2" id="ariaid-title2"><span class="keyword">NX</span> Native Supported Entities</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Entities supported by the <span class="keyword">NX</span> Native reader.</p>
+
+    <section class="section">
+      <div class="p">
+        <ul class="ul" id="reference_cvw_znr_35__ul_exj_sly_35">
+          <li class="li">UF_point</li>
+
+          <li class="li">F_line</li>
+
+          <li class="li">UF_circle</li>
+
+          <li class="li">UF_conic</li>
+
+          <li class="li">UF_spline</li>
+
+          <li class="li">UF_faceted_model</li>
+
+          <li class="li">UF_solid</li>
+
+          <li class="li">When reading an UG assembly or part file with material information, the material
+            information is read into <span class="keyword">HyperWorks</span> as <span class="keyword">Nastran</span> MAT1 material collectors. If there is more than one
+            material associated to the entities in a given part file, <span class="keyword">HyperWorks</span>
+            splits the part into multiple component collectors. A property collector is always
+            created when importing material information and assigned to the component (see note
+            below), and the material collector is then associated to the respective property
+            collector.</li>
+
+          <li class="li">The <span class="keyword">NX</span> Native reader also recognizes midsurface
+            thickness information for each part of an assembly. After the part is imported, the
+            thickness information is stored in <span class="keyword">Nastran</span> PSHELL property
+            collectors. If no thickness information is present but material information does exist,
+            an empty PSHELL property collector is created and the material is assigned to the
+            property collector. The property collector is then assigned to the component
+            collector.</li>
+
+          <li class="li">Midsurface geometry is organized into a separate component from the solid geometry it
+            is associated to, using a similar name as the solid component.</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title3" id="unique_425285383">
+  <h2 class="title topictitle2" id="ariaid-title3"><span class="keyword">NX</span> Native Environment Variables</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Since the <span class="keyword">NX</span> Native reader needs to use the UGOpen
+    library during the run time, it requires that a valid UG installation and UG license be present
+    and available to the user with the assemblies, gateway and solid_modeling modules.</p>
+
+    <section class="section">
+      <div class="p">Set the following environment variables prior to starting:<dl class="dl">
+          
+            <dt class="dt dlterm">UGII_BASE_DIR</dt>
+
+            <dd class="dd">This must point to the UG installation directory<sup class="ph sup">1</sup>.</dd>
+
+          
+          
+            <dt class="dt dlterm">UGII_ROOT_DIR</dt>
+
+            <dd class="dd">This must point to the UG installation UGII directory<sup class="ph sup">1</sup>.</dd>
+
+          
+          
+            <dt class="dt dlterm">PATH</dt>
+
+            <dd class="dd">This must include the <span class="ph filepath">%UGII_BASE_DIR%\UGII\</span>
+                directory<sup class="ph sup">2</sup>.</dd>
+
+          
+          
+            <dt class="dt dlterm">SPLM_LICENSE_SERVER</dt>
+
+            <dd class="dd">This must point to the UG license server<sup class="ph sup">3</sup>.</dd>
+
+          
+          
+            <dt class="dt dlterm">UGS_LICENSE_SERVER</dt>
+
+            <dd class="dd"></dd>
+
+          
+          
+            <dt class="dt dlterm">UGS_LICENSE_BUNDLE</dt>
+
+            <dd class="dd">This must specify the UG license bundle.</dd>
+
+          
+        </dl>
+</div>
+
+      <p class="p">Example: UG installation located at <span class="ph filepath">C:\Program Files\Siemens\NX
+        9.0</span></p>
+
+      <p class="p">UGII_BASE_DIR: <span class="ph filepath">C:\Program Files\Siemens\NX 9.0</span></p>
+
+      <p class="p">UGII_ROOT_DIR: <span class="ph filepath">%UGII_BASE_DIR%\UGII\</span></p>
+
+      <p class="p">PATH: <span class="ph filepath">%UGII_BASE_DIR%\UGII\</span></p>
+
+      <p class="p">SPLM_LICENSE_SERVER: <span class="ph filepath">28000@licsrv</span></p>
+
+      <p class="p">UGS_LICENSE_BUNDLE: <span class="ph filepath">NXPTNR100</span></p>
+
+    </section>
+
+    <section class="section">
+      <p class="p"><sup class="ph sup">1</sup>UG is very sensitive about the environment variables. You should NOT have '/'
+        at the end of UGII_BASE_DIR path and you MUST have '/' at the end of UGII_ROOT_DIR path.</p>
+
+      <p class="p"><sup class="ph sup">3</sup>It is advisable to specify %UGII_BASE_DIR%\UGII\ at the beginning of the PATH
+        environment variable to avoid DLL version conflicts.</p>
+
+      <p class="p"><sup class="ph sup">2</sup>Only UG versions prior to 9.0 utilize the UGS_LICENSE_SERVER variable, while
+        newer versions utilize SPLM_LICENSE_SERVER.</p>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title4" id="reference_tls_dpg_j5">
+  <h2 class="title topictitle2" id="ariaid-title4"><span class="keyword">NX</span> Native Reader Load Options</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="keyword">NX</span> Native reader provides additional customization
+    options for loading of <span class="keyword">NX</span> models. The
+      <span class="ph filepath">ug_load_options.def</span> file can be used for this purpose.</p>
+
+    <section class="section">
+      <div class="p">Behavior of the <span class="ph filepath">ug_load_options.def</span> file.<ul class="ul" id="reference_tls_dpg_j5__ul_ihq_3pg_j5">
+          <li class="li">This file can be setup and written out of <span class="keyword">NX</span> using the <span class="ph menucascade"><span class="ph uicontrol">File</span> &gt; <span class="ph uicontrol">Options</span> &gt; <span class="ph uicontrol">Assembly Load Options</span></span> dialog.</li>
+
+          <li class="li">The <span class="keyword">NX</span> Native reader passes the options in this file to
+            UGOpen during import, and <span class="keyword">NX</span> utilizes the options
+            accordingly</li>
+
+        </ul>
+</div>
+
+      <p class="p">A default version of the <span class="ph filepath">ug_load_options.def</span> file is located in the
+        directory <span class="ph filepath">[Altair Home]/io/afc_translators/bin/[platform]</span>. When the
+          <span class="keyword">NX</span> Native reader is activated, it first checks the current
+        working directory for the <span class="ph filepath">ug_load_options.def</span> file. If the file is not
+        found, the translator uses the <span class="ph filepath">default ug_load_options.def</span> file in the
+        above directory. In this way the <span class="ph filepath">ug_load_options.def</span> file can have
+        "global" or "local" user scope. For instance, "local" user changes for a current job can be
+        made by copying and modifying the <span class="ph filepath">ug_load_options.def</span> file in the local
+        current working directory.</p>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title5" id="reference_q41_f4r_35">
+  <h2 class="title topictitle2" id="ariaid-title5"><span class="keyword">NX</span> Native Import Options</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="keyword">NX</span> Native reader uses the
+      <span class="ph filepath">ug_reader.ini</span> file. The <span class="keyword">NX</span> reader also
+    includes a browser to control the import of assemblies, the sorting of entities by component,
+    and various other import details.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_f1w_gz2_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@AttributesAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e513">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e516">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e513 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e516 ">Import all non-blank name/value attributes as metadata attached to the relevant
+                entities (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e513 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e516 ">Import no name/value pair attributes.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_m3r_bcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@CoordinateSystem</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e562">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e565">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e562 "><code class="ph codeph">global</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e565 ">Sets the Coordinate system option to Global when the Part browser opens
+                (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e562 "><code class="ph codeph">local</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e565 ">Set the Coordinate system option to Local when the Part browser opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_ayg_ccf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@CreateWeldsInHypermesh</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e611">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e614">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e611 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e614 ">Enables the Create welds option when the Part browser opens.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e611 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e614 ">Disables the Create welds option when the Part browser opens (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_fht_ccf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@Display</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e660">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e663">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e660 "><code class="ph codeph">categories</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e663 ">Enables the Categories option when the Part browser opens (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e660 "><code class="ph codeph">layerfiltering</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e663 ">Enables the Layer filtering option when the Part browser opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_djg_dcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ExportToMasterWeldFile</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e709">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e712">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e709 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e712 ">Enables the Export to master weld file &lt;filename&gt; option when the Part
+                browser opens (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e709 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e712 ">Disables the Export to master weld file &lt;filename&gt; option when the Part
+                browser opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_i2s_2cf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportForVisualizationOnly</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1568">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1571">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">
+                <p class="lines">Import the model for visualization purposes only.</p>
+
+                <p class="lines">This skips many of the import steps (cleanup, stitching, solid creation, and so on) to provide a faster import. The resulting model may not be suitable for other uses.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">Import the model in the normal fashion (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_jnl_gcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@IncludeInvisibleGeometry</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e814">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e817">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e814 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e817 ">Enables the Include invisible geometry option when the Part Browser
+                opens.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e814 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e817 ">Disabes the Include invisible geometry option when the Part Browser
+                opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_r2x_gcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@IncludeWireFrame</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e863">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e866">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e863 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e866 ">Enables the Include wireframe geometry option when the Part Browser
+                opens.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e863 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e866 ">Disabes the Include wireframe geometry option when the Part Browser
+                opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_mhk_hcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@LoadColorAttributes</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e912">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e915">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e912 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e915 ">
+                <p class="lines">Read color attributes of geometric entities as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">COLOR_RGB</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e912 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e915 ">Do not read color attributes (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_adv_hcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@LoadDensityAttributes</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e968">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e971">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e968 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e971 ">
+                <p class="lines">Read density and transformation matrix as metadata (default).</p>
+
+                <p class="lines"><code class="ph codeph">DENSITY</code></p>
+
+                <p class="lines"><code class="ph codeph">TRANSFORMATION_MATRIX</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e968 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e971 ">Do not read density and transformation matrix.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_h1h_3cf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@Merge</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1028">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1031">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1028 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1031 ">
+                <p class="lines">Enables the Merge assemblies option when the Part Browser opens. </p>
+
+                <p class="lines">If the option is then accepted by the user, the <code class="ph codeph">.ALTAIR.HW.UG.MERGE</code> metadata is generated.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1028 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1031 ">Disables the Merge assemblies option when the Part Browser opens
+                (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_ggq_3cf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@Midsurface</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1087">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1090">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1087 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1090 ">When <code class="ph codeph">@Display= layerfiltering</code>, the Midsurface checkbox is
+                enabled when the Part Browser opens.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1087 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1090 ">When <code class="ph codeph">@Display= layerfiltering</code>, the Midsurface checkbox is
+                disabled when the Part Browser opens (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_cbg_jcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ShowAllCategories</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1142">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1145">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1142 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1145 ">When <code class="ph codeph">@Display= categories</code>, all categories will be retrieved
+                and displayed when the Part Browser opens.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1142 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1145 ">When <code class="ph codeph">@Display= categories</code>, only categories in the top assembly
+                will be retrieved and displayed when the Part Browser opens (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_lk1_kcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SkipCreationOfSolid</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3643">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3646">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Read surfaces, but do not create solid entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Create solid entities (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_r5n_kcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@Solid</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1246">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1249">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1246 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1249 ">When <code class="ph codeph">@Display= layerfiltering</code>, the Solid checkbox is enabled
+                when the Part Browser opens (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1246 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1249 ">When <code class="ph codeph">@Display= layerfiltering</code>, the Solid checkbox is disabled
+                when the Part Browser opens.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_c2b_lcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@StitchDifferentSheets</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1301">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1304">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1301 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1304 ">Stitching across different sheet bodies belonging to the same UG part/instance
+                is enabled (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1301 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1304 ">Stitching across different UG sheet bodies is disabled.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_kt3_lcf_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TagsAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1350">Value</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1353">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1350 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1353 ">
+                <p class="lines">Read tags of supported entities as metadata (default).</p>
+
+                <p class="lines"><code class="ph codeph">TAG</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1350 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1353 ">Do not read tags.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry\topics/pre_processing/geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title6" id="reference_km2_k4r_35">
+  <h2 class="title topictitle2" id="ariaid-title6"><span class="keyword">NX</span> Native Supported Metadata</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Metadata generated from the <span class="keyword">NX</span> Native
+    reader.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_fwk_qlg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">COLOR_RGB</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e230">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e233">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e236">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e230 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e233 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e236 ">
+                <p class="lines">Three RGB values, ranging from 0 to 255, indicating the color of the entity in the CAD model.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@ColorsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_on1_rlg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">DENSITY</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e781">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e784">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e787">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e781 "><code class="ph codeph">double</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e784 ">solids</td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e787 ">
+                <p class="lines">The value of the density of a solid.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@DensityAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_jp3_wlg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">MERGE</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1580">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1583">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1586">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1580 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1583 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1586 ">
+                <p class="lines">Set to 1 if the Merge assemblies option is chosen in the Part browser.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@Merge = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_ejp_wlg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">MODELUNIT</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1773">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1776">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1779">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1773 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1776 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1779 "> Model units specified in the CAD file.<ul class="sl simple">
+                  <li class="sli">1 = inches</li>
+
+                  <li class="sli">2 = millimeters</li>
+
+                  <li class="sli">4 = feet</li>
+
+                  <li class="sli">5 = miles</li>
+
+                  <li class="sli">6 = meters</li>
+
+                  <li class="sli">7 = kilometers</li>
+
+                  <li class="sli">8 = mils</li>
+
+                  <li class="sli">9 = microns</li>
+
+                  <li class="sli">10 = centimeters</li>
+
+                  <li class="sli">11 = microinches</li>
+
+                  <li class="sli">12 = decimeters</li>
+
+                  <li class="sli">13 = yards</li>
+
+                </ul>
+<p class="lines">This is always generated.</p>
+</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_wjn_zlg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">NX_MIDSURFACE</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1724">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1727">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1730">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1724 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1727 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1730 ">Generated and set to 1 if the component was created during import to contain
+                midsurface geometry.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_a15_1mg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">TAG</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1772">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1775">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1778">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1772 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1775 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">edges</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1778 ">
+                <p class="lines">The tag (name) of the entity as read from the CAD model, if one exists.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@TagsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_onr_fmg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">TRANSFORMATION_MATRIX</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1842">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1845">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1848">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1842 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1845 ">solids</td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1848 ">
+                <p class="lines">A 4x4 transformation matrix from the global reference system to the part reference system.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@DensityAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_tzh_4mg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">UG_DESCRIPTIVE_PARTNAME</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1897">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1900">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1903">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1897 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1900 ">
+                <p class="lines">assems</p>
+
+                <p class="lines">comps</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1903 ">The UGNX descriptive part name of the assembly/comp. For example, its attribute
+                DB_PART_DESC. This is always generated, if present.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_lkp_4mg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">UG_PARTNAME</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e1950">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1953">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e1956">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e1950 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1953 ">
+                <p class="lines">assems</p>
+
+                <p class="lines">comps</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d52584e1956 ">The UGNX part name of the assembly/comp. This is always generated.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_br2_pmg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">UNIQUE_ID</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d52584e2003">Type</th>
+
+              <th class="entry nocellnorowborder" id="d52584e2006">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d52584e2009">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d52584e2003 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d52584e2006 ">assems</td>
+
+              <td class="entry nocellnorowborder" headers="d52584e2009 ">The name of the UG assembly. This is always generated.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_ln2_qmg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">&lt;name&gt;</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3896">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3899">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e3902">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3896 ">
+                <p class="lines"><code class="ph codeph">integer</code></p>
+
+                <p class="lines"><code class="ph codeph">double</code></p>
+
+                <p class="lines"><code class="ph codeph">string</code></p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3899 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+                <p class="lines">solids</p>
+
+                <p class="lines">comps</p>
+
+                <p class="lines">assems</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e3902 ">
+                <p class="lines">The <code class="ph codeph">&lt;name&gt;</code> field is the attribute name and the integer/double/string is the value of the attribute.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@AttributesAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+</article>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,1079 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="optiresponses" /><meta name="abstract" content="" /><meta name="description" content="Unless otherwise specified, data names are accessible in level 3 only. activesuppressed Returns non-zero if the entity is set inactive, 0 otherwise. Type: integer allplies This updates the ..." /><meta name="DC.Coverage" content="" /><meta name="indexterms" content="optiresponses" /><meta name="DC.subject" content="optiresponses" /><meta name="keywords" content="optiresponses" /><meta name="prodname" content="HyperMesh" /><meta name="version" content="2017" /><meta name="release" content="0" /><meta name="DC.Creator" content="Paul Eder" /><meta name="DC.Date.Created" content="2016-05-26" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="data_names-optiresponses" /><title>optiresponses</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" id="data_names-optiresponses" data-spy="scroll" data-target="#toc">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li class="active"><span class="topicref">optiresponses</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm">optidscreens</a></span></li><li class="active"><span class="topicref">optiresponses</span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm">vectors</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">optiresponses</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc"></p>
+
+    <section class="section">
+      <p class="p">Unless otherwise specified, data names are accessible in level 3 only.</p>
+
+      <dl class="dl parml">
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">activesuppressed</var></dt>
+
+          <dd class="dd pd">Returns non-zero if the entity is set inactive, 0 otherwise.  <span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">allplies</var></dt>
+
+          <dd class="dd pd">This updates the attribute_b.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute1_list</var></dt>
+
+          <dd class="dd pd">A pointer to PID, MID, EID, PLY ID or Grid ID as referenced by response type and
+            property type.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span> (value is entity ID assigned to response)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute1max</var></dt>
+
+          <dd class="dd pd">Number of entity IDs.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute_a</var></dt>
+
+          <dd class="dd pd">The attributes of a response where further definition is required. </dd>
+
+          <dd class="dd pd ddexpand">(See ATTA information on DRESP1 card for further information). </dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute_b</var></dt>
+
+          <dd class="dd pd">The attributes of a response where further definition is required. </dd>
+
+          <dd class="dd pd ddexpand">(See ATTB information on DRESP1 card for further information).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute_b_selection</var></dt>
+
+          <dd class="dd pd">The attribute stores the value for DRESP1 for selection (sum, avg, ssq, etc...) </dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute_b_value</var></dt>
+
+          <dd class="dd pd">This updates the <var class="keyword varname">attribute_b</var></dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attributesmax</var></dt>
+
+          <dd class="dd pd">The number of attributes owned by this entity.  <span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">beadfrac</var></dt>
+
+          <dd class="dd pd">The attribute maintains the state of option (Total, by Entity, Combined).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">boresetid</var></dt>
+
+          <dd class="dd pd">The set ID for bore distortion response.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">cluster</var></dt>
+
+          <dd class="dd pd"> This updates the <var class="keyword varname">attribute_b</var> via cluster Name field.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">configname</var></dt>
+
+          <dd class="dd pd">The solver name of the entity. <span class="ph" id="data_names-optiresponses__ph_s3f_2m2_nx">Valid for <span class="keyword cmdname">hm_getvalue</span> query only.</span></dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">coord</var></dt>
+
+          <dd class="dd pd">This updates the CORD flag for static displacement, static strain, static stress,
+            static force, SPC force and GPFORCE responses.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">coordcid</var></dt>
+
+          <dd class="dd pd">This updates the coordinate system ID, if <var class="keyword varname">coordinateoptions</var> is
+            selected as CID for static displacement, static strain, static stress, static force, SPC
+            force and GPFORCE responses.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">coordinate_type_list</var></dt>
+
+          <dd class="dd pd">Pointer to the x, y, or z component of the GRID referenced by functionnodelist for DREPS2.<ul class="sl simple">
+              <li class="sli">1 – X </li>
+
+              <li class="sli">2 – Y </li>
+
+              <li class="sli">3 – Z </li>
+
+            </ul>
+</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: pointer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">coordinateoptions</var></dt>
+
+          <dd class="dd pd">This updates the coordinate system type for static displacement, static strain, static
+            stress, static force, SPC force and GPFORCE responses.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">coordinatetypefortable</var></dt>
+
+          <dd class="dd pd">Maintains the table information for DGRID table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">definedentity</var></dt>
+
+          <dd class="dd pd">True if the entity is defined, false otherwise.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridbcoordinatefortable</var></dt>
+
+          <dd class="dd pd">Maintains the table information for DGRIDB table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridbcoordtypetab</var></dt>
+
+          <dd class="dd pd">Updates the DgridbCoordTypeTab (9299) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridbnodetab</var></dt>
+
+          <dd class="dd pd">Updates the DgridbNodeTab (9298) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridlcoordfortable</var></dt>
+
+          <dd class="dd pd">Maintains the table information for DGRIDL table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridlcoordtypetab</var></dt>
+
+          <dd class="dd pd">Updates the DgridlCoordTypeTab (9303) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dgridlnodetab</var></dt>
+
+          <dd class="dd pd">Updates the DgridlNodeTab (9302) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dreport</var></dt>
+
+          <dd class="dd pd">Updates the DREPORT flag.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dreport_loadsteps</var></dt>
+
+          <dd class="dd pd">The list of loadstep entries for DREPORT .</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">excluded_elem_list</var></dt>
+
+          <dd class="dd pd">The data name (EntityList) updates the <var class="keyword varname">Response_ExcludedElems</var>
+            (4713) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">functionid</var></dt>
+
+          <dd class="dd pd"> DEQATN identifier that defines the response relationship.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity</span> (value is element ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">id</var></dt>
+
+          <dd class="dd pd">The ID of the entity.  <span class="keyword">Type: integer</span></dd>
+
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">include</var></dt>
+
+          <dd class="dd pd">The ID of the include file the entity is organized in.  <span class="keyword">Type: integer</span></dd>
+
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">includeid</var></dt>
+
+          <dd class="dd pd">The ID of the include file the entity is organized in.  <span class="keyword">Type: integer</span></dd>
+
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">internalid</var></dt>
+
+          <dd class="dd pd">The ID of the entity.  <span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">lallow</var></dt>
+
+          <dd class="dd pd"> Updates the lower bound on response for reporting purposes. </dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span> (value is element ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">loadstepweightlist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of loadstep weights.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: pointer</span> (value is loadstep weight)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">loadstepweightname</var></dt>
+
+          <dd class="dd pd">The loadstepweightlist via Table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">modecount</var></dt>
+
+          <dd class="dd pd">The count for modes.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">modenumber</var></dt>
+
+          <dd class="dd pd">The attributes of a response where further definition is required. </dd>
+
+          <dd class="dd pd ddexpand">(See ATTA information on DRESP1 card for further information).</dd>
+
+          <dd class="dd pd ddexpand">Type: integer/real</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">modes</var></dt>
+
+          <dd class="dd pd">Pointer to the list of modes for DRESP1.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span> (value is mode)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">modevalue</var></dt>
+
+          <dd class="dd pd">The modes value via Table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">name</var></dt>
+
+          <dd class="dd pd">The name of the entity.  <span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nl</var></dt>
+
+          <dd class="dd pd">Updates the number of lowest responses to report.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">node_list</var></dt>
+
+          <dd class="dd pd">The GPFORCE_NODEID (3141) attribute.</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nodetabmax</var></dt>
+
+          <dd class="dd pd">The count for DgridbNodeTab (9298) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nodetabmaxl</var></dt>
+
+          <dd class="dd pd">The count for DgridlNodeTab (9302) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">norm</var></dt>
+
+          <dd class="dd pd">The norm value.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">normalflag</var></dt>
+
+          <dd class="dd pd">The attribute performs the show/hide on the option (dof1,dof2, etc...) for FRACCL,
+            FRDISP, FRVELO.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">normconstraint</var></dt>
+
+          <dd class="dd pd">The norm constraint value.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nu</var></dt>
+
+          <dd class="dd pd">Updates the number of highest responses to report.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">outputsuppressed</var></dt>
+
+          <dd class="dd pd">Returns non-zero if the entity is set "do not export", <samp class="ph systemoutput">0</samp>
+            otherwise.  <span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">plyselection</var></dt>
+
+          <dd class="dd pd">This holds the value of attribute_b value selection control (AllPly, GlobalPly,
+            GlobalPlynumber).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">plyvalue</var></dt>
+
+          <dd class="dd pd">This updates the <var class="keyword varname">attribute_b</var>.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">property</var></dt>
+
+          <dd class="dd pd">Property type of the response.<ul class="sl simple">
+              <li class="sli">0 - PROP_TOTAL </li>
+
+              <li class="sli">1 - PSHELL </li>
+
+              <li class="sli">2 - PSOLID </li>
+
+              <li class="sli">3 - PSHEAR </li>
+
+              <li class="sli">4 - PCOMP </li>
+
+              <li class="sli">5 - PBAR </li>
+
+              <li class="sli">6 - PBEAM </li>
+
+              <li class="sli">7 - PELAS </li>
+
+              <li class="sli">8 - PROD </li>
+
+              <li class="sli">9 - PBEND </li>
+
+              <li class="sli">10 - PDAMP </li>
+
+              <li class="sli">11 - PBUSH </li>
+
+              <li class="sli">12 - PTUBE </li>
+
+              <li class="sli">13 - PGAP </li>
+
+              <li class="sli">14 - ELEM </li>
+
+              <li class="sli">15 - MAT </li>
+
+              <li class="sli">16 - SETS </li>
+
+              <li class="sli">17 - PBARL </li>
+
+              <li class="sli">18 - HM_ELAS </li>
+
+              <li class="sli">19 - PBEAML </li>
+
+              <li class="sli">20 - PWELD </li>
+
+              <li class="sli">21 - PMASS </li>
+
+              <li class="sli">22 - PCOMPG </li>
+
+              <li class="sli">23 - PCOMPP </li>
+
+              <li class="sli">24 - PVISC </li>
+
+              <li class="sli">25 - PLYS</li>
+
+            </ul>
+</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">property_attrib_b</var></dt>
+
+          <dd class="dd pd">The attribute maintains the state of option (Total, Entity, Sum).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">propertyname</var></dt>
+
+          <dd class="dd pd">Name of property. <span class="ph" id="data_names-optiresponses__ph_h42_2n2_nx">Valid for <span class="keyword cmdname">hm_getvalue</span> query only.</span></dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">randpsid</var></dt>
+
+          <dd class="dd pd">The attribute RESPONSE_RANDPS_ID (3979).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">region</var></dt>
+
+          <dd class="dd pd">Region identifier.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">response</var></dt>
+
+          <dd class="dd pd">Response type that is defined.<ul class="sl simple">
+              <li class="sli">1 – weight (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">2 – volume </li>
+
+              <li class="sli">3 – volumefrac </li>
+
+              <li class="sli">4 – eign (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">5 – frequency </li>
+
+              <li class="sli">6 – buckling </li>
+
+              <li class="sli">7 – static displacement </li>
+
+              <li class="sli">8 – static strain </li>
+
+              <li class="sli">9 – static stress </li>
+
+              <li class="sli">10 – static force </li>
+
+              <li class="sli">11 – composite stress </li>
+
+              <li class="sli">12 – composite strain </li>
+
+              <li class="sli">13 – composite failure </li>
+
+              <li class="sli">14 – FRF displacement </li>
+
+              <li class="sli">15 – FRF velocity </li>
+
+              <li class="sli">16 – FRF acceleration </li>
+
+              <li class="sli">17 – FRF SPCF (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">18 – FRF stress </li>
+
+              <li class="sli">19 – FRF force </li>
+
+              <li class="sli">20 – tdisp (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">21 – tvelo (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">22 – taccl (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">23 – tspcf (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">24 – tstre (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">25 – tforc (<span class="keyword">Nastran</span>) </li>
+
+              <li class="sli">29 – mass 30 – massfrac </li>
+
+              <li class="sli">31 – compliance </li>
+
+              <li class="sli">32 – weighted comp </li>
+
+              <li class="sli">33 – weighted freq </li>
+
+              <li class="sli">34 – compliance index </li>
+
+              <li class="sli">35 – function 36 – COG </li>
+
+              <li class="sli">37 – inertia </li>
+
+              <li class="sli">38 – FRF strain </li>
+
+              <li class="sli">39 – beadfrac </li>
+
+              <li class="sli">40 – external </li>
+
+              <li class="sli">41 – fatigue </li>
+
+              <li class="sli">42 – FRF pressure </li>
+
+              <li class="sli">43 – PSD displacement </li>
+
+              <li class="sli">44 – PSD velocity </li>
+
+              <li class="sli">45 – PSD acceleration </li>
+
+              <li class="sli">46 – PSD pressure </li>
+
+              <li class="sli">47 – RMS displacement </li>
+
+              <li class="sli">48 – RMS velocity </li>
+
+              <li class="sli">49 – RMS acceleration </li>
+
+              <li class="sli">50 – RMS pressure </li>
+
+              <li class="sli">51 – temperature </li>
+
+              <li class="sli">52 – dsysid </li>
+
+              <li class="sli">53 – PSD stress </li>
+
+              <li class="sli">54 – PSD strain </li>
+
+              <li class="sli">56 – RMS stress </li>
+
+              <li class="sli">57 – RMS strain </li>
+
+              <li class="sli">59 – FRF erp </li>
+
+              <li class="sli">60 – SPC force </li>
+
+              <li class="sli">61 – GPFORCE </li>
+
+              <li class="sli">62 – mode shape </li>
+
+              <li class="sli">63 - thermal compliance</li>
+
+            </ul>
+</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">responsegroup1, responsegroup2, responsegroup3, responsegroup4</var></dt>
+
+          <dd class="dd pd">The combination of these attributes defines ATTA.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">spwld</var></dt>
+
+          <dd class="dd pd">The SPWLD flag for fatigue response.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: Boolean</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">systemlistmax</var></dt>
+
+          <dd class="dd pd">The count for DgridlSystTab (9304) attribute.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">uallow</var></dt>
+
+          <dd class="dd pd">Updates the upper bound on responses for reporting purposes.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: double</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">weightcount</var></dt>
+
+          <dd class="dd pd">The count for weights.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">weights</var></dt>
+
+          <dd class="dd pd">Pointer to the list of weights for DRESP1.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">double array</span> (value is weight)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">weightvalue</var></dt>
+
+          <dd class="dd pd">The weights value via Table.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+      </dl>
+
+    </section>
+
+    <section class="section">
+      <p class="p">DRESP2 response data names.</p>
+
+      <dl class="dl parml">
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">attribute_b_selection_optifunction</var></dt>
+
+          <dd class="dd pd">The value for DRESP2 for selection (sum, avg, ssq, etc..).</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">desvarlist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of designvars for DRESP1/DRESP2 (pointer value is designvar ID). </dd>
+
+          <dd class="dd pd ddexpand">Valid for response = 35, 39 and property = 0.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">desvarlistmax</var></dt>
+
+          <dd class="dd pd">The number of desvars for DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dvprellist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of dvprels referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: pointer</span> (value is dvprel ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">dvprelmax</var></dt>
+
+          <dd class="dd pd">The number of dvprels referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">function_loadsteplist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of loadstep entries for DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: pointer</span> (value is loadstep ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">function_loadsteplistmax</var></dt>
+
+          <dd class="dd pd">The number of loadstep entries referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">loadsteplist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of loadstep entries for DRESP1/DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: pointer</span> (value is loadstep ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">loadsteplistmax</var></dt>
+
+          <dd class="dd pd">The number of loadstep entries referenced by DRESP1.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nodelist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of grids referenced by DRESP1/DRESP2. </dd>
+
+          <dd class="dd pd ddexpand">Valid for response = 7,14,15,16,35,42,43,44,45,46,48,49,50,51 and property = 0.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span> (value is node ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">nodelistmax</var></dt>
+
+          <dd class="dd pd">The number of nodes (DGRID) entries referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">responselist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of response entries referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span> (value is response ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">responselistmax</var></dt>
+
+          <dd class="dd pd">The number of response entries referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">responsename</var></dt>
+
+          <dd class="dd pd">Name of response. Valid for <span class="keyword cmdname">hm_getvalue</span> query only.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">tableentrylist</var></dt>
+
+          <dd class="dd pd">Pointer to the list of table entries referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: entity array</span> (value is table ID)</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">tableentrylistmax</var></dt>
+
+          <dd class="dd pd">The number of table entries (DTABLE) referenced by DRESP2.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: unsigned int.</span></dd>
+
+        
+      </dl>
+
+    </section>
+
+    <section class="section">
+      <p class="p">DSYSID response variables.</p>
+
+      <dl class="dl parml">
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_NUM</var></dt>
+
+          <dd class="dd pd"> Number of DSYSIDs response per subcase.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_RID</var></dt>
+
+          <dd class="dd pd">Array of response IDs</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_SID</var></dt>
+
+          <dd class="dd pd">Array of subcase identification numbers.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_SID_STR</var></dt>
+
+          <dd class="dd pd">Array of subcase identification strings, either ALL or blank.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_T</var></dt>
+
+          <dd class="dd pd">Array of DSYSID target values.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: string array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$DSYSID_W</var></dt>
+
+          <dd class="dd pd">Array of weighting factors.</dd>
+
+          <dd class="dd pd ddexpand">Type: real array</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword"></span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$Response_ExcludedElems</var></dt>
+
+          <dd class="dd pd">Array of element IDs excluded from the response.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer array</span></dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">$RESPONSE_RANDPS_ID</var></dt>
+
+          <dd class="dd pd">RANDPS ID.</dd>
+
+          <dd class="dd pd ddexpand"><span class="keyword">Type: integer</span></dd>
+
+        
+      </dl>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Version History</h2>
+      
+      <p class="p"><span class="keyword">2017.1</span> - Added new data names <var class="keyword varname">coord</var>,
+          <var class="keyword varname">coordinateoptions</var>, <var class="keyword varname">coordcid</var>,
+          <var class="keyword varname">dreport</var>, <var class="keyword varname">dreport_loadsteps</var>,
+          <var class="keyword varname">lallow</var>, <var class="keyword varname">nl</var>, <var class="keyword varname">nu</var> and
+          <var class="keyword varname">uallow</var>.</p>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,264 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="*setdisplaycolor" /><meta name="abstract" content="Sets the display color for the specified item." /><meta name="description" content="Sets the display color for the specified item." /><meta name="DC.Coverage" content="" /><meta name="indexterms" content="*setdisplaycolor" /><meta name="DC.subject" content="*setdisplaycolor" /><meta name="keywords" content="*setdisplaycolor" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/_setbackgroundcolors.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/_setmeshlinecolor.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/_settopologydisplaymode.htm" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/hm_getdisplaycolor.htm" /><meta name="prodname" content="HyperMesh" /><meta name="version" content="15" /><meta name="release" content="0" /><meta name="DC.Creator" content="" /><meta name="DC.Date.Created" content="2016-05-10" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="_setdisplaycolor" /><title>*setdisplaycolor</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" data-spy="scroll" data-target="#toc" onload="highlightSearchTerm()" id="_setdisplaycolor">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">*setdisplaycolor</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc"> Sets the display color for the specified item.</p>
+
+    <section class="section"><h2 class="title sectiontitle">Syntax</h2>
+      
+      <p class="p"><span class="keyword cmdname">*setdisplaycolor</span>
+        <var class="keyword varname">item color</var></p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Type</h2>
+      
+      <p class="p"><span class="keyword">HyperMesh Tcl Modify</span></p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Description</h2>
+      
+      <p class="p"> Sets the display color for the specified item.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle"><span class="keyword">Inputs</span></h2>
+      
+      <dl class="dl parml">
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">item</var></dt>
+
+          <dd class="dd pd">Specifies the item to set. Supported values are:<ul class="sl simple">
+              <li class="sli">1 – free edges </li>
+
+              <li class="sli">2 – shared edges </li>
+
+              <li class="sli">3 – suppressed edges </li>
+
+              <li class="sli">4 – non-manifold edges </li>
+
+              <li class="sli">5 – global coordinate axis labels </li>
+
+              <li class="sli">6 – fin faces on solids </li>
+
+              <li class="sli">7 – bounding faces on solids </li>
+
+              <li class="sli">8 – full partition faces on solids </li>
+
+              <li class="sli">9 – 2D topology faces </li>
+
+              <li class="sli">10 – component edges </li>
+
+              <li class="sli">11 – not supported (background color1). Use
+                  <span class="keyword cmdname">*setbackgroundcolors</span>. </li>
+
+              <li class="sli">12 – ignored topology faces </li>
+
+              <li class="sli">13 – elements no props/mats </li>
+
+              <li class="sli">14 – ignored solid mappable </li>
+
+              <li class="sli">15 – not solid mappable </li>
+
+              <li class="sli">16 – 1 directional solid mappable </li>
+
+              <li class="sli">17 – 3 directional solid mappable </li>
+
+              <li class="sli">18 – global X axis </li>
+
+              <li class="sli">19 – global Y axis </li>
+
+              <li class="sli">20 – global Z axis </li>
+
+              <li class="sli">21 – not supported (background color2). Use
+                  <span class="keyword cmdname">*setbackgroundcolors</span>.</li>
+
+            </ul>
+</dd>
+
+        
+        
+          <dt class="dt pt dlterm"><var class="keyword varname">color</var></dt>
+
+          <dd class="dd pd">The color to set the object type to. Valid values are 1-64. A value of 0 indicates to
+            set the color of that object to the background color value.</dd>
+
+        
+      </dl>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Example</h2>
+      
+      <p class="p">To set the current color of “fin faces on solids” to 1:</p>
+
+      <pre class="pre codeblock"><code>*setdisplaycolor 6 1</code></pre>
+      <p class="p">To set the current color of “1 directional solid mappable” to 10:</p>
+
+      <pre class="pre codeblock"><code>*setdisplaycolor 16 10</code></pre>
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Errors</h2>
+      
+      <p class="p">None.</p>
+
+    </section>
+
+    <section class="section">
+      <p class="p"></p>
+
+      
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist linklist"><strong>See Also</strong><br /><div class="related_link"><a class="navheader_parent_path" href="../../../topics/reference/hm/_setbackgroundcolors.htm" title="Sets the gradient background color1 and color2 values.">*setbackgroundcolors</a></div><div class="related_link"><a class="navheader_parent_path" href="../../../topics/reference/hm/_setmeshlinecolor.htm" title="Sets the color for mesh lines.">*setmeshlinecolor</a></div><div class="related_link"><a class="navheader_parent_path" href="../../../topics/reference/hm/_settopologydisplaymode.htm" title="Sets the geometry color mode.">*settopologydisplaymode</a></div><div class="related_link"><a class="navheader_parent_path" href="../../../topics/reference/hm/hm_getdisplaycolor.htm" title="Returns the display colors as specified in the Options panel.">hm_getdisplaycolor</a></div></div></nav></div>
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

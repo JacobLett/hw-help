@@ -1,0 +1,420 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Performance Improvement and Script Optimization" /><meta name="abstract" content="The Tcl/Tk language support in HyperMesh allows you to perform many complex operations by developing Tcl based procedures. While this flexibility provides the means to develop a wide range of solutions, there are some performance issues associated with graphics operations when interacting with HyperMesh. These issues arise due to the time required to perform actions including displaying messages, changing of the mouse cursor, and the pre-highlighting of entities during mark operations." /><meta name="description" content="The Tcl/Tk language support in HyperMesh allows you to perform many complex operations by developing Tcl based procedures. While this flexibility provides the means to develop a wide range of solutions, there are some performance issues associated with graphics operations when interacting with HyperMesh. These issues arise due to the time required to perform actions including displaying messages, changing of the mouse cursor, and the pre-highlighting of entities during mark operations." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="performance_improve_script_opti_r" /><title>Performance Improvement and Script Optimization</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" data-target="#toc" onload="highlightSearchTerm()" id="performance_improve_script_opti_r" data-spy="scroll">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm">Creating Scripts</a></span></li><li class="active"><span class="topicref">Performance Improvement and Script Optimization</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm">Creating Scripts</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/using_data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_attributes_and_data_names_r.htm">Solver Attributes and Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hwat_r.htm">HWAT</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/tk_gui_r.htm">Tk GUIs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hw_scripting_style_guide_r.htm">HyperWorks Scripting Style Guide</a></span></li><li class="active"><span class="topicref">Performance Improvement and Script Optimization</span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm">Commands and Functions</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Performance Improvement and Script Optimization</h1>
+
+  
+  <div class="body refbody"><p class="shortdesc">The Tcl/Tk language support in <span class="keyword">HyperMesh</span> allows you to perform many
+    complex operations by developing <span class="keyword">Tcl</span> based procedures. While this
+    flexibility provides the means to develop a wide range of solutions, there are some performance
+    issues associated with graphics operations when interacting with <span class="keyword">HyperMesh</span>.
+    These issues arise due to the time required to perform actions including displaying messages,
+    changing of the mouse cursor, and the pre-highlighting of entities during mark
+    operations.</p>
+
+    <section class="section">
+      <div class="p">Along with the <span class="keyword">Tcl</span> performance tips discussed below, the following
+          <span class="keyword">HyperMesh</span> based commands can be used to overcome some of these
+        limitations:<pre class="pre codeblock"><code>*evaltclstring string 0
+*evaltclscript proc_name 0
+
+*retainmarkselections state
+*entityhighlighting state
+hm_commandfilestate state
+hm_blockmessages state
+hwbrowsermanager view flush state</code></pre></div>
+
+      <p class="p">These last five should be reset when leaving a <span class="keyword">Tcl</span> script as these can
+        effect the user interaction with <span class="keyword">HyperMesh</span>. </p>
+
+      <p class="p"><span class="keyword">Tcl</span> scripts should be written in a way that aids efficient execution.
+        Based on research related to Tcl/Tk perfomance, a test was written comparing different
+        approaches. </p>
+
+      <p class="p">The times listed below are based on using the <span class="keyword">Tcl</span> time command using
+        10000 iterations, on a 266mhz Pentium based computer.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Variable assignments outside of the current scope</h2>
+      
+      <div class="p">Variables defined in a procedure are local by default. There are a number of methods
+        available to access a variable that is outside the current scope of a procedure, including
+        using the commands <span class="keyword cmdname">global</span>, <span class="keyword cmdname">upvar</span>,
+          <span class="keyword cmdname">uplevel</span>, and using the global namespace reference ::<table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_ksc_qwy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">uplevel w/level:</td>
+
+            <td style="vertical-align:top;" class="stentry">66 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">uplevel:</td>
+
+            <td style="vertical-align:top;" class="stentry">55 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">upvar:</td>
+
+            <td style="vertical-align:top;" class="stentry">55 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">global:</td>
+
+            <td style="vertical-align:top;" class="stentry">60 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">global namespace:</td>
+
+            <td style="vertical-align:top;" class="stentry">50 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">local:</td>
+
+            <td style="vertical-align:top;" class="stentry">39 microseconds per iteration</td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Variable addition and subtraction</h2>
+      
+      <div class="p">When adding or subtracting a value from a variable, when applicable, use the
+          <span class="keyword cmdname">incr</span> command, instead of an <span class="keyword cmdname">expr</span> call.<table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_jtr_ywy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">expr:</td>
+
+            <td style="vertical-align:top;" class="stentry">55 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">incr:</td>
+
+            <td style="vertical-align:top;" class="stentry">11 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">difference:</td>
+
+            <td style="vertical-align:top;" class="stentry">5.00x</td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Braced expression calls</h2>
+      
+      <div class="p">When using the <span class="keyword cmdname">expr</span> command, place braces around the expression to be
+        evaluated to take advantage of byte code compiling.<table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_zy4_dxy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">w/o braces:</td>
+
+            <td style="vertical-align:top;" class="stentry">143 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">w/ braces</td>
+
+            <td style="vertical-align:top;" class="stentry">55 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">difference:</td>
+
+            <td style="vertical-align:top;" class="stentry">2.60x</td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Returning from a procedure</h2>
+      
+      <div class="p">Avoid using the <span class="keyword cmdname">return</span> function in a procedure when possible. Setting a
+        variable to the value to return, and calling <span class="keyword cmdname">set varname</span> at the bottom of
+        the procedure is more efficient. <table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_lqs_hxy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">return:</td>
+
+            <td style="vertical-align:top;" class="stentry">39 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">set</td>
+
+            <td style="vertical-align:top;" class="stentry">5 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">difference:</td>
+
+            <td style="vertical-align:top;" class="stentry">7.80x</td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">List Parsing</h2>
+      
+      <div class="p">When parsing the contents of a list, the fastest method is to use the
+          <span class="keyword cmdname">foreach</span> command. The next best choice would be to use a
+          <span class="keyword cmdname">while</span> loop with a decreasing index test, and the least efficient method
+        is to use a for loop.<table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_qqq_nxy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">for/lindex:</td>
+
+            <td style="vertical-align:top;" class="stentry">159 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">while/lindex:</td>
+
+            <td style="vertical-align:top;" class="stentry">115 microseconds per iteration</td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">foreach:</td>
+
+            <td style="vertical-align:top;" class="stentry">66 microseconds per iteration</td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Variable initialization</h2>
+      
+      <div class="p">When initializing global variables, place them inside a procedure, and access them in the
+        global namespace to take advantage of byte code compiling.<table cellpadding="4" cellspacing="0" summary="" id="performance_improve_script_opti_r__simpletable_i1x_rxy_ww" border="0" class="simpletable"><col style="width:50%" /><col style="width:50%" /><thead></thead><tbody><tr class="strow">
+            <td style="vertical-align:top;" class="stentry">inline:</td>
+
+            <td style="vertical-align:top;" class="stentry">110000 microseconds </td>
+
+          </tr>
+<tr class="strow">
+            <td style="vertical-align:top;" class="stentry">proc based:</td>
+
+            <td style="vertical-align:top;" class="stentry">50000 microseconds </td>
+
+          </tr>
+</tbody></table>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Arrays vs. lists</h2>
+      
+      <p class="p">For large list searches, it may be more efficient to use arrays. List searches are
+        sequential searches and may not be very efficient for large lists. Instead of adding items
+        to a list, set the indices of an array to the item name.</p>
+
+      <div class="p">Using a
+        list:<pre class="pre codeblock"><code>set a "1 2 3 4 5 6 7 8 9 0";
+if {[lsearch $a 9] != -1} {
+   …command body…
+}
+</code></pre></div>
+
+      <div class="p">Using an
+        array:<pre class="pre codeblock"><code>set a(1) 1;
+set a(2) 2;
+…
+set a(9) 9;
+set a(0) 0;
+
+if {[info exist a(9)] == 1} {
+   …command body…
+}</code></pre></div>
+
+      <p class="p">For sorted lists, it may be more efficient to use the <span class="keyword option">-sorted</span> option to
+          <span class="keyword cmdname">lsearch</span>, along with <span class="keyword option">-ascii</span>,
+          <span class="keyword option">-decreasing</span>, <span class="keyword option">-dictionary</span>, <span class="keyword option">-increasing</span>,
+          <span class="keyword option">-integer</span>, and/or <span class="keyword option">-real</span>, depending on the list type.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Example</h2>
+      
+      <div class="p">The following example shows procedures to sum the numbers from a global list, and
+        demonstrates some of the performance enhancements discussed
+        above.<pre class="pre codeblock"><code>set vals {10 20 30 40 50 60 70 80 90};
+
+proc sum {} {
+   global vals;
+   set sum 0;
+   for { set i 0 } { $i &lt; [ llength $vals ] } { incr i } {
+      set curVal [ lindex $vals $i ];
+      set sum [ expr $sum + $curVal ];
+   }
+   return $sum;
+}
+
+proc fasterSum {} {    
+   set sum 0;
+   foreach val $::vals {
+      incr sum $val;
+   }
+   set sum;
+}
+
+sum:  829
+fasterSum:  83
+difference:  9.99x</code></pre></div>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

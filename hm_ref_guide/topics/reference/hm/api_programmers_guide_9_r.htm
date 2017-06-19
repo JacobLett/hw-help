@@ -1,0 +1,1307 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="9.0 API Programmer's Guide" /><meta name="abstract" content="" /><meta name="description" content="2D/3D Properties In HyperMesh 9.0, there is new core functionality for assigning properties directly to 1D, 2D, and 3D elements in addition to the existing method of assigning properties to ..." /><meta name="DC.Coverage" content="" /><meta name="indexterms" content="API Programmer's Guide, v9.0" /><meta name="DC.subject" content="API Programmer's Guide, v9.0" /><meta name="keywords" content="API Programmer's Guide, v9.0" /><meta name="prodname" content="HyperMesh" /><meta name="version" content="2017" /><meta name="release" content="0" /><meta name="DC.Creator" content="Paul Eder" /><meta name="DC.Date.Created" content="2016-09-08" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="api_programmers_guide_9_r" /><title>9.0 API Programmer's Guide</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" onload="highlightSearchTerm()" id="api_programmers_guide_9_r" data-spy="scroll" data-target="#toc">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li class="active"><span class="topicref">9.0 API Programmer's Guide</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm">10.0 API Programmer's Guide</a></span></li><li class="active"><span class="topicref">9.0 API Programmer's Guide</span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">9.0 API Programmer's Guide</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc"></p>
+
+    <section class="section"><h2 class="title sectiontitle">2D/3D Properties</h2>
+      
+      <p class="p">In <span class="keyword">HyperMesh</span> 9.0, there is new core functionality for assigning
+        properties directly to 1D, 2D, and 3D elements in addition to the existing method of
+        assigning properties to components. Also, for solver group #1 (<span class="keyword">OptiStruct</span>, <span class="keyword">Abaqus</span>, <span class="keyword">Nastran</span>) components no longer have property cards assigned to them.
+        Instead, users create properties for all element types (1D, 2D, and 3D) the same and assign
+        those properties to either components or elements depending on the behavior desired. The
+        implementation for solver group #1 and solver group #2 (<span class="keyword">RADIOSS</span>,
+          <span class="keyword">ANSYS</span>, <span class="keyword">LS-DYNA</span>, <span class="keyword">PAM-CRASH</span>, PERMAS) is given below.</p>
+
+      <div class="p">For solver group #1 (<span class="keyword">OptiStruct</span>, <span class="keyword">Abaqus</span>, <span class="keyword">Nastran</span>) the following diagram and
+        rules apply for property assignment to components and elements:<figure class="fig fignone" id="api_programmers_guide_9_r__fig_wp1_gsl_zw"><span class="figcap"><span class="fig--title-label">Figure 1. </span></span>
+          
+          <img class="image" id="api_programmers_guide_9_r__image_o1z_gsl_zw" src="../../../images/2d_3d_properties.bmp" />
+        </figure>
+<ul class="ul" id="api_programmers_guide_9_r__ul_xzh_hsl_zw">
+          <li class="li">If property assigned to the element, that element is assigned the element
+            property.</li>
+
+          <li class="li">If no property is assigned to the element, that element is assigned its component
+            property.</li>
+
+          <li class="li">If no property is assigned to the element or component, that element is assigned no
+            property.</li>
+
+          <li class="li">Materials are always assigned to properties and each element is assigned the material
+            of its property.</li>
+
+        </ul>
+</div>
+
+      <div class="p">For solver group #2 (<span class="keyword">RADIOSS</span>, <span class="keyword">ANSYS</span>, <span class="keyword">LS-DYNA</span>, <span class="keyword">PAM-CRASH</span>, PERMAS) the
+        following diagram and rules apply for property assignment to components and elements:<figure class="fig fignone" id="api_programmers_guide_9_r__fig_pdj_lsl_zw"><span class="figcap"><span class="fig--title-label">Figure 2. </span></span>
+          
+          <img class="image" id="api_programmers_guide_9_r__image_gh2_msl_zw" src="../../../images/2d_3d_properties2.bmp" />
+        </figure>
+<ul class="ul" id="api_programmers_guide_9_r__ul_prl_msl_zw">
+          <li class="li">Property and materials are assigned to components only. Ignores any property assigned
+            to elements.</li>
+
+          <li class="li">All elements within a component are assigned the component property and the component
+            material.</li>
+
+        </ul>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New and Updated Tcl Commands for 2D/3D Properties</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_9_r__ul_tdy_nsl_zw">
+          <li class="li">Elements and components now have data names for referenced properties:<ol class="ol" id="api_programmers_guide_9_r__ol_mmf_4sl_zw">
+              <li class="li">property (pointer)</li>
+
+              <li class="li">propertyid</li>
+
+            </ol>
+</li>
+
+          <li class="li">To query the property and material assigned to a component or an element for solver
+            group #1:<ol class="ol" id="api_programmers_guide_9_r__ol_vdg_psl_zw">
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id property.id 0</li>
+
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id property.id 0</li>
+
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id property.material.id 0</li>
+
+            </ol>
+</li>
+
+          <li class="li">To query the property and material assigned to a component or an element for solver
+            group #2:<ol class="ol" id="api_programmers_guide_9_r__ol_xql_ssl_zw">
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id material.id 0</li>
+
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> comps $id property.id 0</li>
+
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id collector.material.id 0</li>
+
+              <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> elems $id collector.property.id 0<ul class="sl simple">
+                  <li class="sli">Note: If an element has been assigned a property directly it is still
+                    possible to query these values even though the solver group is not using
+                    them.</li>
+
+                </ul>
+</li>
+
+            </ol>
+</li>
+
+          <li class="li">
+            <a class="xref" href="_propertyupdate.htm" title="Updates the property assigned to the mark of entities.">*propertyupdate</a>
+            <span class="keyword cmdname">entity_type mark_id property_name</span><ul class="ul" id="api_programmers_guide_9_r__ul_wp2_2tl_zw">
+              <li class="li">This command assigns/updates/unassigns the property associated with components and
+                elements. This same command is used by the <var class="keyword varname">assign</var> subpanel in
+                both the <var class="keyword varname">comps</var> and <var class="keyword varname">properties</var> panels.</li>
+
+            </ul>
+</li>
+
+          <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a><ul class="ul" id="api_programmers_guide_9_r__ul_ftw_ltl_zw">
+              <li class="li">These options are available for components and elements:<ul class="sl simple">
+                  <li class="sli"><span class="keyword cmdname">"by property" </span></li>
+
+                  <li class="sli"><span class="keyword cmdname">"by property id" </span></li>
+
+                  <li class="sli"><span class="keyword cmdname">"by property name"</span></li>
+
+                </ul>
+</li>
+
+            </ul>
+</li>
+
+          <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a><ul class="ul" id="api_programmers_guide_9_r__ul_qyt_4tl_zw">
+              <li class="li">These options are available for components, elements, and properties:<ul class="sl simple">
+                  <li class="sli"><span class="keyword cmdname">"by material" </span></li>
+
+                  <li class="sli"><span class="keyword cmdname">"by material id" </span></li>
+
+                  <li class="sli"><span class="keyword cmdname">"by material name"</span></li>
+
+                </ul>
+</li>
+
+            </ul>
+</li>
+
+          <li class="li"><a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a>
+            <span class="keyword cmdname">entity_type entity_id ?ply_id?\</span><ul class="sl simple">
+              <li class="sli">This command returns the thickness associated with the passed components and
+                elements. The optional <var class="keyword varname">ply_id</var> argument allows for additional
+                control for querying the thickness of individual plies of composites. The
+                thicknesses returned by this command follow the specific solver interface rules
+                described above.</li>
+
+            </ul>
+</li>
+
+          <li class="li">hm_getcompthickness<ul class="ul" id="api_programmers_guide_9_r__ul_obc_ztl_zw">
+              <li class="li">This command will return the same values as in 8.0, the thickness assigned to the
+                property assigned to the component for both solver groups #1 and #2. However, these
+                may not be the expected values as properties for solver group #1 can be assigned to
+                the elements in 9.0. The continuing usage is of this command is not recommended,
+                instead, use the command <a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a> with the appropriate
+                options. This command will be deprecated.</li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Scripting Considerations</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_cng_b5l_zw">
+        <li class="li">Card images on components have been moved to properties for solver group #1.<p class="p">For
+            example, the <span class="keyword">OptiStruct</span> PSHELL card image is now a property
+            card image instead of a component card image. Any scripts that create components and
+            assign these card images must now create a property and assign the property to the
+            component or to the elements.</p>
+</li>
+
+        <li class="li">Both elements and components can have property references for solver group #1.<p class="p">Scripts
+            that either set or query properties (thickness for example) must now consider that
+            elements within the component can also have properties assigned directly to
+            them.</p>
+<p class="p">Properties on components are now core references instead of template
+            attributes for solver group #2. Instead of using the template attributes, scripts must
+            now be updated to use the core data reference. (THIS HAS NOT BEEN COMPLETELY ACHIEVED AS
+            OF YET FOR 9.0 – FOR SOLVER GROUP #2. FOR <span class="keyword">RADIOSS</span>, <span class="keyword">LS-DYNA</span>, <span class="keyword">PAM-CRASH</span>, PROPERTIES ON
+            COMPONENTS ARE STILL ATTRIBUTES. FOR ALL OTHERS, PROPERTIES ON COMPONENTS ARE CORE
+            ENTITIES.)</p>
+</li>
+
+        <li class="li">Scripts using hm_getcompthickness.<p class="p">This command is no longer supported and continuing
+            usage is not recommended. Instead, use the command <a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a>
+            with the appropriate options.</p>
+</li>
+
+      </ul>
+
+      <p class="p">When converting or switching between solver interfaces it is possible to have some
+        “mixture” between the two methods shown above. It is important to know what the correct
+        practice is for each solver interface in order to know when modifications are required. It
+        is also important to know these practices in order to understand the values being returned
+        from relevant <span class="keyword">Tcl</span> commands.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Active/Inactive</h2>
+      
+    </section>
+
+    <section class="section">
+      <p class="p">In <span class="keyword">HyperMesh</span>
+        <span class="keyword">9.0</span>, there is new core functionality for setting collectors and
+        named entities states to “active” or "inactive". See below for a list of collectors and
+        named entities in <span class="keyword">HyperMesh</span> that have this setting. “Inactive”
+        entities are not shown in panel lists, browsers lists, and are not available for selection
+        through <span class="keyword">HyperMesh</span> entity selectors and most <span class="keyword">Tcl</span> commands. An “inactive” entity is essentially “locked” in the database. See
+        the <cite class="cite"><span class="keyword">HyperMesh</span> User's Guide</cite> for additional
+        details.</p>
+
+      <div class="p">Collectors with Active/Inactive state:<ul class="ul" id="api_programmers_guide_9_r__ul_tyy_s5l_zw">
+          <li class="li">Include </li>
+
+          <li class="li">Assembly </li>
+
+          <li class="li">Component </li>
+
+          <li class="li">Load Collector </li>
+
+          <li class="li">System Collector </li>
+
+          <li class="li">Vector Collector </li>
+
+          <li class="li">BeamSection Collector </li>
+
+          <li class="li">Multibody</li>
+
+        </ul>
+</div>
+
+      <div class="p">Named entities with Active/Inactive state:<ul class="ul" id="api_programmers_guide_9_r__ul_anc_v5l_zw">
+          <li class="li">Property </li>
+
+          <li class="li">Material </li>
+
+          <li class="li">Sets </li>
+
+          <li class="li">LoadSteps </li>
+
+          <li class="li">OutputBlocks </li>
+
+          <li class="li">Blocks </li>
+
+          <li class="li">Tabs </li>
+
+          <li class="li">Titles </li>
+
+          <li class="li">Plots </li>
+
+          <li class="li">ContactSurfaces </li>
+
+          <li class="li">Groups </li>
+
+          <li class="li">Sensors </li>
+
+          <li class="li">Control Volumes </li>
+
+          <li class="li">Cards </li>
+
+          <li class="li">Optimization</li>
+
+        </ul>
+</div>
+
+      <div class="p">The active/inactive state of collected entities (example elements, loads, systems, etc.)
+        are controlled by their collector active/inactive state. Below is a list of collected
+        entities and their collector:<ul class="ul" id="api_programmers_guide_9_r__ul_edf_x5l_zw">
+          <li class="li">Nodes - Special entity, See the <cite class="cite"><span class="keyword">HyperMesh</span> User's
+              Guide</cite> for additional details. </li>
+
+          <li class="li">Element - Component </li>
+
+          <li class="li">Connector - Component </li>
+
+          <li class="li">Load - Load Collector </li>
+
+          <li class="li">Equation - Load Collector </li>
+
+          <li class="li">System - System Collector </li>
+
+          <li class="li">Vector - Vector Collector </li>
+
+          <li class="li">Point - Component </li>
+
+          <li class="li">Line - Component </li>
+
+          <li class="li">Surface - Component </li>
+
+          <li class="li">Solid - Component </li>
+
+          <li class="li">BeamSection - BeamSection Collector </li>
+
+          <li class="li">Ellipsoids - Multibody </li>
+
+          <li class="li">MBPlanes - Multibody </li>
+
+          <li class="li">MBJoints - Multibody</li>
+
+        </ul>
+</div>
+
+      <p class="p">As a final note, all morphing entities do not utilize active/inactive states.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New/Updated <span class="keyword">Tcl</span> Commands for Active/Inactive</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_dc3_dvl_zw">
+        <li class="li">Entities with an active/inactive state now have a new data name.<ul class="ul" id="api_programmers_guide_9_r__ul_syp_svl_zw">
+            <li class="li">activesuppressed (0 indicates active, non-zero indicates inactive)</li>
+
+          </ul>
+<ul class="ul" id="api_programmers_guide_9_r__ul_omk_tvl_zw">
+            <li class="li">To query the active state of one of these entities using the entity ID:</li>
+
+            <li class="li"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> $entity_type $entity_id activesuppressed 0
+              -byid</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_allsuppressactive.htm" title="Sets the active/inactive state of all supported entities.">*allsuppressactive</a>, <a class="xref" href="_entitysuppressactive.htm" title="Sets the active/inactive state of the specified entity.">*entitysuppressactive</a>, <a class="xref" href="_includesuppressactive.htm" title="Sets the active/inactive state of all supported entities contained within the specified include file.">*includesuppressactive</a>, <a class="xref" href="_marksuppressactive.htm" title="Sets the active/inactive state of the specified entity mark.">*marksuppressactive</a><ul class="ul" id="api_programmers_guide_9_r__ul_xgy_rvl_zw">
+            <li class="li">These commands have been created in order to set the active/inactive state for
+              specific entities or marks.</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a>/<a class="xref" href="_appendmark.htm" title="Appends entities on a mark based on user supplied options.">*appendmark</a>/<a class="xref" href="hm_createmark.htm" title="Places entities on a mark based on user-supplied options.">hm_createmark</a>/<a class="xref" href="hm_appendmark.htm" title="Appends entities on a mark based on user supplied options.">hm_appendmark</a><ul class="ul" id="api_programmers_guide_9_r__ul_b4l_zvl_zw">
+            <li class="li">These commands will only select/return entities from the database that have an
+              active state. If an entity is set to inactive, or its parent collector is set to
+              inactive for collected entities, then the entity will not be selected/returned.
+              Inactive entities can only be selected using the following options to these commands:<ul class="sl simple">
+                <li class="sli">"inactive" </li>
+
+                <li class="sli">"by id only" </li>
+
+                <li class="sli">"by name only" </li>
+
+                <li class="sli">no option, directly enter names or IDs</li>
+
+              </ul>
+</li>
+
+            <li class="li">Furthermore, if an inactive entity is used as one of the selection options, no
+              entities will be returned based on that entity. For example, if an entity set is
+              marked inactive and elements are selected "by set", even though those elements may be
+              active, because the set is inactive no elements from that set will be returned.</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="hm_entitylist.htm" title="Returns a list of names or IDs of all entities of the requested type.">hm_entitylist</a><ul class="ul" id="api_programmers_guide_9_r__ul_vfh_rwl_zw">
+            <li class="li">This command will only return entities from the database that have an active state.
+              If an entity is set to inactive, or its parent collector is set to inactive for
+              collected entities, then the entity will not be returned. </li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_findmark.htm" title="Finds and displays entities or finds and displays adjacent entities.">*findmark</a><ul class="ul" id="api_programmers_guide_9_r__ul_lym_twl_zw">
+            <li class="li">This command finds both active and inactive entities. If it finds an inactive
+              entity, it also makes the entity active.</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_renumberall.htm" title="Renumbers the internal HyperMesh IDs for all entities in the model.">*renumberall</a>, <a class="xref" href="_renumbersolverid.htm" title="Renumbers the solver IDs for the specified entity type.">*renumbersolverid</a>, <a class="xref" href="_renamecollectorbyid.htm" title="Renames a collector to its ID.">*renamecollectorbyid</a><ul class="ul" id="api_programmers_guide_9_r__ul_ijh_ywl_zw">
+            <li class="li">These commands will only consider active entities. (This has not yet been completely
+              achieved).</li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Scripting Considerations</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_lpw_1xl_zw">
+        <li class="li">Current append mark, create mark, and hm_entitylist commands may not return all of the
+          expected entities.<ul class="ul" id="api_programmers_guide_9_r__ul_pbk_cxl_zw">
+            <li class="li">If you have not set any entity to inactive in the database, all commands
+              return/behave as 8.0 and earlier. Scripters only need to consider updates/enhancements
+              to their scripts if they want to utilize the active/inactive functionality or their
+              users will use the active/inactive functionality. It is possible that the user has set
+              some entities inactive in the database. If a <span class="keyword">Tcl</span> script is
+              expecting these entities to be returned, for example using
+                <span class="keyword cmdname">*createmark</span> all (which only returns all active entities in
+                <span class="keyword">9.0</span>), the script may need to be updated to also select the
+              inactive entities (<span class="keyword cmdname">*createmark</span> inactive). Another alternative is to
+              make the parent collector active before selecting
+                (<span class="keyword cmdname">*entitysuppressactive</span>, <span class="keyword cmdname">*marksuppressactive</span>).
+              Then <span class="keyword cmdname">*createmark</span> all will return all as 8.0 and earlier. It is only
+              necessary to update scripts if users use active/inactive. No changes are required if
+              all entities in the database are active. A failsafe command has been created for
+              scripters who do not wish to update their scripts to handle active/inactive for 9.0.
+              The command <span class="keyword cmdname">*allsuppressactive</span> can be run at the beginning of a
+              script to make all entities active so that the script performs as expected with a
+              minimal amount of updating.</li>
+
+          </ul>
+</li>
+
+        <li class="li">Commands can still operate on inactive entities.<ul class="ul" id="api_programmers_guide_9_r__ul_n2n_dxl_zw">
+            <li class="li">Although entities may be marked "inactive", commands can still operate them if they
+              are passed to the command. For example, if a mark of inactive components is created
+              using <span class="keyword cmdname">*createmark</span> inactive, that mark can be passed to the
+                <span class="keyword cmdname">*deletemark</span> command and those comps can be deleted. The same is
+              true for commands that accept individual entity names/IDs. This is only possible via
+              the Tcl/Tk command layer. A user cannot do this through the <span class="keyword">HyperMesh</span> GUI interactively in <span class="keyword">HyperMesh</span>. It is a special consideration/behavior for <span class="keyword">HyperMesh</span> Tcl/Tk scripters to understand and manage
+              appropriately, at least for <span class="keyword">9.0</span></li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Custom Export</h2>
+      
+    </section>
+
+    <section class="section">
+      <p class="p">In <span class="keyword">HyperMesh</span>
+        <span class="keyword">9.0</span>, there is new core functionality for setting collectors and
+        named entities states to “export” or "do not export". See below for a list of collectors and
+        named entities in <span class="keyword">HyperMesh</span> that have this setting. Setting an
+        entities export state allows the new “custom” export option to determine if that entity
+        should be exported or not exported. The standard export options “all” and “displayed” ignore
+        the export state of the entity and behave exactly as they did in 8.0. See the <cite class="cite"><span class="keyword">HyperMesh</span> User's Guide</cite> for additional details.</p>
+
+      <div class="p">Collectors with Export state:<ul class="ul" id="api_programmers_guide_9_r__ul_mzf_qxl_zw">
+          <li class="li">Include </li>
+
+          <li class="li">Assembly </li>
+
+          <li class="li">Component </li>
+
+          <li class="li">Load Collector </li>
+
+          <li class="li">System Collector </li>
+
+          <li class="li">Vector Collector </li>
+
+          <li class="li">BeamSection Collector </li>
+
+          <li class="li">Multibody</li>
+
+        </ul>
+</div>
+
+      <div class="p">Named entities with Export state:<ul class="ul" id="api_programmers_guide_9_r__ul_hnd_sxl_zw">
+          <li class="li">Property </li>
+
+          <li class="li">Material </li>
+
+          <li class="li">Sets </li>
+
+          <li class="li">LoadSteps </li>
+
+          <li class="li">OutputBlocks </li>
+
+          <li class="li">Blocks </li>
+
+          <li class="li">Tabs </li>
+
+          <li class="li">Titles </li>
+
+          <li class="li">Plots </li>
+
+          <li class="li">ContactSurfaces </li>
+
+          <li class="li">Groups </li>
+
+          <li class="li">Sensors </li>
+
+          <li class="li">Control Volumes </li>
+
+          <li class="li">Cards </li>
+
+          <li class="li">Optimization</li>
+
+        </ul>
+</div>
+
+      <div class="p">The export state of collected entities (example elements, loads, systems, etc.) are
+        controlled by their collectors export state. Below is a list of collected entities and their
+          collector:<ul class="ul" id="api_programmers_guide_9_r__ul_gjl_5xl_zw">
+          <li class="li">Nodes - Special entity, See the <cite class="cite"><span class="keyword">HyperMesh</span> User's
+              Guide</cite> for additional details. </li>
+
+          <li class="li">Element - Component </li>
+
+          <li class="li">Connector - Component </li>
+
+          <li class="li">Load - Load Collector </li>
+
+          <li class="li">Equation - Load Collector </li>
+
+          <li class="li">System - System Collector </li>
+
+          <li class="li">Vector - Vector Collector </li>
+
+          <li class="li">Point - Component </li>
+
+          <li class="li">Line - Component </li>
+
+          <li class="li">Surface - Component </li>
+
+          <li class="li">Solid - Component </li>
+
+          <li class="li">BeamSection - BeamSection Collector </li>
+
+          <li class="li">Ellipsoids - Multibody </li>
+
+          <li class="li">MBPlanes - Multibody </li>
+
+          <li class="li">MBJoints - Multibody</li>
+
+        </ul>
+</div>
+
+      <p class="p">As a final note, all morphing entities do not utilize export states.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New/Updated <span class="keyword">Tcl</span> Commands for Custom Export</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_fhx_yxl_zw">
+        <li class="li">Entities with an export state now have a new data name.<ul class="sl simple">
+            <li class="sli">outputsuppressed (0 indicates export, non-zero indicates do not export)</li>
+
+          </ul>
+<ul class="sl simple">
+            <li class="sli">To query the export state of one of these entities using the entity ID: </li>
+
+            <li class="sli"><a class="xref" href="hm_getentityvalue.htm" title="Returns a single template/data name value for a single entity.">hm_getentityvalue</a> $entity_type $entity_id outputsuppressed 0
+              –byid</li>
+
+          </ul>
+</li>
+
+        <li class="li"><a class="xref" href="_allsuppressoutput.htm" title="Sets the export/do not export state of all entities.">*allsuppressoutput</a>, <a class="xref" href="_entitysuppressoutput.htm" title="Sets the export/do not export state of the specified entity.">*entitysuppressoutput</a>, <a class="xref" href="_includesuppressoutput.htm" title="Sets the export/do not export state of all supported entities contained within the specified include file.">*includesuppressoutput</a>, <a class="xref" href="_marksuppressoutput.htm" title="Sets the export/do not export state of the specified entity mark.">*marksuppressoutput</a><ul class="sl simple">
+            <li class="sli">These commands have been created in order to set the export/do not export state for
+              specific entities or marks.</li>
+
+          </ul>
+</li>
+
+        <li class="li">New option for “all” parameter on <span class="keyword cmdname">*feoutput</span> and
+            <span class="keyword cmdname">*feoutputwithdata</span> commands.<ul class="ul" id="api_programmers_guide_9_r__ul_wqr_tyl_zw">
+            <li class="li">The “all” parameter on these commands now has the following values:<ul class="sl simple">
+                <li class="sli">0 – Only the visible entities are exported. </li>
+
+                <li class="sli">1 – All entities are exported. </li>
+
+                <li class="sli">2 – Only entities with export bit set to 0 are exported. This is also known as
+                  custom export.</li>
+
+              </ul>
+<ul class="sl simple">
+                <li class="sli">The <span class="keyword cmdname">*feoutputwithdata</span> command is suggested for output as the
+                  *feoutput command will be deprecated.</li>
+
+              </ul>
+</li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Display Masking</h2>
+      
+    </section>
+
+    <section class="section">
+      <p class="p">In <span class="keyword">HyperMesh</span>
+        <span class="keyword">9.0</span>, masking commands have been updated to support only the masking
+        of relevant entities. Masking commands no longer operate on the display state of collectors.
+        If a collector entity is passed to a masking command, the collected entities contained in
+        the collector will be masked but the display state of the collector will not be changed. For
+        changing the display state of a collector relevant display commands must be used.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New/Updated <span class="keyword">Tcl</span> Commands for Display/Masking</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_fq1_fzl_zw">
+        <li class="li"><a class="xref" href="_maskall.htm" title="Masks all supported entities.">*maskall</a>, <a class="xref" href="_maskentitiesincollector.htm" title="Masks the specified entities contained within the specified collectors.">*maskentitiesincollector</a>, <a class="xref" href="_maskentitymark.htm" title="Masks the entities on the specified mark.">*maskentitymark</a>, <a class="xref" href="_masknotshown.htm" title="Masks all supported entities not in the current view window.">*masknotshown</a>, <a class="xref" href="_maskreverse.htm" title="Reverses the masking state of a specific entity type.">*maskreverse</a>, <a class="xref" href="_maskreverseall.htm" title="Reverses the masking state of supported entities.">*maskreverseall</a>, <a class="xref" href="_unmaskall.htm" title="Unmasks all supported entities.">*unmaskall</a>, <a class="xref" href="_unmaskentitiesincollector.htm" title="Unmasks the specified entities contained within the specified collectors.">*unmaskentitiesincollector</a>, <a class="xref" href="_unmaskentitymark.htm" title="Unmasks the entities on the specified mark.">*unmaskentitymark</a>, <a class="xref" href="_unmaskshown.htm" title="Unmasks all supported entities in the current view window.">*unmaskshown</a><ul class="sl simple">
+            <li class="sli">These commands do not operate on the display state of collectors. Instead, they
+              only operate on the mask state of collected entities that are listed below. In order
+              for an entity to be masked/unmasked, its parent collector must have the relevant
+              element/geometry display state turned "on".</li>
+
+            <li class="sli">Collected Entities and their Collectors:</li>
+
+          </ul>
+<ul class="ul" id="api_programmers_guide_9_r__ul_e3t_4bm_zw">
+            <li class="li">Points - Components </li>
+
+            <li class="li">Lines - Components </li>
+
+            <li class="li">Surfaces - Components </li>
+
+            <li class="li">Solids - Components </li>
+
+            <li class="li">Connectors - Components </li>
+
+            <li class="li">Elements - Components </li>
+
+            <li class="li">Loads – Load Collectors </li>
+
+            <li class="li">Equations – Load Collectors </li>
+
+            <li class="li">Systems – System Collectors </li>
+
+            <li class="li">Vectors – Vector Collectors </li>
+
+            <li class="li">Ellipsoids - Multibodies </li>
+
+            <li class="li">Mbjoints - Multibodies </li>
+
+            <li class="li">Mbplanes - Multibodies </li>
+
+            <li class="li">Tags – No Collector, this is a Named Entity which has mask state </li>
+
+            <li class="li">Domains - No Collector, this is a Named Entity which has mask state </li>
+
+            <li class="li">Handles - No Collector, this is a Named Entity which has mask state </li>
+
+            <li class="li">Symmetries - No Collector, this is a Named Entity which has mask state </li>
+
+            <li class="li">Morphconstraints - No Collector, this is a Named Entity which has mask state</li>
+
+          </ul>
+<ul class="sl simple">
+            <li class="sli">The <a class="xref" href="_maskentitymark.htm" title="Masks the entities on the specified mark.">*maskentitymark</a>, <a class="xref" href="_maskreverse.htm" title="Reverses the masking state of a specific entity type.">*maskreverse</a>, and
+                <a class="xref" href="_unmaskentitymark.htm" title="Unmasks the entities on the specified mark.">*unmaskentitymark</a> commands also support operations on
+              collectors, in which case all collected entities contained within the collectors are
+              masked/unmasked but the display state of the parent collector is not modified.</li>
+
+          </ul>
+<ul class="ul" id="api_programmers_guide_9_r__ul_lyr_bcm_zw">
+            <li class="li">Components (Connectors, Points, Lines, Surfaces, Solids, Elements) </li>
+
+            <li class="li">Groups (Master/Slave Elements) </li>
+
+            <li class="li">Load Collectors (Equations, Loads) </li>
+
+            <li class="li">Multibodies (Ellipsoids, MBjoints, MBbplanes) </li>
+
+            <li class="li">System Collectors (Systems) </li>
+
+            <li class="li">Vector Collectors (Vectors)</li>
+
+          </ul>
+</li>
+
+        <li class="li"><span class="keyword cmdname">*maskmark</span><p class="p">This command has been updated to perform similarly as the
+            commands above. </p>
+<p class="p">This command is no longer supported and continuing usage is not
+            recommended. Instead, use the command <span class="keyword cmdname">*maskentitymark</span> with the
+            appropriate options.</p>
+</li>
+
+        <li class="li"><span class="keyword cmdname">*unmaskmark, *unmaskmarkedelements</span><p class="p">This command has been updated to
+            perform similarly as the commands above. </p>
+<p class="p">This command is no longer supported and
+            continuing usage is not recommended. Instead, use the command
+              <span class="keyword cmdname">*unmaskentitymark</span> with the appropriate options.</p>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Scripting Considerations</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_cyr_jcm_zw">
+        <li class="li">Scripts using <span class="keyword cmdname">*maskmark</span>, <span class="keyword cmdname">*unmaskmark</span> and
+            <span class="keyword cmdname">*unmaskmarkelements</span><p class="p">Scripts that use any of these commands should
+            be updated to use the new commands as indicated above.</p>
+</li>
+
+        <li class="li">Scripts using any masking/unmasking commands.<p class="p">Scripts that use any masking/unmasking
+            commands should be checked to make sure that they are not being expected to operate on
+            the display of collectors. Instead, relevant display commands should be used.</p>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Browsers</h2>
+      
+      <p class="p">In <span class="keyword">HyperMesh</span>
+        <span class="keyword">9.0</span>, browsers have taken a more prominent role. There is an
+        overhead associated with updating the browser GUI each time an entity is created, modified
+        or deleted. This can have a negative effect on script performance. In order to remedy this,
+        there is a new command introduced that allows the update of the browser display to be
+        withheld until the operation of the script is completed:</p>
+
+      <pre class="pre codeblock"><code>hwbrowsermanager view flush false; // add this at starting of script
+...
+...
+body of script
+...
+...
+hwbrowsermanager view flush true; // add this at end of script</code></pre>
+      <p class="p">It is important to note that the scripter must make sure to turn the browser flush back on
+        at the end of the script or anytime a script exits or stops.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New Commands</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_kyg_wcm_zw">
+        <li class="li">Analysis<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_createblockwithsystem.htm" title="Creates a simplified block entity with a local coordinate system.">*createblockwithsystem</a></li>
+
+            <li class="sli">*updateblock </li>
+
+            <li class="sli">*updateblockwithsystem</li>
+
+          </ul>
+</li>
+
+        <li class="li">Browsers<ul class="sl simple">
+            <li class="sli">hwbrowsermanager</li>
+
+          </ul>
+</li>
+
+        <li class="li">Connectors<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_ce_alldetailsget.htm" title="Returns all custom details assigned to a connector.">hm_ce_alldetailsget</a></li>
+
+            <li class="sli"><a class="xref" href="hm_ce_globalget.htm" title="Get global variables related to connector display.">hm_ce_globalget</a></li>
+
+            <li class="sli"><a class="xref" href="_ce_globalsetdouble.htm" title="Set global double parameters relating to the display of connectors.">*CE_GlobalSetDouble</a></li>
+
+            <li class="sli"><a class="xref" href="_ce_globalsetint.htm" title="Set global integer parameters relating to the display of connectors.">*CE_GlobalSetInt</a></li>
+
+            <li class="sli"><a class="xref" href="_ce_projectioncheck.htm" title="Check quality of projections with connectors.">*CE_ProjectionCheck</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">General/Core<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_getdisplaycolor.htm" title="Returns the display colors as specified in the Options panel.">hm_getdisplaycolor</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getloadoption.htm" title="Returns the current values for load display options.">hm_getloadoption</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getsystemoption.htm" title="Returns the current value of the settings for system display.">hm_getsystemoption</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a></li>
+
+            <li class="sli"><a class="xref" href="hm_gettopologyoption.htm" title="Returns the current value of the settings for edge and solid topology display.">hm_gettopologyoption</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getvectoroption.htm" title="Returns the current value of the settings for vector display.">hm_getvectoroption</a></li>
+
+            <li class="sli"><a class="xref" href="hm_runcommandfile.htm" title="Runs a HyperMesh command file specified by a complete path and filename.">hm_runcommandfile</a></li>
+
+            <li class="sli"><a class="xref" href="_allsuppressactive.htm" title="Sets the active/inactive state of all supported entities.">*allsuppressactive</a></li>
+
+            <li class="sli"><a class="xref" href="_allsuppressoutput.htm" title="Sets the export/do not export state of all entities.">*allsuppressoutput</a></li>
+
+            <li class="sli"><a class="xref" href="_beamsectioncreatestandardsolver.htm" title="Creates a standard solver-specific HyperBeam section.">*beamsectioncreatestandardsolver</a></li>
+
+            <li class="sli"><a class="xref" href="_entitysuppressactive.htm" title="Sets the active/inactive state of the specified entity.">*entitysuppressactive</a></li>
+
+            <li class="sli"><a class="xref" href="_entitysuppressoutput.htm" title="Sets the export/do not export state of the specified entity.">*entitysuppressoutput</a></li>
+
+            <li class="sli"><a class="xref" href="_feoutputwithdata.htm" title="Creates an ASCII export file based on an output template.">*feoutputwithdata</a></li>
+
+            <li class="sli"><a class="xref" href="_includesuppressactive.htm" title="Sets the active/inactive state of all supported entities contained within the specified include file.">*includesuppressactive</a></li>
+
+            <li class="sli"><a class="xref" href="_includesuppressoutput.htm" title="Sets the export/do not export state of all supported entities contained within the specified include file.">*includesuppressoutput</a></li>
+
+            <li class="sli"><a class="xref" href="_marksuppressactive.htm" title="Sets the active/inactive state of the specified entity mark.">*marksuppressactive</a></li>
+
+            <li class="sli"><a class="xref" href="_marksuppressoutput.htm" title="Sets the export/do not export state of the specified entity mark.">*marksuppressoutput</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_nodesandelesclear.htm" title="Clear numbers from the modeling window for all nodes and elements.">*nodesandelesclear</a></li>
+
+            <li class="sli"><a class="xref" href="_propertyupdate.htm" title="Updates the property assigned to the mark of entities.">*propertyupdate</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Geometry<ul class="sl simple">
+            <li class="sli">hm_getcentroidofsolids </li>
+
+            <li class="sli"><a class="xref" href="hm_getcoordinatesfromnearestsurface.htm" title="Finds coordinates of a point that belongs to one of surfaces in input set and is a closest point to the location specified in command input.">hm_getcoordinatesfromnearestsurface</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getdeleteelementsmode.htm" title="Returns the current value of the remesh setting for topology revision.">hm_getdeleteelementsmode</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getfilletfacesfrommark.htm" title="Returns the faces containing fillets with a radius inside a range, only considering specific faces.">hm_getfilletfacesfrommark</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getmeshvolumesinfo.htm" title="Returns the number of volumes and lists containing the element IDs and volume indices for each input element.">hm_getmeshvolumesinfo</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getuvbounds.htm" title="Returns the parametric uv coordinate bounds associated with the referenced surface.">hm_getuvbounds</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getuvcoordinates.htm" title="Returns the parametric uv coordinates at a node location on the referenced surface.">hm_getuvcoordinates</a></li>
+
+            <li class="sli"><a class="xref" href="_createfilletmidlines.htm" title="Recognize fillet surfaces of triangular or rectangular shape, and split strings of fillets down to their longitudinal center lines.">*createfilletmidlines</a>
+            </li>
+
+            <li class="sli">*midsurface_extract_new </li>
+
+            <li class="sli"><a class="xref" href="_offset_surfaces_display_offset.htm" title="Creates segments indicating the direction of surface or solid offsets for visualization/review.">*offset_surfaces_display_offset</a></li>
+
+            <li class="sli"><a class="xref" href="_offset_surfaces_and_modify.htm" title="Offsets selected surfaces or solids.">*offset_surfaces_and_modify</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_orient_normals_outside_solid.htm" title="Re-orients the normals of a solid inside or outside, depending on the orientation flag.">*orient_normals_outside_solid</a>
+            </li>
+
+            <li class="sli">*separate_holes_in_3d_body </li>
+
+            <li class="sli"><a class="xref" href="_surfacesplinefillholes.htm" title="Creates spline surfaces on all loops of selected lines.">*surfacesplinefillholes</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_verticesrelease.htm" title="Unstitches selected vertices.">*verticesrelease</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Graphics<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_displaycollectorsallbymark.htm" title="Turns the display of a mark of entities on or off, including toggling their current state.">*displaycollectorsallbymark</a></li>
+
+            <li class="sli"><a class="xref" href="_setmarktopologydisplay.htm" title="Sets the topology visualization style for the marked geometric entities.">*setmarktopologydisplay</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_toggleincludefromdisplay.htm" title="Toggles the entities contained in the specified include file to/from the current display.">*toggleincludefromdisplay</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">GUI<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_framework.htm" title="Controls certain options and of the HyperMesh GUI framework.">hm_framework</a> formatwindowtitle </li>
+
+            <li class="sli"><a class="xref" href="hm_framework.htm" title="Controls certain options and of the HyperMesh GUI framework.">hm_framework</a> getuserprofile </li>
+
+            <li class="sli"><a class="xref" href="hm_framework.htm" title="Controls certain options and of the HyperMesh GUI framework.">hm_framework</a> loaduserprofile </li>
+
+            <li class="sli"><a class="xref" href="hm_framework.htm" title="Controls certain options and of the HyperMesh GUI framework.">hm_framework</a> removelabelsfrompulldown </li>
+
+            <li class="sli"><a class="xref" href="hm_getcommandposition.htm" title="Returns the position of the command window.">hm_getcommandposition</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="hm_getpanelitems.htm" title="Returns the IDs and names of menu bar items in the Connector panels.">hm_getpanelitems</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="hm_getpanelposition.htm" title="Returns the position (top | bottom) of the panel area.">hm_getpanelposition</a></li>
+
+            <li class="sli"><a class="xref" href="hm_setcommandposition.htm" title="Sets the position of the command window.">hm_setcommandposition</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="hm_setpanelposition.htm" title="Sets the position of the panel area.">hm_setpanelposition</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">hm.cfg file<ul class="sl simple">
+            <li class="sli">*linefacetmatch()</li>
+
+          </ul>
+</li>
+
+        <li class="li">Imaging<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_getgraphicsarea.htm" title="Returns the x, y, width and height of the modeling window.">hm_getgraphicsarea</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getwindowarea.htm" title="Returns the x, y, width and height of a window.">hm_getwindowarea</a></li>
+
+            <li class="sli"><a class="xref" href="hm_windowtoclipboard.htm" title="Capture a rectangular area of the screen and save it to the clipboard.">hm_windowtoclipboard</a></li>
+
+            <li class="sli"><a class="xref" href="hm_windowtofile.htm" title="Capture a rectangular area of the screen and save it to a file.">hm_windowtofile</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Masking<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_maskall.htm" title="Masks all supported entities.">*maskall</a></li>
+
+            <li class="sli"><a class="xref" href="_maskentitiesincollector.htm" title="Masks the specified entities contained within the specified collectors.">*maskentitiesincollector</a></li>
+
+            <li class="sli"><a class="xref" href="_maskreverse.htm" title="Reverses the masking state of a specific entity type.">*maskreverse</a></li>
+
+            <li class="sli"><a class="xref" href="_maskreverseall.htm" title="Reverses the masking state of supported entities.">*maskreverseall</a></li>
+
+            <li class="sli"><a class="xref" href="_unmaskentitiesincollector.htm" title="Unmasks the specified entities contained within the specified collectors.">*unmaskentitiesincollector</a></li>
+
+            <li class="sli"><a class="xref" href="_unmaskentitymark.htm" title="Unmasks the entities on the specified mark.">*unmaskentitymark</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Meshing<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_alternatejointcreate.htm" title="Creates a joint element for use with the OptiStruct MBD solution sequence.">*alternatejointcreate</a></li>
+
+            <li class="sli"><a class="xref" href="_alternatejointupdate.htm" title="Updates joint elements for use with the OptiStruct MBD solution sequence.">*alternatejointupdate</a></li>
+
+            <li class="sli"><a class="xref" href="_change_edgedensities.htm" title="Changes the densities of selected surface edges and remeshes the adjacent surfaces, according to the specified mode.">*change_edgedensities</a></li>
+
+            <li class="sli"><a class="xref" href="_element2dalign.htm" title="Aligns the order of nodes in 2D elements based on the nodes of attached 1D elements.">*element2Dalign</a></li>
+
+            <li class="sli"><a class="xref" href="_elementsaddnodesfixed.htm" title="Marks the specified nodes of the old elements as fixed nodes (nodes that must be retained in the mesh to be created) before using the commands for remeshing/meshing by elements.">*elementsaddnodesfixed</a></li>
+
+            <li class="sli"><a class="xref" href="_hmshrinkwrap.htm" title="Used to shrink wrap mesh selected elements.">*hmshrinkwrap</a></li>
+
+            <li class="sli"><a class="xref" href="_qismoothconstrained.htm" title="This command tries to improve the selected elements' quality index by QI optimizing elements nodes positions.">*qismoothconstrained</a></li>
+
+            <li class="sli"><a class="xref" href="_qismoothfixfailed.htm" title="Selectively applies QI smoothing (the quality index-based node-position optimization) to elements violating the quality index thresholds. Allowed displacements of nodes on the feature edges are limited by user-specified thresholds. The command tries to fix the failed elements while making moving the feature nodes as little as possible.">*qismoothfixfailed</a></li>
+
+            <li class="sli"><a class="xref" href="_rigidlinkbycollector.htm" title="Creates a rigid link with one independent node and dependent node defined by a collector.">*rigidlinkbycollector</a></li>
+
+            <li class="sli"><a class="xref" href="_rigidlinkupdatebycollector.htm" title="Updates connectivity and properties of a rigid link element with one independent node and dependent node defined by collector.">*rigidlinkupdatebycollector</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_rigidlinkupdatecalcinodebycollector.htm" title="Updates a rigidlink by calculating the independent node based on selection of dependent nodes defined by comps, mats, assems, props sets and nodes.">*rigidlinkupdatecalcinodebycollector</a></li>
+
+            <li class="sli"><a class="xref" href="_rlinkcalcinodeandcreateforcollector.htm" title="Creates a rigidlink by calculating the independent node based on selection of dependent nodes defined by collector. The supported collectors are comps, mats, assems, props and sets.">*rlinkcalcinodeandcreateforcollector</a></li>
+
+            <li class="sli"><a class="xref" href="_setusefeatures.htm" title="Specifies the mode for defining and using feature edges for element-based re-meshing.">*setusefeatures</a></li>
+
+            <li class="sli">*tetra_remesh_transition </li>
+
+            <li class="sli">*tetra_volumemesh_transition </li>
+
+            <li class="sli">*tetramesh_transition</li>
+
+          </ul>
+</li>
+
+        <li class="li">Morphing<ul class="sl simple">
+            <li class="sli">hm_morph_getparameter </li>
+
+            <li class="sli"><a class="xref" href="_morphconnstodoms.htm" title="Creates general domains for selected connectors.">*morphconnstodoms</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_morphconstraintcreateedge.htm" title="Creates a tangency constraint between two edge or 2D domains or for a single edge domain.">*morphconstraintcreateedge</a></li>
+
+            <li class="sli"><a class="xref" href="_morphconstraintupdateedge.htm" title="Updates a tangency constraint between two edge or 2D domains or for a single edge domain.">*morphconstraintupdateedge</a></li>
+
+            <li class="sli"><a class="xref" href="_morphremeshedges.htm" title="Remeshes selected elements or domains with the target element size.">*morphremeshedges</a></li>
+
+            <li class="sli"><a class="xref" href="_morphsculptmesh2.htm" title="Sculpts the elements on the mark with additional modes of operation compared to *morphsculptmesh.">*morphsculptmesh2</a></li>
+
+            <li class="sli"><a class="xref" href="_morphshapecreateorthogonal.htm" title="Creates shapes, design variables, dlink2s, and equations to enable non-linear shape variables in linear optimization.">*morphshapecreateorthogonal</a></li>
+
+            <li class="sli"><a class="xref" href="_morphshrinkmvols.htm" title="Applies shrinking to selected morph volumes.">*morphshrinkmvols</a></li>
+
+            <li class="sli"><a class="xref" href="_morphvolumecreateplus.htm" title="Creates a matrix of morph volumes and optionally applies shrinking.">*morphvolumecreateplus</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Optimization<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_dlinkgetdesvarcoeffs.htm" title="Returns the coefficient multipliers of a design variable link.">hm_dlinkgetdesvarcoeffs</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_desvarlinkcreatewithfunction.htm" title="Creates a design variable link.">*desvarlinkcreatewithfunction</a></li>
+
+            <li class="sli"><a class="xref" href="_desvarlinkupdatewithfunction.htm" title="Updates a design variable link.">*desvarlinkupdatewithfunction</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapedesvarcreatewithsetoption.htm" title="Creates a free shape design variable.">*freeshapedesvarcreatewithsetoption</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapedesvarupdatewithsetoption.htm" title="Updates a free shape design variable.">*freeshapedesvarupdatewithsetoption</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_freeshapedrawextrusionpdate.htm" title="Updates the draw and extrusion constraints of a free shape design variable.">*freeshapedrawextrusionpdate</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapegridconstraintsupdatewithsetoption.htm" title="Updates the grid constraints of a free shape design variable.">*freeshapegridconstraintsupdatewithsetoption</a>
+            </li>
+
+            <li class="sli"><a class="xref" href="_freeshapeparametersupdatewithlimits.htm" title="Updates the parameters of a free shape design variable.">*freeshapeparametersupdatewithlimits</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapepatternupdate.htm" title="Updates the pattern grouping options of a free shape design variable.">*freeshapepatternupdate</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapesideconstraintsbarrierupdatebyblocks.htm" title="Updates the side constraints of a free shape design variable using blocks and also updates the ID of the component specified as the barrier.">*freeshapesideconstraintsbarrierupdatebyblocks</a></li>
+
+            <li class="sli"><a class="xref" href="_freeshapesidecontraintsbarrierupdatemanual.htm" title="Updates the side constraints of a free shape design variable by allowing the specification of each individual bound and also updates the ID of the component specified as the barrier.">*freeshapesidecontraintsbarrierupdatemanual</a></li>
+
+            <li class="sli"><a class="xref" href="_freesizelaminatethicknessupdate.htm" title="Updates the minimum and maximum laminate thickness of a free size design variable.">*freesizelaminatethicknessupdate</a></li>
+
+            <li class="sli"><a class="xref" href="_opticontrolupdateeslparameters.htm" title="Updates the optimization control parameters to be used in the Equivalent Static Load Method (ESLM) optimization.">*opticontrolupdateeslparameters</a></li>
+
+            <li class="sli">*ossmooth </li>
+
+            <li class="sli">*ossmooth_post</li>
+
+          </ul>
+</li>
+
+        <li class="li">Penetration<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_calculateproximityelements.htm" title="Used to determine the proximity distance between elements.">*calculateproximityelements</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">Template<ul class="sl simple">
+            <li class="sli"><a class="xref" href="hm_getentitycardimagedictionary.htm" title="Returns a list of card images for the specified entity type and card image organizational type defined in the current template.">hm_getentitycardimagedictionary</a></li>
+
+            <li class="sli"><a class="xref" href="hm_getentitytypedictionary.htm" title="Returns a list of card image types defined in the current template for the specified entity type.">hm_getentitytypedictionary</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">View<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_removeview.htm" title="Deletes a saved view from the database.">*removeview</a></li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Modified Commands</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_hbs_dlm_zw">
+        <li class="li">Masking<ul class="sl simple">
+            <li class="sli"><a class="xref" href="_maskentitymark.htm" title="Masks the entities on the specified mark.">*maskentitymark</a> – only supported for collected entities </li>
+
+            <li class="sli"><a class="xref" href="_masknotshown.htm" title="Masks all supported entities not in the current view window.">*masknotshown</a> – only supported for collected entities </li>
+
+            <li class="sli"><a class="xref" href="_unmaskall.htm" title="Unmasks all supported entities.">*unmaskall</a> – only supported for collected entities </li>
+
+            <li class="sli"><a class="xref" href="_unmaskshown.htm" title="Unmasks all supported entities in the current view window.">*unmaskshown</a> – only supported for collected entities</li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Deprecated Commands</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_ymx_5lm_zw">
+        <li class="li">Connectors<ul class="sl simple">
+            <li class="sli">hm_ce_size – use <a class="xref" href="_ce_globalsetdouble.htm" title="Set global double parameters relating to the display of connectors.">*CE_GlobalSetDouble</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">General/Core<ul class="sl simple">
+            <li class="sli">hm_getcompthickness – use <a class="xref" href="hm_getthickness.htm" title="Returns the thickness of the specified component, element or property.">hm_getthickness</a></li>
+
+            <li class="sli"> hm_setcurrentfilename </li>
+
+            <li class="sli">hm_setcurrentmodelname </li>
+
+            <li class="sli">*feinput – use <a class="xref" href="_feinputwithdata2.htm" title="Reads data from sources such as CAD files, connector files/MCF/MWF, and FE files, with additional input parameters.">*feinputwithdata2</a>
+            </li>
+
+            <li class="sli">*feinput2 – use <a class="xref" href="_feinputwithdata2.htm" title="Reads data from sources such as CAD files, connector files/MCF/MWF, and FE files, with additional input parameters.">*feinputwithdata2</a></li>
+
+            <li class="sli">*feinputdefault </li>
+
+            <li class="sli">*feoutput – use <a class="xref" href="_feoutputwithdata.htm" title="Creates an ASCII export file based on an output template.">*feoutputwithdata</a>
+            </li>
+
+            <li class="sli">*maskmark – use <a class="xref" href="_maskentitymark.htm" title="Masks the entities on the specified mark.">*maskentitymark</a>
+            </li>
+
+            <li class="sli">*unmaskmark – use <a class="xref" href="_unmaskentitymark.htm" title="Unmasks the entities on the specified mark.">*unmaskentitymark</a></li>
+
+            <li class="sli">*unmaskmarkedelements – use <a class="xref" href="_unmaskentitymark.htm" title="Unmasks the entities on the specified mark.">*unmaskentitymark</a></li>
+
+          </ul>
+</li>
+
+        <li class="li">GUI<ul class="sl simple">
+            <li class="sli">hm_callwhatsnew – use <a class="xref" href="hm_callhelp.htm" title="Displays the HTML help for a specific book and topic.">hm_callhelp</a></li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Removed Commands</h2>
+      
+      <ul class="ul" id="api_programmers_guide_9_r__ul_cjf_cnm_zw">
+        <li class="li">Geometry<ul class="sl simple">
+            <li class="sli"><span class="keyword cmdname">hm_lineparameterizationwithbounds </span></li>
+
+            <li class="sli"><span class="keyword cmdname">hm_smoothenjointswithfillet </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*find_zero_and_small_area_faces</span></li>
+
+          </ul>
+</li>
+
+        <li class="li">Meshing<ul class="sl simple">
+            <li class="sli"><span class="keyword cmdname">*full_remesh </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*opti_defaultmeshsurf </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*remeshelemsabout </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoamcleanup </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoamoptimization </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoelementcleanup </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoelementoptimization </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoelementremesh </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdofirstcleanup </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdofixrededges </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdohmcleanup </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdohmoptimization </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoinitialmesh </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdomeshinteractively </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoremovefillets </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoremovepinholes </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdoselectmeshalgorithm </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*setdotopologycleanup </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*surfacemarkcombine_variabletolerance </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*try_remesh </span></li>
+
+            <li class="sli"><span class="keyword cmdname">*verticessmallrededgescombine</span></li>
+
+          </ul>
+</li>
+
+      </ul>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

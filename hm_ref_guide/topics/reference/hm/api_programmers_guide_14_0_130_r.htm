@@ -1,0 +1,769 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Elements to Accelerometers The LS-DYNA keyword *ELEMENT_SEATBELT_ACCELEROMETER has been mapped from the element entity to the accelerometer entity. See the accelerometer data names documentation for ..." /><meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="14.0.130 API Programmer's Guide" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="api_programmers_guide_14_0_130_r" /><title>14.0.130 API Programmer's Guide</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" data-spy="scroll" onload="highlightSearchTerm()" id="api_programmers_guide_14_0_130_r" data-target="#toc">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm">14.0 API Programmer's Guide</a></span></li><li class="active"><span class="topicref">14.0.130 API Programmer's Guide</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm">14.0 API Programmer's Guide</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_14_0_110_r.htm">14.0.110 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_14_0_120_r.htm">14.0.120 API Programmer's Guide</a></span></li><li class="active"><span class="topicref">14.0.130 API Programmer's Guide</span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm">9.0 API Programmer's Guide</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">14.0.130 API Programmer's Guide</h1>
+
+  <div class="body refbody">
+    <section class="section"><h2 class="title sectiontitle">Elements to Accelerometers</h2>
+      
+      <p class="p">The <span class="keyword">LS-DYNA</span> keyword *ELEMENT_SEATBELT_ACCELEROMETER has been
+        mapped from the element entity to the accelerometer entity. See the <cite class="cite">accelerometer data
+          names</cite> documentation for more details.</p>
+
+      <p class="p">This keyword was previously mapped to elements, using config 103 and type 2. This keyword
+        can now be created using an accelerometer entity with config 101. The ID pool under which it
+        was previously supported was ELEMENT_SEATBELT_ACCELEROMETER_IDPOOL. As this ID pool is no
+        longer required, it has been removed.</p>
+
+      <p class="p">Scripts that created or queried the element entity for this keyword must be updated to use
+        the accelerometer entity. Below are a few examples.</p>
+
+      <div class="p">To create a *ELEMENT_SEATBELT_ACCELEROMETER keyword, create an accelerometer entity with
+        config 101:<pre class="pre codeblock"><code>*createentity accelerometer config=101</code></pre></div>
+
+      <div class="p">To update the values of different data names like nodes, gravitational acceleration,
+        integration option or mass
+        values:<pre class="pre codeblock"><code>*setvalue accelerometers id=$id node1=$node1_id
+*setvalue accelerometers id=$id node2=$node2_id
+*setvalue accelerometers id=$id node3=$node3_id
+*setvalue accelerometers id=$id multi_nodes={$node1_id $node2_id $node3_id}
+*setvalue accelerometers id=$id igrav=$igrav_value
+*setvalue accelerometers id=$id intopt=$intopt_value
+*setvalue accelerometers id=$id mass=$mass_value</code></pre></div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Entity Bundles</h2>
+      
+      <p class="p">An entity bundle is persistent grouping of entities designed to be used by GUI widgets that
+        need to store some of their data with the user’s model. Bundle names are unique, and each
+        bundle can have up to 10 entity types. Entities can be added and removed from a bundle by
+        specifying which data number to use.</p>
+
+      <p class="p">The name and signature definition of a bundle is part of the <span class="keyword">HyperMesh</span>
+        session, but any entity data associated to that bundle is part of the model.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">New Commands</h2>
+      
+      <div class="p">
+        <ul class="ul" id="api_programmers_guide_14_0_130_r__ul_awl_sxx_kx">
+          <li class="li">Connectors<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_ce_cleanup.htm" title="Sets connectors to unrealized and back to a clean undefined state.">*CE_Cleanup</a></li>
+
+              <li class="sli"><a class="xref" href="hm_ce_tooclosetoedgecheck.htm" title="Checks if connectors are too close to an edge.">hm_ce_tooclosetoedgecheck</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Contact<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_adjustcontactsurfacenormal.htm" title="Adjusts a contact surface normal using an orientation element.">*adjustcontactsurfacenormal</a></li>
+
+              <li class="sli"><a class="xref" href="_adjustgroupsnormal.htm" title="Adjusts a group normal using an orientation element.">*adjustgroupsnormal</a></li>
+
+              <li class="sli"><a class="xref" href="_convertlegacyentities.htm" title="Converts any of the source legacy entities, in a particular solver interface, to a specified target entity.">*convertlegacyentities</a></li>
+
+              <li class="sli"><a class="xref" href="_detectandcreateface2facecontacts.htm" title="Detects if the specified components are within the contact distance specified and creates contact entities relevant to the solver interface.">*detectandcreateface2facecontacts</a></li>
+
+              <li class="sli"><a class="xref" href="_entitydisplaywithattached.htm" title="Isolates an entity and its attached entities.">*entitydisplaywithattached</a></li>
+
+              <li class="sli"><a class="xref" href="_reviewcontactnormalinconsistency.htm" title="Graphically reviews the group entity region where the contact normal is inconsistent.">*reviewcontactnormalinconsistency</a></li>
+
+              <li class="sli"><a class="xref" href="_swapcards.htm" title="Swaps the card image of an entity.">*swapcards</a></li>
+
+              <li class="sli"><a class="xref" href="_swapcontactmasterslave.htm" title="Swaps the master and slave entities of groups.">*swapcontactmasterslave</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Data Names<ul class="sl simple">
+              <li class="sli"><a class="xref" href="data_names-accelerometers.htm">accelerometers</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Entity Bundles<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_entitybundleaddid.htm" title="Adds a single entity to a data item of a bundle.">*entitybundleaddid</a></li>
+
+              <li class="sli"><a class="xref" href="_entitybundleaddmark.htm" title="Adds the entities on a mark to a data item of an entity bundle.">*entitybundleaddmark</a></li>
+
+              <li class="sli"><a class="xref" href="_entitybundleclear.htm" title="Removes all entities either from a single data item of an or from all the data items of an entitybundle.">*entitybundleclear</a></li>
+
+              <li class="sli"><a class="xref" href="_entitybundleregister.htm" title="Defines a name and signature for a new entity bundle.">*entitybundleregister</a></li>
+
+              <li class="sli"><a class="xref" href="_entitybundleremoveid.htm" title="Removes a single entity from a data item of a bundle.">*entitybundleremoveid</a></li>
+
+              <li class="sli"><a class="xref" href="_entitybundleremovemark.htm" title="Removes the entities on a mark from a data item of an entity bundle.">*entitybundleremovemark</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getentitybundleinto.htm" title="Returns information about entity bundles.">hm_getentitybundleinfo</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">General/Core<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_convertthermalloads.htm" title="Converts thermal loads from one solver to another.">*convertthermalloads</a></li>
+
+              <li class="sli"><a class="xref" href="_setoption.htm" title="Sets various option values.">*setoption</a></li>
+
+              <li class="sli"><a class="xref" href="_springfournoded.htm" title="Creates a spring element between four nodes using an orientation vector.">*springfournoded</a></li>
+
+              <li class="sli"><a class="xref" href="_springthreenoded.htm" title="Creates a spring element between three nodes using an orientation vector.">*springthreenoded</a></li>
+
+              <li class="sli"><a class="xref" href="hm_excludebeyond.htm" title="Removes entities from the base mark which are beyond the given distance or number of element rows from the entities on the target mark.">hm_excludebeyond</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getalltiedentities.htm" title="Identifies groups of connected components and free parts within selected components.">hm_getalltiedentities</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">HMASCII<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_accelerometers.htm" title="Creates an accelerometer in HMASCII format.">*accelerometers()</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Job Management<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_jobs_addServer.htm" title="Add a new server.">hm_jobs_addServer</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_authenticateserver.htm" title="Authenticates a server.">hm_jobs_authenticateServer</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_cansubmit.htm" title="Reports if a job can be submitted on the current server without authentication.">hm_jobs_canSubmit</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_editserver.htm" title="Edits an already existing server.">hm_jobs_editServer</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_getjobstatus.htm" title="Returns the present status of a job on a server.">hm_jobs_getJobStatus</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_getserverdetails.htm" title="Returns the name, IP and port of a server.">hm_jobs_getServerDetails</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_getserverlist.htm" title="Returns the list of servers added by HyperMesh.">hm_jobs_getServerList</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_getserverlistfromservices.htm" title="Returns the list of servers added by all applications.">hm_jobs_getServerListFromServices</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_removeserver.htm" title="Removes a server.">hm_jobs_removeServer</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_setcurrentserver.htm" title="Sets a server as current.">hm_jobs_setCurrentServer</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_setserviceproperty.htm" title="Sets a service property for the PBS-sensor.">hm_jobs_setServiceProperty</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_startservice.htm" title="To explicitly start the PBS-sensor services.">hm_jobs_startService</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_submitbatchmeshjob.htm" title="Submits a BatchMesh job to the server.">hm_jobs_submitBatchmeshJob</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_submithstjob.htm" title="Submits a HyperStudy job to the server.">hm_jobs_submitHSTJob</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_submitoptistructjob.htm" title="Submits a OptiStruct job to the server.">hm_jobs_submitOptistructJob</a></li>
+
+              <li class="sli"><a class="xref" href="hm_jobs_terminatejob.htm" title="Kills a running job.">hm_jobs_terminateJob</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_aligntoedges.htm" title="Aligns nodes of mesh edges along geometric edges.">*aligntoedges</a></li>
+
+              <li class="sli"><a class="xref" href="_shell_mesh_smoother.htm" title="Performs smoothing on selected mesh patches.">*shell_mesh_smoother</a></li>
+
+              <li class="sli"><a class="xref" href="hm_getmaxgapwidth.htm" title="Returns the approximate maximum distance between a pair of node lists.">hm_getmaxgapwidth</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Morphing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_morphmapedgestoextendedoffset.htm" title="Maps selected morph volume edges to extended versions of the specified surfaces or elements.">*morphmapedgestoextendedoffset</a></li>
+
+              <li class="sli"><a class="xref" href="_morphmaptoextendedvecoffset.htm" title="Maps nodes to extended versions of the specified surfaces or elements.">*morphmaptoextendedvecoffset</a></li>
+
+              <li class="sli"><a class="xref" href="_morphnodesextendedoffset.htm" title="Moves the selected nodes to a mark of extended surfaces or elements while morphing the affected elements.">*morphnodesextendedoffset</a></li>
+
+            </ul>
+</li>
+
+          <li class="li">Template Commands<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_accelerometers2.htm" title="Starts an accelerometers block.">*accelerometers()</a></li>
+
+            </ul>
+</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Modified Commands</h2>
+      
+      <div class="p">The following commands have modified behavior that potentially require script updates:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_s53_wjw_yw">
+          <li class="li">Data Names<ul class="sl simple">
+              <li class="sli"><a class="xref" href="data_names-contactsurfs_r.htm">contactsurfs</a> – Added new data names node5,
+                node6, node7 and node8. Updated the facetype data name to return 6 or 8 for second
+                order elements, where previously it would return 3 or 4. These changes may require
+                logic updates in Tcl scripts, or in custom templates, where contactsurfs with second
+                order elements are being handled.</li>
+
+            </ul>
+</li>
+
+        </ul>
+</div>
+
+      <div class="p">The following commands have new options or enhanced capabilities. Existing scripts are not
+        affected and only need to be updated if usage of the new functionality is desired:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_c2f_tnm_lx">
+          <li class="li">Collision<ul class="sl simple">
+              <li class="sli"><a class="xref" href="hm_collisionentitycreate.htm" title="Adds entities to consider for collision detection.">hm_collisionentitycreate</a> – Added new behaviors and values 20,
+                30 and 40 for thickness_type.</li>
+
+            </ul>
+</li>
+
+          <li class="li">Data Names<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_wkw_xnm_lx">
+              <li class="li"><a class="xref" href="data_names-boxes_r.htm">boxes</a> – Added configs 202 and 203. Added new data
+                names cylinder_base_node, cylinder_base_point, cylinder_base_x, cylinder_base_y,
+                cylinder_base_z, cylinder_diameter, cylinder_direction_node,
+                cylinder_direction_point, cylinder_direction_x, cylinder_direction_y,
+                cylinder_direction_z, sphere_center_node, sphere_center_point, sphere_center_x,
+                sphere_center_y, sphere_center_z, sphere_diameter.</li>
+
+              <li class="li">designvars<ul class="sl simple">
+                  <li class="sli"><a class="xref" href="data_names-designvars_topology_r.htm">topology</a> – Added new data names
+                    dfail, failsafe, ofail, pfail, sfail and tfail.</li>
+
+                </ul>
+</li>
+
+              <li class="li"><a class="xref" href="../../chapter_heads/data_names-loads.htm">loads</a><ul class="sl simple">
+                  <li class="sli"><a class="xref" href="data_names-loads-constraints.htm">constraints</a> – Added new data name
+                    dofstring.</li>
+
+                </ul>
+</li>
+
+              <li class="li"><a class="xref" href="data_names-modules.htm">modules</a> – Added new data names module_triple_dxyz1,
+                module_triple_dxyz2, module_triple_dxyz3, module_triple_xyz0, PDM_ID and
+                PDM_Revision.</li>
+
+              <li class="li"><a class="xref" href="data_names-opticontrols.htm">opticontrols</a> – Added new data names bucksf,
+                bucksftoggle, maxrad, maxradtoggle, minrad, minradtoggle.</li>
+
+              <li class="li"><a class="xref" href="data_names-optiresponses.htm">optiresponses</a> – Added new data name boresetid.</li>
+
+              <li class="li"><a class="xref" href="data_names-regions.htm">regions</a> – Added new data name sourceentities.</li>
+
+            </ul>
+</li>
+
+          <li class="li">General/Core<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_createmark.htm" title="Places entities on a mark based on user-supplied options.">*createmark</a> – The "equal to value" option, and other similar
+                options, no longer select anything in case the attribute/data name is invalid.</li>
+
+              <li class="sli"><a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a> – Added many new options, see command
+                documentation for details.</li>
+
+              <li class="sli"><a class="xref" href="hm_wadlinesgetgridpoints.htm" title="Returns coordinate data defining WAD grid points.">hm_wadlinesgetgridpoints</a> – Added method 3 and new optional
+                argument version.</li>
+
+              <li class="sli"><a class="xref" href="hm_wadlinesgetgridpointsleg.htm" title="Returns grid points for either upper or lower leg impact analysis.">hm_wadlinesgetgridpointsleg</a> – Updated version values, and
+                added new optional argument method.</li>
+
+            </ul>
+</li>
+
+          <li class="li">Geometry<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_delete_logo.htm" title="Removes geometric logos.">*delete_logo</a> – Providing a negative value for max_height or
+                max_size auto-calculates those values based on the model dimensions.</li>
+
+            </ul>
+</li>
+
+          <li class="li">Meshing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_fill_fe_gaps_elems.htm" title="Fills gaps in FE from elements selected on both sides of the gap.">*fill_fe_gaps_elems</a>/<a class="xref" href="_fill_fe_gaps_nodeid.htm" title="Fills gaps in FE from a node selected on both sides of the gap.">*fill_fe_gaps_nodeid</a>/<a class="xref" href="_fill_fe_holes.htm" title="Fills FE holes by automatic or manual detection.">*fill_fe_holes</a>/<a class="xref" href="_fill_fe_holes_nodelist.htm" title="Fills FE holes from a node list defining the hole.">*fill_fe_holes_nodelist</a>
+                – Added CurvedFill and GuideNodePairs options to string_array.</li>
+
+              <li class="sli"><a class="xref" href="_fill_fe_gaps_nodelist.htm" title="Fills gaps in FE from node lists selected on both sides of the gap.">*fill_fe_gaps_nodelist</a> – Added CurvedFill, DetectNodeClusters
+                and GuideNodePairs options to string_array.</li>
+
+              <li class="sli"><a class="xref" href="_map_symmetric_mesh.htm" title="Maps a mesh between symmetric source/target surfaces.">*map_symmetric_mesh</a> – Added ElementMappingAsLists,
+                NodeMappingAsLists and PreferReflection options to string_array.</li>
+
+            </ul>
+</li>
+
+          <li class="li">Morphing<ul class="sl simple">
+              <li class="sli"><a class="xref" href="_morphmapedgestoequationoffset.htm" title="Maps selected morph volume edges to the surface of an equation.">*morphmapedgestoequationoffset</a>/<a class="xref" href="_morphmapedgestolineoffset.htm" title="Maps selected morph volume edges to the specified lines.">*morphmapedgestolineoffset</a>/<a class="xref" href="_morphmapedgestonodesoffset.htm" title="Maps selected morph volume edges to the specified node list.">*morphmapedgestonodesoffset</a>/<a class="xref" href="_morphmapedgestoplaneoffset.htm" title="Maps selected morph volume edges to the specified plane.">*morphmapedgestoplaneoffset</a>/<a class="xref" href="_morphmapedgestosurfaceoffset.htm" title="Maps selected morph volume edges to the specified surfaces.">*morphmapedgestosurfaceoffset</a>/<a class="xref" href="_morphmapedgestotaticoffset.htm" title="Maps selected morph volume edges to the specified elements.">*morphmapedgestotacitoffset</a>/<a class="xref" href="_morphmaptoequationvecoffset.htm" title="Maps nodes to the surface of an equation along a vector.">*morphmaptoequationvecoffset</a>/<a class="xref" href="_morphmaptolinenodesoffset.htm" title="Maps a node list to a line list along a vector.">*morphmaptolinenodesoffset</a>/<a class="xref" href="_morphmaptolinevecoffset.htm" title="Maps nodes to a line list along a vector.">*morphmaptolinevecoffset</a>/<a class="xref" href="_morphmaptonodesnodesoffset.htm" title="Maps a node list to a line along a vector.">*morphmaptonodesnodesoffset</a>/<a class="xref" href="_morphmaptonodesvecoffset.htm" title="Maps nodes to a line along a vector.">*morphmaptonodesvecoffset</a>/<a class="xref" href="_morphmaptoplanevecoffset.htm" title="Maps nodes to a plane along a vector.">*morphmaptoplanevecoffset</a>/<a class="xref" href="_morphmaptosurfacevecoffset.htm" title="Maps nodes to surfaces along a vector.">*morphmaptosurfacevecoffset</a>/<a class="xref" href="_morphmaptotacitvecoffset.htm" title="Maps nodes to surfaces along a vector.">*morphmaptotacitvecoffset</a>/<a class="xref" href="_morphnodeslineoffset.htm" title="Moves the selected nodes to a line while morphing the affected elements.">*morphnodeslineoffset</a>/<a class="xref" href="_morphnodesmeshoffset.htm" title="Moves the selected nodes to a mesh while morphing the affected elements.">*morphnodesmeshoffset</a>/<a class="xref" href="_morphnodesnodesoffset.htm" title="Moves the selected nodes to a line created from a node list while morphing the affected elements.">*morphnodesnodesoffset</a>/<a class="xref" href="_morphnodesplaneoffset.htm" title="Moves the selected nodes to a plane while morphing the affected elements.">*morphnodesplaneoffset</a>/<a class="xref" href="_morphnodessurfoffset.htm" title="Moves the selected nodes to the specified surfaces while morphing the affected elements.">*morphnodessurfoffset</a>/<a class="xref" href="_morphnodesvectoroffset.htm" title="Moves the selected nodes to a line extending along a vector created from two nodes while morphing the affected elements.">*morphnodesvectoroffset</a> – Added new project values 10-16 (as
+                appropriate), and corresponding behavior for offset. </li>
+
+            </ul>
+</li>
+
+        </ul>
+</div>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Deprecated Commands</h2>
+      
+      <div class="p">While still continuing to work as before, the following are all deprecated by <a class="xref" href="_setoption.htm" title="Sets various option values.">*setoption</a> and may be removed in a future release:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_ehz_dpm_lx">
+          <li class="li">*allowduplicateids – Use duplicate_ids instead.</li>
+
+          <li class="li">*bitmapanimationmode – Use bitmap_animation_mode instead.</li>
+
+          <li class="li">*centroid1dmode – Use 1d_at_centroid instead.</li>
+
+          <li class="li">*cleantoleranceset – Use cleanup_tolerance instead.</li>
+
+          <li class="li">*clipboundaryelements – Use clip_boundary_elements instead.</li>
+
+          <li class="li">*coincidentnodepickmode – Use coincident_picking instead.</li>
+
+          <li class="li">*coincidentpickmode – Use coincident_picking instead.</li>
+
+          <li class="li">*deleteelementsmode – Use delete_elements_mode instead.</li>
+
+          <li class="li">*detailedelements – Use detailed_elements instead.</li>
+
+          <li class="li">*detailedelements_beamvis – Use detailed_elements_beamvis instead.</li>
+
+          <li class="li">*detailedelements_shellvis – Use detailed_elements_shellvis instead.</li>
+
+          <li class="li">*displayimporterrors – Use display_import_errors instead.</li>
+
+          <li class="li">*elementhandle – Use element_handle instead.</li>
+
+          <li class="li">*elementorder – Use element_order instead.</li>
+
+          <li class="li">*elementsizeset – Use element_size instead.</li>
+
+          <li class="li">*entityhighlighting – Use entity_highlighting instead.</li>
+
+          <li class="li">*equationhandle – Use equation_handle instead.</li>
+
+          <li class="li">*exponentialdisplay – Use exponential_display instead.</li>
+
+          <li class="li">*featureangleset – Use feature_angle instead.</li>
+
+          <li class="li">*feoutputtimeinfo – Use feoutput_time_info instead.</li>
+
+          <li class="li">*fieldofview – Use perspective_fov instead.</li>
+
+          <li class="li">*fixedpointhandle – Use fixed_point_handle instead.</li>
+
+          <li class="li">*forcetextblack – Use force_text_black instead.</li>
+
+          <li class="li">*geometrytoleranceset – Use cleanup_tolerance instead.</li>
+
+          <li class="li">*geomfeatureangleset – Use geom_feature_angle instead.</li>
+
+          <li class="li">*geomstitching – Use geom_stitching instead.</li>
+
+          <li class="li">*graphic_label – Use load_solver_label instead.</li>
+
+          <li class="li">*graphicsfileblankbackground – Use graphics_file_blank_background instead.</li>
+
+          <li class="li">*graphicsimplificationmode – Use graphics_simplification_component and
+            graphics_simplification_mode instead.</li>
+
+          <li class="li">*loadhandle – Use load_handle instead.</li>
+
+          <li class="li">*loadlabel – Use load_label instead.</li>
+
+          <li class="li">*loadlabelsetcolor – Use load_label_color instead.</li>
+
+          <li class="li">*loadsize – Use load_size_magnitude, load_size_type and load_size_uniform
+            instead.</li>
+
+          <li class="li">*loadvisualvector – Use load_visual_vector instead.</li>
+
+          <li class="li">*mixedpropertywarning – Use mixed_property_warning instead.</li>
+
+          <li class="li"><a class="xref" href="_morphupdateparameter.htm" title="Updates integer/real morphing parameters.">*morphupdateparameter</a> domainicons – Use domain_handle
+            instead.</li>
+
+          <li class="li">*perspectiveview – Use perspective_view instead.</li>
+
+          <li class="li">*picktoleranceset – Use pick_tolerance instead.</li>
+
+          <li class="li">*resultcolormode – Use contour_type instead.</li>
+
+          <li class="li">*retainloads – Use retain_loads instead.</li>
+
+          <li class="li">*rotationangleset – Use rotation_angle instead.</li>
+
+          <li class="li">*rotationcentermode – Use rotation_center_mode instead.</li>
+
+          <li class="li">*setautomeshcolormode – Use auto_mesh_color_mode instead.</li>
+
+          <li class="li">*setbackgroundcolors – Use background_colors instead.</li>
+
+          <li class="li">*setelementcolormode – Use element_color_mode instead.</li>
+
+          <li class="li">*setelementinternaledgesmode – Use element_internal_edges_mode instead.</li>
+
+          <li class="li">*setgeomrefinelevel – Use geom_refine_level instead.</li>
+
+          <li class="li">*sethvlaunchflag – Use hv_launch_flag instead.</li>
+
+          <li class="li">*setlodthreshold – Use lod_threshold instead.</li>
+
+          <li class="li">*setmeshlinecolor – Use mesh_line_color instead.</li>
+
+          <li class="li">*setmeshlodthreshold – Use mesh_lod_threshold instead.</li>
+
+          <li class="li">*setmeshtransparency – Use mesh_transparency instead.</li>
+
+          <li class="li">*setperformancenormalmode – Use performance_normal instead.</li>
+
+          <li class="li">*setscaleoption – Use scale_color, scale_height, scale_position and scale_width
+            instead.</li>
+
+          <li class="li">*settopologydisplay – Use topology_display_mode instead.</li>
+
+          <li class="li">*settopologydisplaymode – Use topology_display_mode instead.</li>
+
+          <li class="li">*settopologyedgedisplay – Use topology_edge_display_mode instead.</li>
+
+          <li class="li">*settopologysoliddisplay – Use solid_transparency and topology_solid_display_mode
+            instead.</li>
+
+          <li class="li">*settransparentwithmeshlines – Use transparent_with_mesh_lines instead.</li>
+
+          <li class="li">*showcompositelayers – Use show_composite_layers instead.</li>
+
+          <li class="li">*showgeomlinedir – Use show_line_dir instead.</li>
+
+          <li class="li">*showglobalaxes – Use show_global_axes instead.</li>
+
+          <li class="li">*showscale – Use show_scale instead.</li>
+
+          <li class="li">*shrink – Use shrink_factor and shrink_mode instead.</li>
+
+          <li class="li">*stereodisplay – Use stereo_display instead.</li>
+
+          <li class="li">*surfaceuvlines – Use surface_uv_lines instead.</li>
+
+          <li class="li">*systemsize – Use system_size_uniform instead.</li>
+
+          <li class="li">*tagdisplay – Use tag_display instead.</li>
+
+          <li class="li">*tagtextdisplaymode – Use tag_text_display_mode instead.</li>
+
+          <li class="li">*thick1dlines – Use thick_1d_lines instead.</li>
+
+          <li class="li">*thickmeshlines – Use thick_mesh_lines instead.</li>
+
+          <li class="li">*toleranceset – Use node_tolerance instead.</li>
+
+          <li class="li">*vectorautoscale – Use vector_auto_scale instead.</li>
+
+          <li class="li">*vectordrawoptions – Use vector_size_magnitude, vector_size_type and
+            vector_size_uniform instead.</li>
+
+          <li class="li">*vectorhandle – Use vector_handle instead.</li>
+
+          <li class="li">*vectorlabel – Use vector_label instead.</li>
+
+          <li class="li">*zoomfactorset – Use mesh_line_color instead.</li>
+
+          <li class="li">hm_blockerrormessages – Use block_error_messages instead.</li>
+
+          <li class="li">hm_blockmessages – Use block_messages instead.</li>
+
+          <li class="li">hm_blockredraw – Use block_redraw instead.</li>
+
+          <li class="li">hm_buffercommandfile – Use buffer_command_file instead.</li>
+
+          <li class="li">hm_commandfilestate – Use command_file_state instead.</li>
+
+        </ul>
+</div>
+
+      <div class="p">While still continuing to work as before, the following are all deprecated by <a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a> and may be removed in a future release:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_clk_spm_lx">
+          <li class="li">hm_blockerrormessages – Use block_error_messages instead.</li>
+
+          <li class="li">hm_blockmessages – Use block_messages instead.</li>
+
+          <li class="li">hm_commandfilestate – Use command_file_state instead.</li>
+
+          <li class="li">hm_getcleanuptol – Use cleanup_tolerance instead.</li>
+
+          <li class="li">hm_getdeleteelementsmode – Use delete_elements_mode instead.</li>
+
+          <li class="li">hm_getdisplaycolor – Use background_colors instead.</li>
+
+          <li class="li">hm_getelementsize – Use element_size instead.</li>
+
+          <li class="li">hm_getloadoption – Use equation_handle, load_handle, load_label, load_size_magnitude,
+            load_size_type, load_size_uniform and load_solver_label instead.</li>
+
+          <li class="li">hm_getmeshlinecolor – Use mesh_line_color instead.</li>
+
+          <li class="li">hm_getnodetol – Use node_tolerance instead.</li>
+
+          <li class="li">hm_gettopologyoption – Use solid_transparency, topology_edge_display_mode and
+            topology_solid_display_mode instead.</li>
+
+          <li class="li">hm_getsystemoption – Use system_size_uniform instead.</li>
+
+          <li class="li">hm_getvectoroption – Use vector_auto_scale, vector_handle, vector_label,
+            vector_size_magnitude, vector_size_type and vector_size_uniform instead.</li>
+
+          <li class="li"><a class="xref" href="hm_morph_getinfo.htm" title="Returns certain options/values from HyperMorph.">hm_morph_getinfo</a> parameter domainicons – Use domain_handle
+            instead.</li>
+
+        </ul>
+</div>
+
+      <div class="p">While still continuing to work as before, the following <a class="xref" href="hm_info.htm" title="Query general information about HyperMesh options and paths.">hm_info</a> options
+        are deprecated by <a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a> and may be removed in a future
+          release:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_i14_zpm_lx">
+          <li class="li">automeshcolormode – Use auto_mesh_color_mode instead.</li>
+
+          <li class="li">blockredraw – Use block_redraw instead.</li>
+
+          <li class="li">clipboundaryelements – Use clip_boundary_elements instead.</li>
+
+          <li class="li">displayimporterrors – Use display_import_errors instead.</li>
+
+          <li class="li">duplicateids – Use duplicate_ids instead.</li>
+
+          <li class="li">elementcolormode – Use element_color_mode instead.</li>
+
+          <li class="li">elementinternaledgesmode – Use element_internal_edges_mode instead.</li>
+
+          <li class="li">entityhighlighting – Use entity_highlighting instead.</li>
+
+          <li class="li">fieldofview – Use perspective_fov instead.</li>
+
+          <li class="li">geomrefinelevel – Use geom_refine_level instead.</li>
+
+          <li class="li">geomstitching – Use geom_stitching instead.</li>
+
+          <li class="li">lodthreshold – Use lod_threshold instead.</li>
+
+          <li class="li">meshlinecolor – Use mesh_line_color instead.</li>
+
+          <li class="li">meshlodthreshold – Use mesh_lod_threshold instead.</li>
+
+          <li class="li">meshtransparency – Use mesh_transparency instead.</li>
+
+          <li class="li">mixedpropertywarning – Use mixed_property_warning instead.</li>
+
+          <li class="li">perspectiveview – Use perspective_view instead.</li>
+
+          <li class="li">picktolerance – Use pick_tolerance instead.</li>
+
+          <li class="li">retainloads – Use retain_loads instead.</li>
+
+          <li class="li">rotationangle – Use rotation_angle instead.</li>
+
+          <li class="li">rotationcentermode – Use rotation_center_mode instead.</li>
+
+          <li class="li">scalecolor – Use scale_color instead.</li>
+
+          <li class="li">scaleheight – Use scale_height instead.</li>
+
+          <li class="li">scaleposition – Use scale_position instead.</li>
+
+          <li class="li">scalewidth – Use scale_width instead.</li>
+
+          <li class="li">showcompositelayers – Use show_composite_layers instead.</li>
+
+          <li class="li">showglobalaxes – Use show_global_axes instead.</li>
+
+          <li class="li">showscale – Use show_scale instead.</li>
+
+          <li class="li">shrinkoptionvalue – Use shrink_factor instead.</li>
+
+          <li class="li">shrinkvalue – Use shrink_mode instead.</li>
+
+          <li class="li">stereodisplay – Use stereo_display instead.</li>
+
+          <li class="li">surfaceuvlines – Use surface_uv_lines instead.</li>
+
+          <li class="li">topologydisplaymode – Use topology_display_mode instead.</li>
+
+          <li class="li">transparentwithmeshlines – Use transparent_with_mesh_lines instead.</li>
+
+          <li class="li">zoomfactor – Use zoom_factor instead.</li>
+
+        </ul>
+</div>
+
+      <div class="p">While still continuing to work as before, the following <a class="xref" href="hm_getoption.htm" title="Returns the value of certain HyperMesh options.">hm_getoption</a>
+        options have been deprecated in favor of renamed options and may be removed in a future
+          release:<ul class="ul" id="api_programmers_guide_14_0_130_r__ul_nfk_gqm_lx">
+          <li class="li">displayscale – Use show_scale instead.</li>
+
+          <li class="li">fixed_points – Use fixed_point_handle instead.</li>
+
+          <li class="li">geometryhandle – Use line_handle instead.</li>
+
+          <li class="li">geomstitching – Use geom_stitching instead.</li>
+
+          <li class="li">loadvisualvector – Use load_visual_vector instead.</li>
+
+          <li class="li">outputtimeinfo – Use feoutput_time_info instead.</li>
+
+          <li class="li">perspective_value – Use perspective_fov instead.</li>
+
+          <li class="li">outputtimeinfo – Use feoutput_time_info instead.</li>
+
+          <li class="li">shrink_value – Use shrink_factor and shrink_mode instead.</li>
+
+          <li class="li">tagdisplay – Use tag_display instead.</li>
+
+          <li class="li">tagtextdisplaymode – Use tag_text_display_mode instead.</li>
+
+          <li class="li">view_acceleration – Use graphics_simplification_mode instead.</li>
+
+        </ul>
+</div>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

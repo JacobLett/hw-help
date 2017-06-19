@@ -1,0 +1,1198 @@
+/*
+ * ==============================================
+ * Skin for oXygen generated WebHelp.
+ * ==============================================
+ */
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fonts.
+ *  
+ */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic);
+
+*{word-wrap: break-word;}
+
+body {
+    font-family: "NotoSans", sans-serif;
+    background-color: #e1ebf5;
+    line-height: 1.618;
+
+
+}
+
+#topic_content {
+    background-color: white !important;
+    padding: 15px; 
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+}
+
+
+
+.wh_content_area {
+  background-color: transparent; 
+  border-radius: 5px; 
+  margin: 15px; 
+  padding: 15px;
+  min-height: auto;}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fight with bootstrap
+ *  
+ */
+.navbar-brand {
+    height: auto;
+}
+
+.navbar {
+    background-color: #4d5251;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 black;
+}
+
+/*Index icon in the header*/
+.wh_header a, .wh_header a:hover, .wh_header a:visited, .wh_footer a, .wh_footer a:hover, .wh_footer a:visited {
+  color: #e1ebf5;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #4a90e2;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Publication titles
+ *  
+ */
+.wh_publication_title > a {
+    /*color: #4acaa8;
+    font-size: 2em;
+    line-height: 1em;*/
+    display: none;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Menu
+ *  
+ */
+
+@media only screen and (min-width: 768px) {
+    .wh_top_menu {
+        padding: 2px 0;
+        border-style: solid none;
+        border-width: 1px;
+        border-color: #e1ebf5;
+    }
+
+    .wh_top_menu_and_indexterms_link {
+        padding: 0;
+        margin: 0 !important;
+    }
+
+    /* Menu bar */
+    .wh_top_menu ul li:hover a {
+        background-color: #e1ebf5;
+        color: #1D2E38;
+
+    }
+
+    /* Sub menus */
+    .wh_top_menu ul ul li {
+        background-color: #e1ebf5;
+        border: solid 1px #c0c0c0;
+        border-top: none;
+        
+    }
+
+    /*
+       This will add a blank space between the menu bar and the current submenu.
+       Also will ensure that when the mouse transits the blank space, the submenu is not hidden.
+    */
+    .wh_top_menu > ul > li:hover > ul {
+        margin-top: 0;
+        border-top: 1.3em solid transparent;
+        background-color: transparent;
+    }
+
+    /* The ^ arrow on top of the drop-down menu */
+    .wh_top_menu > ul > li:hover > ul:before {
+        content: '';
+        position: absolute;
+        top: -1.3em;
+        left: 1.3em;
+        width: 1.3em;
+        height: 1.3em;
+        border-bottom: solid 0.8em #e1ebf5;
+        border-left: solid 0.8em transparent;
+        border-right: solid 0.8em transparent;
+    }
+    
+    /* @RTL: Display the arrow in the right side. */    
+    *[dir='rtl'] .wh_top_menu > ul > li:hover > ul:before {
+        left: auto;
+        right: 1.3em
+    }
+
+    .wh_top_menu ul li:hover ul a {
+        color: #1D2E38;
+        transition: background-color .25s ease-out 0s,
+        color .3s ease-out 0s;
+    }
+
+    .wh_top_menu ul ul li a:hover {
+        color: #1D2E38;
+        background-color: rgba(0, 0, 0, 0.08);
+        transition: background-color .25s ease-in 0s,
+            color .3s ease-in 0s;
+    }
+
+    .wh_top_menu ul ul li.has-children:after {
+        color: #1D2E38;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wh_top_menu li.active a {
+        color: #1d2e38;
+    }
+
+    .wh_top_menu li.active {
+        background-color: #e1ebf5;
+    }
+
+    .wh_top_menu li.active > span > a {
+        background-color: rgba(0, 0, 0, .07);
+    }
+
+    .wh_toggle_button.navbar-toggle {
+        border-color: #e1ebf5;
+    }
+
+    .wh_toggle_button.navbar-toggle:focus {
+        background-color: #d1f1e9;
+    }
+
+    .wh_toggle_button.navbar-toggle .icon-bar {
+        background-color: #e1ebf5;
+    }
+
+    .wh_top_menu ul ul li {
+        border: none;
+    }
+}
+
+
+.wh_top_menu {
+    font-size: 1em;
+}
+
+.wh_top_menu ul {
+    background-color: transparent;
+}
+
+.wh_top_menu ul a {
+    color: #e1ebf5;
+}
+
+/* The submenus */
+.wh_top_menu ul ul {
+    background-color: #e1ebf5;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Link to the index.
+ * 
+ */
+.wh_indexterms_link a:before {
+    margin: 0;
+    padding-left: .7em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.wh_indexterms_link a span {
+    display: none;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Breadcrumb
+ *  
+ */
+
+.wh_breadcrumb {
+  font-size: 1.286em;
+  margin-left: 45px;
+  
+}
+
+
+.wh_breadcrumb ol {
+    color: #1D2E38;
+    
+}
+
+.wh_breadcrumb ol a {
+    color: #1D2E38;
+}
+
+.wh_breadcrumb ol .active {
+    color: #4a90e2;
+    text-decoration: underline;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tools and navigation
+ * 
+ */
+.wh_tools {
+    background-color: #e1ebf5;
+    margin: 1em 0 0em;
+    font-size: 1.1em;
+}
+
+.wh_print_link,
+.wh_navigation_links,
+.wh_navigation_links .navnext,
+.wh_navigation_links .navprev {
+}
+
+.wh_print_link a,
+.wh_navigation_links a,
+.wh_navigation_links a:hover,
+.wh_navigation_links a:active,
+.wh_navigation_links a:visited,
+.wh_print_link a:before,
+.wh_navigation_links a:before,
+.wh_navigation_links a:hover:before,
+.wh_navigation_links a:active:before,
+.wh_navigation_links a:visited:before {
+    color: #d1f1e9;
+    text-decoration: none;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tiles
+ * 
+ */
+
+ .wh_tiles {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: flex-start;
+ }
+
+.wh_tile_shortdesc {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.wh_tile_title {
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .wh_tile > div {
+        height: auto;
+    }
+}
+
+.seperator {
+    border-bottom: .5px solid silver;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+/* ---------------------------------   */
+
+.wh_main_page .wh_content_area {
+    background-color: #e1ebf5;
+}
+
+.wh_tile {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.wh_tile_shortdesc {
+    font-style: normal;
+    color: #484848;
+    font-size: 14px;
+    margin-top: 0.5em;
+    text-align: left;
+    font-family: "NotoSans",sans-serif;
+}
+
+.wh_tile_title a {
+    text-align: left;
+    color: #484848 !important;
+    font-family: "NotoSans",sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 22px;
+
+}
+
+/*
+You can style some of the tiles in a special way. 
+Example:
+.wh_tiles *[data-id='getting_started']{
+    background-color:gray;
+}
+*/
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Search area
+ * 
+ */
+
+@media only screen and (min-width: 768px) {
+    .wh_main_page .wh_search_input {
+        padding: 2em 0;
+        background-color: #e1ebf5;
+    }
+
+    .wh_main_page .wh_search_textfield {
+        height: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .wh_search_textfield {
+        height: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .wh_main_page .wh_search_button {
+        height: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .wh_search_button:after {
+       color: #616366;
+    }
+
+    
+}
+
+.wh_search_input {
+    padding: 2em 0;
+    margin: 0;
+}
+
+.wh_search_textfield,
+.wh_search_button {
+  color: #3a444a;
+  background-color: #ffffff;
+  padding: 0 .4em;
+  height: 1.5em;
+  font-size: 1.5em;
+  border-color: hsla(210, 54%, 20%, 0.15) hsla(210, 54%, 20%, 0.17) hsla(210, 54%, 20%, 0.2);
+  border-radius: 2px 0 0 2px;
+  border-spacing: 0;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 hsla(210, 65%, 9%, 0.02) inset, 0 0 2px hsla(210, 65%, 9%, 0.1) inset, 0 1px 0 hsla(0, 0%, 100%, 0.2);
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Side TOC
+ * 
+ */
+
+ .wh_content_area .navbar {
+    background-color: white;
+    box-shadow: none;
+    margin: 0px;
+    }
+
+#wh_side_toc {background-color: transparent; padding-left: 0px;}
+
+
+.wh_side_toc {
+    border: 1px solid #DCE4E7;
+    background-color: #F3F6F7;
+    padding: 5px;
+    line-height: 2em;
+    border-radius: 5px;
+    
+}
+
+.wh_side_toc ul {
+    padding-left: 0.4em;
+}
+
+.wh_side_toc .active > span {
+    color: #4a90e2;
+    text-decoration: underline;
+    
+}
+
+.wh_side_toc a, .wh_side_toc a:visited, .wh_side_toc a:hover {
+    color: #1D2E38;
+}
+
+.wh_side_toc a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    #wh_side_toc {
+        display: none;
+    }
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Footer
+ * 
+ */
+.wh_footer {
+    text-align: center;
+    background-color: #4d5251;
+    color: #cccccc;
+    padding: 1.5em;
+}
+
+#footer {
+    padding-bottom: 10px;
+    font-size: .8em;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Topic content
+ * 
+ */
+
+/*
+ * Title & subtitles
+ */
+.topictitle1 {
+    color: #1D2E38;
+    font-style: normal;
+    font-size: 1.714em;
+    text-transform:none;
+}
+
+.topictitle2, .sectiontitle {
+
+  border-top: 1px dotted #c1c5c8;
+  border-left: none;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  font-size: 1.286em;
+  font-weight: 200;
+  font-style: normal;
+  margin-left: 0em;
+}
+
+.topictitle3, h3.sectiontitle {
+
+  border-left: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 0em;
+  border-top: none;
+  text-decoration: underline;
+}
+
+
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6 {
+    color: #1D2E38;
+    padding-left: 0em;
+}
+
+/*
+ * Other content
+ */
+
+.wh_topic_content p, .wh_topic_content .p {
+    margin-top: .5em;
+}
+
+.wh_topic_content .shortdesc {
+    font-style: normal;
+}
+
+.wh_topic_content, .wh_content_area {
+    color: #1D2E38;
+    font-size: 1em;
+}
+
+
+.wh_related_links .related-links,
+.wh_topic_content .related-links,
+.wh_child_links {
+    margin-top: 1em;
+    background-color: #ffffff;
+    border-top: #d1f1e9 solid 1px;
+}
+
+.wh_child_links {
+    padding: 0.5em 0;
+}
+
+.wh_topic_content .related-links {
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+    .related-links {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Search results.
+ * 
+ */
+.searchresult {
+    list-style: none;
+}
+
+.searchresult li {
+    padding: .5em;
+}
+
+.searchresult li a,
+.wh_search_expression {
+    color: #4a90e2;
+}
+
+.searchresult .shortdesclink {
+    margin: .3em .5em 0;
+}
+
+.wh_search_expression {
+    font-weight: bold;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Index terms.
+ * 
+ */
+.wh_index_terms span.wh_first_letter {
+    color: #777;
+}
+
+.wh_index_terms #indexList {
+    padding: 0;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tree TOC for the main page.
+ * 
+ */
+.wh_main_page_toc {
+    border: none;
+    background-color: #e1ebf5;
+}
+
+.wh_main_page_toc .topicref a {
+    color: #ffffff;
+}
+
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover {
+    background-color: #ffffff;
+    color:#e1ebf5;
+}
+
+.wh_main_page_toc_accordion_header:hover > .wh_toc_shortdesc,
+.wh_main_page_toc_entry:hover > .wh_toc_shortdesc {
+    background-color: #ffffff;
+    color:#777;
+}
+
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover a,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover a {
+    color: #e1ebf5;
+}
+
+.wh_main_page_toc_accordion_header:hover:before {
+    color: #e1ebf5;
+}
+
+.wh_main_page_toc .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry,
+.wh_main_page_toc_accordion_entries {
+    border-bottom: 1px solid #d1f1e9;
+}
+
+.wh_main_page_toc .wh_toc_shortdesc {
+    color: #d1f1e9;
+}
+
+.wh_main_page_toc_accordion_header:before {
+    color: #ffffff;
+}
+
+.wh_main_page_toc .expanded {
+    border : none;
+}
+
+.wh_main_page_toc > div:nth-child(6n+1),
+.wh_main_page_toc > div:nth-child(6n+1) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
+.wh_main_page_toc > div:nth-child(6n+2),
+.wh_main_page_toc > div:nth-child(6n+2) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.wh_main_page_toc > div:nth-child(6n+3),
+.wh_main_page_toc > div:nth-child(6n+3) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.105);
+}
+
+.wh_main_page_toc > div:nth-child(6n+4),
+.wh_main_page_toc > div:nth-child(6n+4) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.wh_main_page_toc > div:nth-child(6n+5),
+.wh_main_page_toc > div:nth-child(6n+5) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.175);
+}
+
+.wh_main_page_toc > div:nth-child(6n+0),
+.wh_main_page_toc > div:nth-child(6n+0) + .wh_main_page_toc_accordion_entries {
+    background-color: rgba(0, 0, 0, 0.21);
+}
+
+
+.wh_tile_image {
+
+    float: left;
+    margin: 8px 15px 8px 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 96px;
+    width: 96px;
+}
+
+
+.wh_expand_btn {display: none;}
+
+.wh_tile:nth-child(1), .wh_tile:nth-child(2), .wh_tile:nth-child(3) {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+}
+
+.wh_tile:nth-child(1) > .wh_tile_shortdesc, .wh_tile:nth-child(2) > .wh_tile_shortdesc, .wh_tile:nth-child(3) > .wh_tile_shortdesc {
+    display: none;
+
+}
+
+.wh_tile:nth-child(1) > .wh_tile_title a,
+.wh_tile:nth-child(2) > .wh_tile_title a,
+.wh_tile:nth-child(3) > .wh_tile_title a {
+    text-align: center;
+}
+
+.wh_tile:nth-child(1) > .wh_tile_title,
+.wh_tile:nth-child(2) > .wh_tile_title,
+.wh_tile:nth-child(3) > .wh_tile_title {
+    position: absolute; 
+    top: 0;
+    padding-left: auto;
+    width: 100%;
+}
+
+.wh_tile:nth-child(1) > .wh_tile_image,
+.wh_tile:nth-child(2) > .wh_tile_image,
+.wh_tile:nth-child(3) > .wh_tile_image {
+    position: absolute; 
+    bottom: 0;
+    padding-left: auto;
+    width: 100%;
+}
+
+.wh_tile_title a span {display: inline;}
+
+/*hierarchy links*/
+
+.related-links li {
+
+   padding-top: 5px;
+   padding-bottom: 13px;
+
+}
+
+
+.related-links strong {
+    padding-top: 8px;
+    padding-bottom: 6px;
+
+}
+
+.related-links .related_link {
+    padding-top: 3px;
+    padding-bottom: 6px;
+
+}
+
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/* Start DL w/ outputclass= table styles */
+
+
+dl.table > .dlentry, .dlhead {
+  display: table-row;
+
+}
+
+
+dl.table dt {
+  display: table-cell;
+  padding-top: 15px;
+  
+}
+dl.table dd {
+  display: table-cell;
+  padding-left: 3em;
+  padding-bottom: 10px;
+}
+
+
+dl.table .dthd {
+  display: table-cell;
+  font-weight: bold;
+  
+}
+dl.table .ddhd {
+  display: table-cell;
+  padding-left: 3em;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+
+dl.table {
+
+  width: 90%;
+}
+
+.dt_desc {
+    font-weight: normal;
+}
+
+/* End DL w/ outputclass= table styles */
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/* Start DL w/o outputclass styles */
+.ddhd {
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+dt {
+
+  padding-top: 3px;
+  padding-bottom: 5px;
+
+}
+
+dd {
+    padding-left: 30px;
+}
+
+
+
+/* End DL w/o outputclass styles */
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+/*Start: Table w/Title and Choice Table*/
+
+.tablenoborder, .choicetable {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x:auto;
+}
+
+
+.tablenoborder .thead, .choicetable .chhead /*Table header background color*/ {
+    background-color: #E6EDF1;
+}
+
+
+.tablenoborder .tbody tr:nth-child(odd), .choicetableborder tbody tr:nth-child(odd) /*Table odd row background color*/ {
+    background-color: #F0F4F6;
+}
+
+
+.tablenoborder .tbody tr:nth-child(even), .choicetableborder tbody tr:nth-child(even) /*Table even background color*/ {
+    background-color: #F6F6F6;
+}
+
+
+.tablenoborder .tbody tr:hover, .choicetableborder tbody tr:hover /*Table row hover background color*/{
+    background-color: #dddfe1;
+}
+
+
+.tablenoborder table, table.choicetable /*Table border*/{
+    border: 1px solid #CDD1D3;
+}
+
+
+.tablenoborder .nocellnorowborder, .tablenoborder table thead tr, .choicetable .stentry /*cell border style*/{
+    border: 1px solid #CDD1D3;
+}
+
+
+/*End: Table w/Title and Choice Table*/
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+/*Start: Simple Table*/
+
+
+.simpletable tbody tr td {
+    border-left: 0px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.simpletable {
+    border-left: 0px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+/*End: Simple Table*/
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+
+ol[class="ol steps"] {padding-left: 20px;}
+ol ul, ol ol, ul ul, ul ol {padding-left: 1em;}
+ol ul li, ol ol li, ul ul li, ul ol li {padding-left: .5em}
+ol[class="ol steps"] li {padding-left: .5em;}
+ul[class="ul choices"] {padding-left: 15px;}
+ul[class="ul choices"] li {padding-left: .5em;}
+ul {list-style-type: disc;}
+ul li, ol li {padding-left: .5em;}
+ul li ul {list-style-type: circle;}
+
+.olchildlinks li {
+    list-style-type: decimal;
+    margin-left: 1.15em;
+}
+
+.steps-unordered {padding-left: 15px;}
+
+.stepexpand {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.fig, .fig .image {padding-top: 6px; padding-bottom: 10px;
+}
+
+.figcap {
+    font-size: 0.75em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Start Filepath w/outputlcass styles */
+
+
+.filepath.file_required {
+
+  font-family:monospace;
+  font-weight: bold;
+}
+
+
+.filepath.file_emphasis {
+
+  font-family:monospace;
+  font-style: italic;
+}
+
+
+/* End Filepath w/outputlcass styles */
+
+.userinput {
+    background-color: transparent;
+    color: #1D2E38;
+}
+
+.cmdname {
+    font-family: courier new;
+}
+
+/* Start TCL outputclass styles */
+
+.tcl_cmd {
+
+  color: green;
+  font-family: courier new;
+}
+
+.tcl_output {
+
+  color: blue;
+  display: block;
+}
+
+
+/* End TCL outputclass styles */
+
+
+/*Start Note:Tip Styles*/
+
+
+div[class="note tip"] {
+
+  border: 1px solid rgb(182,194,206);
+  background-color: rgb(244,246,248);
+  padding: 15px;
+  width: 70%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: inherit;
+
+}
+
+
+span[class="tiptitle"] {
+
+  float: left;
+  padding-right: 20px;
+  display:inline-block;
+  padding-top: 0px;
+
+
+}
+
+div[class="note tip"] > .ul {
+
+  clear: both;
+  margin-bottom: 0px;
+}
+
+
+/*End Note:Tip Styles*/
+
+.codeph {
+    color: #1d2e38;
+    background-color: transparent;
+
+}
+
+#comments {
+    border: none;
+}
+
+
+.highlight {
+    background-color: transparent;
+}
+
+
+.wh_side_toc .nav > li > ul > li {
+    padding-left: 1em;
+}
+
+
+.wh_side_toc .nav > li {
+
+    line-height: 1.5em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+
+/*Start: Equation Styles*/
+
+
+.eqn-inline { font-style: italic;}
+
+
+.equation-figure {
+    overflow: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.equation-figure div, .equation-figure img {
+    display: inline-block;
+    float: left;
+    padding-left: 3em;
+    
+}
+
+
+.equation-figure .figcap {
+    display: inline-block;
+    float: right;
+    padding-right: 4em;
+    padding-top: 12px;
+    
+}
+
+
+/*End: Equation Styles*/
+
+
+/*-----------------------------------------------------*/
+
+
+/*Start: Outputclass for Advanced short descriptions*/
+
+
+.ulchildlink .adv_sd {
+    display: none;
+}
+
+.body .shortdesc .adv_sd {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+/*End: Outputclass for Advanced short descriptions*/
+
+
+/*-----------------------------------------------------*/
+
+
+/*Start: Footnote Styles*/
+
+
+.fn {
+    display: table-row;
+}
+
+.fnNumber {
+    padding-right: 3px;
+    display: table-cell;
+    line-height: 1.618;
+    font-size: 1em;
+    font-family: "NotoSans", sans-serif;
+}
+
+.fnNumber:after {
+    content: ".";
+}
+
+.fnDesc {
+    display: table-cell;
+    padding-bottom: 8px;
+   
+}
+
+
+/*End: Footnote Styles*/
+
+
+/*-----------------------------------------------------*/
+
+
+/*Start: FN Xref Styles*/
+
+a[href*="fn"] sup {
+    font-size: 12px;
+}
+
+a[href*="fn"] > sup:before {
+    content: "["
+}
+
+a[href*="fn"] > sup:after {
+    content: "]"
+}
+
+a[href*="fn"] {
+    padding-right: 5px;
+}
+
+/*End: FN Xref Styles*/
+
+
+/*-----------------------------------------------------*/
+
+
+/*Start: ordered list with @outputclass="letter"*/
+
+
+ol.letter {
+    list-style-type: lower-latin;
+}
+
+
+/*End: ordered list with @outputclass="letter"*/

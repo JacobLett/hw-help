@@ -1,0 +1,652 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="hwbrowsermanager - view" /><meta name="abstract" content="API to handle the customization and manipulation of the browser view." /><meta name="description" content="API to handle the customization and manipulation of the browser view." /><meta name="DC.Coverage" content="" /><meta name="prodname" content="HyperMesh" /><meta name="version" content="2017" /><meta name="release" content="0" /><meta name="DC.Creator" content="Paul Eder" /><meta name="DC.Date.Created" content="2016-09-27" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="hwbrowsermanager_view" /><title>hwbrowsermanager - view</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body data-spy="scroll" data-target="#toc" class="frmBody" onload="highlightSearchTerm()" id="hwbrowsermanager_view">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">hwbrowsermanager - view</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">API to handle the customization and manipulation of the browser view.</p>
+
+    <section class="section"><h2 class="title sectiontitle">Syntax</h2>
+      
+      <p class="p"><span class="keyword cmdname">hwbrowsermanager view</span>
+        <var class="keyword varname">?options?</var></p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Type</h2>
+      
+      <p class="p"><span class="keyword">HyperMesh Tcl GUI</span></p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Description</h2>
+      
+      <p class="p">hwbrowsermanager view create &lt;view_name&gt;</p>
+
+      <p class="p">Creates a new browser view with the given name, and makes it the current view.</p>
+
+      <p class="p">hwbrowsermanager view current</p>
+
+      <p class="p">Returns the name of the current browser view.</p>
+
+      <p class="p">hwbrowsermanager view current &lt;view_name&gt;</p>
+
+      <p class="p">Sets the current browser view.</p>
+
+      <p class="p">hwbrowsermanager view dataitem deselect ?&lt;byprop|bypropval&gt;? ?&lt;propval&gt;?
+        ?&lt;recursive&gt;?</p>
+
+      <p class="p">Deselects the dataitems of the current datasource in the current view. With this option a
+        user can deselect the dataitems either by current property or with a particular value in the
+        current property, or by the entire datasource.</p>
+
+      <p class="p">hwbrowsermanager view dataitem select ?&lt;byprop|bypropval&gt;? ?&lt;propval&gt;?
+        ?&lt;recursive&gt;?</p>
+
+      <p class="p">Selects the dataitems of the current datasource in the current view. With this option a
+        user can select the dataitems either by current property or with a particular value in the
+        current property, or by the entire datasource.</p>
+
+      <p class="p">hwbrowsermanager view dataitem selected ?&lt;all&gt;?</p>
+
+      <p class="p">Returns all of the selected items or returns only the selected items in the current
+        datasource if the “all” option is not supplied.</p>
+
+      <p class="p">hwbrowsermanager view delete</p>
+
+      <p class="p">Destroys the current view.</p>
+
+      <p class="p">hwbrowsermanager view flush &lt;true|false&gt;</p>
+
+      <p class="p">Sets the state of the browser flush operation. If browser flushing is disabled, performance
+        of scripts will be improved as the browser is not being updated after each operation. This
+        command should be used as pair at the beginning and end of a script. If the state is left
+        false, the browser will not be updated.</p>
+
+      <p class="p">hwbrowsermanager view names</p>
+
+      <p class="p">Returns all of the view names.</p>
+
+      <p class="p">hwbrowsermanager view column caption</p>
+
+      <p class="p">Returns the caption for the current column.</p>
+
+      <p class="p">hwbrowsermanager view column caption &lt;"your caption"&gt;</p>
+
+      <p class="p">Sets the caption for current column. By default if no caption is given, the column will
+        display with its own name as the caption.</p>
+
+      <p class="p">hwbrowsermanager view column create &lt;column_name&gt;</p>
+
+      <p class="p">Creates a column for the current view with the specified name.</p>
+
+      <p class="p">hwbrowsermanager view column create &lt;column_name&gt; &lt;columntype&gt;</p>
+
+      <p class="p">Creates a column for the current view with the specified name and type.</p>
+
+      <p class="p">hwbrowsermanager view column current</p>
+
+      <p class="p">Returns the current column for the current view.</p>
+
+      <p class="p">hwbrowsermanager view column current &lt;newcurrent&gt;</p>
+
+      <p class="p">Sets the current column for the current view.</p>
+
+      <p class="p">hwbrowsermanager view column delete</p>
+
+      <p class="p">Deletes the current column from the current view.</p>
+
+      <p class="p">hwbrowsermanager view column italic &lt;enabled|disabled&gt;</p>
+
+      <p class="p">Sets the italics display for the current column.</p>
+
+      <p class="p">hwbrowsermanager view column justify &lt;left|center|right&gt;</p>
+
+      <p class="p">Sets the justification of the current column.</p>
+
+      <p class="p">hwbrowsermanager view column show</p>
+
+      <p class="p">Returns the display state of the current column.</p>
+
+      <p class="p">hwbrowsermanager view column show &lt;true|false&gt;</p>
+
+      <p class="p">Sets the display state of the current column.</p>
+
+      <p class="p">hwbrowsermanager view column sort &lt;enabled|disabled&gt;</p>
+
+      <p class="p">Sets the sorting for the current column.</p>
+
+      <p class="p">hwbrowsermanager view column width</p>
+
+      <p class="p">Returns the width of the current column.</p>
+
+      <p class="p">hwbrowsermanager view column width &lt;size&gt;</p>
+
+      <p class="p">Sets the width of the current column.</p>
+
+      <p class="p">hwbrowsermanager view datasource hierarchical connect</p>
+
+      <p class="p">Connects the current hierarchical datasource to the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource hierarchical connected</p>
+
+      <p class="p">hwbrowsermanager view datasource hierarchical names</p>
+
+      <p class="p">Returns the hierarchical datasources connected to the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource hierarchical disconnect</p>
+
+      <p class="p">Disconnects the current hierarchical datasource from the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource hierarchical selected</p>
+
+      <p class="p">Returns the selected hierarchical datasources from the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource simple connect</p>
+
+      <p class="p">Connects the current simple datasource to the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource simple connected</p>
+
+      <p class="p">hwbrowsermanager view datasource simple names</p>
+
+      <p class="p">Returns the simple datasources connected to the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource simple disconnect</p>
+
+      <p class="p">Disconnects the current simple datasource from the current view.</p>
+
+      <p class="p">hwbrowsermanager view datasource simple selected</p>
+
+      <p class="p">Returns the selected simple datasources from the current view.</p>
+
+      <p class="p">hwbrowsermanager view element create &lt;view_element_name&gt; </p>
+
+      <p class="p">Creates a new element in the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view element connect property &lt;property_name&gt;</p>
+
+      <p class="p">Connects the current element in the current view style with a property for the current
+        view.</p>
+
+      <p class="p">hwbrowsermanager view element connect map &lt;map_name&gt;</p>
+
+      <p class="p">Connects the current element in the current view style with a map for the current view.</p>
+
+      <p class="p">hwbrowsermanager view element current</p>
+
+      <p class="p">Returns the current element in the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view element current &lt;element_name&gt;</p>
+
+      <p class="p">Sets the current element in the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view element delete</p>
+
+      <p class="p">Deletes the current element in the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view element names</p>
+
+      <p class="p">Returns the names of all of the existing elements in the current view style for the current
+        view.</p>
+
+      <p class="p">hwbrowsermanager view filter dataitemtype current</p>
+
+      <p class="p">Returns the names of the filtered (shown) datasources for the current view.</p>
+
+      <p class="p">hwbrowsermanager view filter dataitemtype current &lt;datasource_name1&gt;
+        &lt;datasource_name2&gt; …</p>
+
+      <p class="p">Sets the list of filtered (shown) datasource names for the current view.</p>
+
+      <p class="p">hwbrowsermanager view filter group [true|false]</p>
+
+      <p class="p">Sets the current filter list grouping state for the current view. If set true, the current
+        filter list will be changed and grouped together by entity type If set false, the current
+        filter list will be changed but not grouped together by entity type.</p>
+
+      <p class="p">hwbrowsermanager view filter string current </p>
+
+      <p class="p">Returns the current pattern used for filtering items in the current view.</p>
+
+      <p class="p">hwbrowsermanager view filter string current &lt;filter_pattern&gt;</p>
+
+      <p class="p">Sets the current pattern used for filtering items in the current view.</p>
+
+      <p class="p">hwbrowsermanager view folder children byimage [true|false]</p>
+
+      <p class="p">Sets the method of counting children in the current free folder for the current view. The
+        folder image will be updated depending on the recursive value. If set true, children are
+        counted within the current folder and all child folders. If set false, children are only
+        counted within the current folder.</p>
+
+      <p class="p">hwbrowsermanager view folder children bynumber [true|false]</p>
+
+      <p class="p">Sets the method of counting children in the current free folder for the current view. The
+        folder number will be updated depending on the recursive value. If set true, children are
+        counted within the current folder and all child folders. If set false, children are only
+        counted within the current folder.</p>
+
+      <p class="p">hwbrowsermanager view folder create &lt;free_folder_name&gt;</p>
+
+      <p class="p">Creates a new free folder for the current view.</p>
+
+      <p class="p">hwbrowsermanager view folder current</p>
+
+      <p class="p">Returns the name of the current free folder for the current view.</p>
+
+      <p class="p">hwbrowsermanager view folder current &lt;free_folder_name&gt;</p>
+
+      <p class="p">Sets the current free folder for the current view.</p>
+
+      <p class="p">hwbrowsermanager view folder delete &lt;free_folder_name&gt; &lt;recursive&gt;</p>
+
+      <p class="p">Deletes a free folder from the current view. It can be recursive or not.</p>
+
+      <p class="p">hwbrowsermanager view folder empty</p>
+
+      <p class="p">Returns the value of the flag for whether or not empty free folders are shown.</p>
+
+      <p class="p">hwbrowsermanager view folder empty [true|false]</p>
+
+      <p class="p">Sets the value of the flag for whether or not empty free folders are shown.</p>
+
+      <p class="p">hwbrowsermanager view folder expand ?recursive&lt;true|false&gt;?</p>
+
+      <p class="p">Expands the current folder. The recursive option will expand the children of the current
+        folder too.</p>
+
+      <p class="p">hwbrowsermanager view folder keepchildrenfoldersinorderascreated [true|false]</p>
+
+      <p class="p">Sets the current free folder’s children free folder sorting method. If true (default for
+        new free folder), while sorting, children free folders will be ordered by name. If false,
+        while sorting, children free folders will be not be reordered and will be retained according
+        to the sequence in which they were created.</p>
+
+      <p class="p">hwbrowsermanager view folder style [true|false]</p>
+
+      <p class="p">Sets a style to the current free folder and all its child folders for scripted columns for
+        the current view.</p>
+
+      <p class="p">hwbrowsermanager view group children [true|false]</p>
+
+      <p class="p">Sets the state of children grouping for the lists connected to the folders and sub-folders
+        in the current view.</p>
+
+      <p class="p">hwbrowsermanager view italic [enabled|disabled]</p>
+
+      <p class="p">Sets the italic font state for the current column in the current view. </p>
+
+      <p class="p">hwbrowsermanager view list create &lt;datasource_name&gt;</p>
+
+      <p class="p">Creates a new list off of a datasource for the current view.</p>
+
+      <p class="p">hwbrowsermanager view list current &lt;datasource_name&gt;</p>
+
+      <p class="p">Sets the current list for the current view.</p>
+
+      <p class="p">hwbrowsermanager view list delete &lt;datasource_name&gt;</p>
+
+      <p class="p">Deletes a list from the current view.</p>
+
+      <p class="p">hwbrowsermanager view list expand ?recursive&lt;true|false&gt;?</p>
+
+      <p class="p">Expands the current existing list in current folder. The recursive option will expand any
+        lists in the children of the current folder too.</p>
+
+      <p class="p">hwbrowsermanager view list group &lt;true|false&gt;</p>
+
+      <p class="p">Sets the state of grouping for the lists connected to the folder for the current view.</p>
+
+      <p class="p">hwbrowsermanager view list names &lt;true|false&gt;</p>
+
+      <p class="p">Returns all of the list names for the current view. If set true, the search is performed
+        for all folders and sub-folders under the root. If set false, the search is performed only
+        for the folders under the root.</p>
+
+      <p class="p">hwbrowsermanager view list style &lt;true|false&gt;</p>
+
+      <p class="p">Sets the list style for current list of the current folder in current view. If set true,
+        the custom style connected to the current folder is used. If set false, the default_style
+        will be used.</p>
+
+      <p class="p">hwbrowsermanager view operation create &lt;view_operation&gt;</p>
+
+      <p class="p">Creates a view operation for the current view.</p>
+
+      <p class="p">hwbrowsermanager view operation current</p>
+
+      <p class="p">Returns the current view operation for the current view.</p>
+
+      <p class="p">hwbrowsermanager view operation current &lt;view_operation&gt;</p>
+
+      <p class="p">Sets the current view operation for the current view.</p>
+
+      <p class="p">hwbrowsermanager view operation connect</p>
+
+      <p class="p">Connects the current data operation for the current view operation for the current
+        view.</p>
+
+      <p class="p">hwbrowsermanager view operation script &lt;Tcl_script_name&gt;</p>
+
+      <p class="p">Sets a Tcl script function for the current view operation for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem caption</p>
+
+      <p class="p">Returns the caption of the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem caption &lt;caption&gt;</p>
+
+      <p class="p">Sets the caption for the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem container create &lt;container_name&gt;</p>
+
+      <p class="p">Creates a container for the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem current</p>
+
+      <p class="p">Returns the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem current &lt;popup_name&gt;</p>
+
+      <p class="p">Sets the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem leaf create &lt;leaf_name&gt;</p>
+
+      <p class="p">Creates a leaf for the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem delete &lt;popup_name&gt;</p>
+
+      <p class="p">Deletes a popup item from the current popup item for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem names</p>
+
+      <p class="p">Returns the names of all popup items for the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem operation viewoperation &lt;operation_name&gt;</p>
+
+      <p class="p">Connects a view operation to the current popup item in the current view.</p>
+
+      <p class="p">hwbrowsermanager view popupitem separator create</p>
+
+      <p class="p">Creates a seperator for the current popup item in the current view.</p>
+
+      <p class="p">hwbrowsermanager view property connect &lt;ds_prop_name&gt;</p>
+
+      <p class="p">Connects the current view property to a datasource property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property connected</p>
+
+      <p class="p">Returns the names of all of the connected view properties for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property create &lt;view_prop_name&gt;</p>
+
+      <p class="p">Creates a view property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property current</p>
+
+      <p class="p">Returns the current view property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property current &lt;view_prop_name&gt;</p>
+
+      <p class="p">Sets the current view property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property delete</p>
+
+      <p class="p">Deletes the current view property from the current view.</p>
+
+      <p class="p">hwbrowsermanager view property names</p>
+
+      <p class="p">Returns the names of all of the existing view properties for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property type</p>
+
+      <p class="p">Returns the type of the current view property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property type [integer|double|string]</p>
+
+      <p class="p">Sets the type of the current view property for the current view.</p>
+
+      <p class="p">hwbrowsermanager view property script &lt;update_script&gt; &lt;get_script&gt;</p>
+
+      <p class="p">Sets the update and get property scripts for the current view property for the current
+        view. This aids the user in getting and updating the values to show in browser instead of
+        using data properties.</p>
+
+      <p class="p">hwbrowsermanager view selection &lt;single|multiple&gt;</p>
+
+      <p class="p">Sets the selection type as single selection or multiple selection for the current view.</p>
+
+      <p class="p">hwbrowsermanager view selection dataitem [names|ids] &lt;view_property_name&gt;</p>
+
+      <p class="p">Returns the selected data item names/ids with the given (name/id) view property name for
+        the current view.</p>
+
+      <p class="p">hwbrowsermanager view selection datasource names</p>
+
+      <p class="p">Returns the datasource names for any selections in the current view.</p>
+
+      <p class="p">hwbrowsermanager view sort [ascending|descending]</p>
+
+      <p class="p">Sets the sort mode for the current column in the current view.</p>
+
+      <p class="p">hwbrowsermanager view sort [enabled|disabled]</p>
+
+      <p class="p">Sets the sorting state for the current column in the current view.</p>
+
+      <p class="p">hwbrowsermanager view style connect</p>
+
+      <p class="p">Connects the current view style in the current view to the current folder.</p>
+
+      <p class="p">hwbrowsermanager view style create &lt;view_style_name&gt;</p>
+
+      <p class="p">Creates a new view style called view_style_name in the current view.</p>
+
+      <p class="p">hwbrowsermanager view style current</p>
+
+      <p class="p">Returns the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view style current &lt;view_style_name&gt;</p>
+
+      <p class="p">Sets the current view style for the current view.</p>
+
+      <p class="p">hwbrowsermanager view style delete</p>
+
+      <p class="p">Deletes the current view style in the current view.</p>
+
+      <p class="p">hwbrowsermanager view style names</p>
+
+      <p class="p">Returns the names of all of the existing view styles for the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree create &lt;datasource_name&gt;</p>
+
+      <p class="p">Creates a hierarchical datasource for the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree current &lt;datasource_name&gt;</p>
+
+      <p class="p">Sets the hierarchical datasource “datasource_name” as current in the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree delete &lt;datasource_name&gt;</p>
+
+      <p class="p">Deletes a hierarchical datasource from the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree group &lt;true|false&gt;</p>
+
+      <p class="p">Sets the grouping of the current list in the current tree in the current folder.</p>
+
+      <p class="p">hwbrowsermanager view tree hide &lt;datasource_name&gt;</p>
+
+      <p class="p">Hides a hierarchical datasource in the tree for the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree names</p>
+
+      <p class="p">Returns all of the hierarchical datasource names for the current view.</p>
+
+      <p class="p">hwbrowsermanager view tree show &lt;datasource_name&gt;</p>
+
+      <p class="p">Shows a hierarchical datasource in the tree for the current view.</p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Example</h2>
+      
+      <p class="p">An example browser script can be found in the HyperWorks installation at
+          <span class="ph filepath">&lt;altair_home&gt;/hm/examples/scripts/browser_example.tcl.</span></p>
+
+    </section>
+
+    <section class="section"><h2 class="title sectiontitle">Errors</h2>
+      
+      <p class="p">None.</p>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

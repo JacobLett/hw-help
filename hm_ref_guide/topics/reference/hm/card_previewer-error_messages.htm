@@ -1,0 +1,1894 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="The following list describes the card previewer error messages and the corresponding solutions. Message Invalid variable &lt;variable&gt; in *setvariable() command. Meaning The &lt;variable&gt; specified in the ..." /><meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Error Messages" /><meta name="DC.Relation" scheme="URI" content="../../../topics/reference/hm/previewing_cards_r.htm" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="card_previewer-error_messages" /><title>Error Messages</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="../../../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="../../../skin_2017_acusolve.css" /></head>
+
+    <body class="frmBody" data-target="#toc" onload="highlightSearchTerm()" id="card_previewer-error_messages" data-spy="scroll">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.htm" class=" wh_logo hidden-xs "><img src="../../../hw_logo_2017.png" alt="HyperMesh Reference Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../../../index.htm"><span class="title">HyperMesh Reference Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm" data-id="api_programmers_guides">API Programmer's Guides</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_2017_r.htm" data-id="api_programmers_guide_2017_r">2017 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_hm_r.htm" data-id="api_programmers_guide_hm_r">14.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_13_r.htm" data-id="api_programmers_guide_13_r">13.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_12_r.htm" data-id="api_programmers_guide_12_r">12.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_11_r.htm" data-id="api_programmers_guide_11_r">11.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_10_r.htm" data-id="api_programmers_guide_10_r">10.0 API Programmer's Guide</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guide_9_r.htm" data-id="api_programmers_guide_9_r">9.0 API Programmer's Guide</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm" data-id="data_names_r">Data Names</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-accelerometers.htm" data-id="data_names-accelerometers">accelerometers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-assemblies_r.htm" data-id="data_names-assemblies_r">assemblies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bags_r.htm" data-id="data_names-bags_r">bags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsectcols_r.htm" data-id="data_names-beamsectcols_r">beamsectcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-beamsects_r.htm" data-id="data_names-beamsects_r">beamsects</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-blocks_r.htm" data-id="data_names-blocks_r">blocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-bodies.htm" data-id="data_names-bodies">bodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-boxes_r.htm" data-id="data_names-boxes_r">boxes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-cards_r.htm" data-id="data_names-cards_r">cards</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-collections.htm" data-id="data_names-collections">collections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-components_r.htm" data-id="data_names-components_r">components</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-configurations.htm" data-id="data_names-configurations">configurations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-connectors_r.htm" data-id="data_names-connectors_r">connectors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedextranodes_r.htm" data-id="data_names-constrainedextranodes_r">constrainedextranodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constrainedrigidbodies.htm" data-id="data_names-constrainedrigidbodies">constrainedrigidbodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-constraints.htm" data-id="data_names-constraints">constraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactgroups.htm" data-id="data_names-contactgroups">contactgroups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-contactsurfs_r.htm" data-id="data_names-contactsurfs_r">contactsurfs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-controlvols_r.htm" data-id="data_names-controlvols_r">controlvols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-crosssections_r.htm" data-id="data_names-crosssections_r">crosssections</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-curves_r.htm" data-id="data_names-curves_r">curves</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ddvals_r.htm" data-id="data_names-ddvals_r">ddvals</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dequations_r.htm" data-id="data_names-dequations_r">dequations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-designvars_r.htm" data-id="data_names-designvars_r">designvars</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-desvarlinks_r.htm" data-id="data_names-desvarlinks_r">desvarlinks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-directmatrixinputs_r.htm" data-id="data_names-directmatrixinputs_r">directmatrixinputs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dobjrefs_r.htm" data-id="data_names-dobjrefs_r">dobjrefs</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-domains_r.htm" data-id="data_names-domains_r">domains</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-dvprels.htm" data-id="data_names-dvprels">dvprels</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/elements_data_names_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">elements</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-ellipsoids.htm" data-id="data_names-ellipsoids">ellipsoids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-encryptions.htm" data-id="data_names-encryptions">encryptions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-equations.htm" data-id="data_names-equations">equations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-features.htm" data-id="data_names-features">features</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-fields.htm" data-id="data_names-fields">fields</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-global.htm" data-id="data_names-global">global</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-groups.htm" data-id="data_names-groups">groups</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-handles.htm" data-id="data_names-handles">handles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-hourglass.htm" data-id="data_names-hourglass_r">hourglass</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-includefiles.htm" data-id="data_names-includefiles">includefiles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-joints.htm" data-id="data_names-joints">joints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-laminates.htm" data-id="data_names-laminates">laminates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-lines.htm" data-id="data_names-lines">lines</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadcols.htm" data-id="data_names-loadcols">loadcols</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/data_names-loads.htm" data-id="reference_msz_35b_rw">loads</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-loadsteps.htm" data-id="data_names-loadsteps">loadsteps</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-materials.htm" data-id="data_names-materials">materials</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbjoints.htm" data-id="data_names-mbjoints">mbjoints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mbplanes.htm" data-id="data_names-mbplanes">mbplanes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-mechanisms.htm" data-id="data_names-mechanisms">mechanisms</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-meshcontrols.htm" data-id="data_names-meshcontrols">meshcontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-metadata.htm" data-id="data_names-metadata">metadata</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-modules.htm" data-id="data_names-modules">modules</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphconstraints.htm" data-id="data_names-morphconstraints">morphconstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-morphvolumes.htm" data-id="data_names-morphvolumes">morphvolumes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-multibodies.htm" data-id="data_names-multibodies">multibodies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-nodes.htm" data-id="data_names-nodes">nodes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-objectives.htm" data-id="data_names-objectives">objectives</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticonstraints.htm" data-id="data_names-opticonstraints">opticonstraints</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-opticontrols.htm" data-id="data_names-opticontrols">opticontrols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optidscreens.htm" data-id="data_names-optidscreens">optidscreens</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-optiresponses.htm" data-id="data_names-optiresponses">optiresponses</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-outputblocks.htm" data-id="data_names-outputblocks">outputblocks</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-parameters.htm" data-id="data_names-parameters">parameters</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-partsets.htm" data-id="data_names-partsets.dita">partsets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plies.htm" data-id="data_names-plies">plies</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-plots.htm" data-id="data_names-plots">plots</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-points.htm" data-id="data_names-points">points</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-positions.htm" data-id="data_names-positions">positions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-pretensioners.htm" data-id="data_names-pretensioners">pretensioners</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-properties.htm" data-id="data_names-properties">properties</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-regions.htm" data-id="data_names-regions">regions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-retractors.htm" data-id="data_names-retractors">retractors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-rigidwalls_r.htm" data-id="data_names-rigidwalls_r">rigidwalls</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sensors.htm" data-id="data_names-sensors">sensors</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sets.htm" data-id="data_names-sets">sets</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-shapes.htm" data-id="data_names-shapes">shapes</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-sliprings.htm" data-id="data_names-sliprings">sliprings</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-solids.htm" data-id="data_names-solids">solids</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-surfaces.htm" data-id="data_names-surfaces">surfaces</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-symmetries.htm" data-id="data_names-symmetries">symmetries</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systemcols.htm" data-id="data_names-systemcols">systemcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-systems.htm" data-id="data_names-systems">systems</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tables.htm" data-id="data_names-tables">tables</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-tags.htm" data-id="data_names-tags">tags</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-titles.htm" data-id="data_names-titles">titles</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-transformations.htm" data-id="data_names-transformations">transformations</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectorcols.htm" data-id="data_names-vectorcols">vectorcols</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names-vectors.htm" data-id="data_names-vectors">vectors</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm" data-id="extapi">Ext API</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-header_files.htm" data-id="extapi-header_files">Header Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-library_files.htm" data-id="extapi-library_files">Library Files</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-running.htm" data-id="extapi-running">Running</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi-examples.htm" data-id="extapi-examples">Examples</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_ext_api_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm" data-id="feinput_readers-introduction">FE Input Readers</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/result_readers-introduction.htm" data-id="result_readers-introduction">Result Readers</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmlib_introduction.htm" data-id="hmlib_introduction">hmlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hminlib_introduction.htm" data-id="hminlib_introduction">hminlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmmodlib_introduction.htm" data-id="hmmodlib_introduction">hmmodlib</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmreslib_introduction.htm" data-id="hmreslib_introduction">hmreslib</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/create_fe_input_readers_t.htm" data-id="task_btw_ccc_rw">Creating FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_fe_input.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm" data-id="concept_ucz_r4y_ww">HMASCII</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-input_format.htm" data-id="hmascii-input_format">Input Format</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/hmascii-output_format.htm" data-id="hmascii-output_format">Output Format</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_hmascii_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm" data-id="concept_y4v_lhv_vw">Model Checker</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/config_file_r.htm" data-id="config_file_r">Config File</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/check_corrections_r.htm" data-id="check_corrections_r">Checks and Corrections</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm" data-id="reference_gcb_2cw_vw">Scripts</a></span><ul><li><span class="topicref"><a href="../../../topics/chapter_heads/introduction_r.htm" data-id="reference_gcb_2cw_vw">Introduction</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/creating_scripts_r.htm" data-id="creating_scripts_r">Creating Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/running_scripts_r.htm" data-id="running_scripts_r">Running Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_scripts_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm" data-id="solver_templates_hm_ref_guide">Solver Templates</a></span><ul><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm" data-id="card_previewer_r">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm" data-id="reference_ddk_cm3_mv">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm" data-id="reference_ddk_cm3_mv">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="../../../indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="../../../index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm">Creating Solver Templates</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/previewing_cards_r.htm">Previewing Cards</a></span></li><li class="active"><span class="topicref">Error Messages</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/api_programmers_guides.htm">API Programmer's Guides</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_names_r.htm">Data Names</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/extapi.htm">Ext API</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/feinput_readers-introduction.htm">FE Input Readers</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/hmascii_c.htm">HMASCII</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/model_checker_r.htm">Model Checker</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/scripts_r.htm">Scripts</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/solver_templates_hm_ref_guide.htm">Solver Templates</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/card_previewer_r.htm">Card Previewer</a></span></li><li><span class="topicref"><a href="../../../topics/chapter_heads/solver_templates_creating_hm_ref_r.htm">Creating Solver Templates</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="../../../topics/reference/hm/organization_r.htm">Organization</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/data_entry_and_access_r.htm">Data Entry and Access</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/math_expressions_r.htm">Mathematical Expressions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/equalities_inequalities_logical_expressions_r.htm">Equalities, Inequalities and Logical Expressions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/functions_r.htm">Functions</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/previewing_cards_r.htm">Previewing Cards</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">Error Messages</span></li></ul></li><li><span class="topicref"><a href="../../../topics/reference/hm/node_output_example_r.htm">Node Output Example</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/element_output_example_r.htm">Element Output Example</a></span></li><li><span class="topicref"><a href="../../../topics/reference/hm/assembly_output_example_r.htm">Assembly Output Example</a></span></li></ul></li><li><span class="topicref"><a href="../../../topics/chapter_heads/commands_and_functions_r.htm">Commands and Functions</a></span></li></ul></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Error Messages</h1>
+
+  <div class="body refbody">
+    <section class="section">
+      <p class="p">The following list describes the card previewer error messages and the corresponding
+        solutions.</p>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_fm2_l2h_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid variable &lt;variable&gt; in <span class="keyword cmdname">*setvariable()</span>
+                command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The &lt;variable&gt; specified in the <span class="keyword cmdname">*menusetvariable()</span>
+                command was not between variable1 and variable20.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the invalid variable to a valid variable name.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder"> </td>
+
+              <td class="entry nocellnorowborder"> </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Attribute id &lt;id&gt; on entity does not match type in template.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The attribute's type did not match the type specified for the attribute in the
+                template.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">The <span class="keyword cmdname">*defineattribute()</span> command in the template may have been
+                modified, a different template with the same <span class="keyword cmdname">*codename()</span> was used
+                to edit the entity, or an invalid entity was created by an input translator.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">You must clear the attributes for the solver off of the entity to edit the
+                card.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid entity type &lt;type&gt; specified in
+                <span class="keyword cmdname">*menuentitytype()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menuentitytype()</span> command with invalid type was present in
+                the template file.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*menentitytype()</span> command's parameter to be a
+                valid entity name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_rzc_cgh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Too many &lt;type&gt; collectors used.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A maximum of 48 <span class="keyword cmdname">*menuentitytype()</span> commands for the same
+                entity type can be used in a card image. You have exceeded this limit.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Reduce the number of <span class="keyword cmdname">*menuentitytype()</span> commands for
+                &lt;type&gt; to be less than 48.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_ntc_ggh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find entity &lt;id&gt; associated with attribute &lt;attribute
+                name&gt;</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An entity attribute holds an id without an entity.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">Entities may have been deleted or renumbered, or the
+                  <span class="keyword cmdname">*menuentitytype()</span> command specifying the entity collected by
+                this attribute was changed in the template file.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">None. The value is set to 0.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_e5p_lgh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">No attribute attached to menu item &lt;name&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred while parsing an expression.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_mks_rgh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">No attribute attached to collector item &lt;id&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred when a collector was selected.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_vnj_5gh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find attribute named &lt;name&gt; in <span class="keyword cmdname">*menuoption()</span>,
+                skipping.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menuoption()</span> or <span class="keyword cmdname">*menuoptionenum()</span>
+                command referenced &lt;name&gt; that does not have an
+                  <span class="keyword cmdname">*defineattribute()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*menuoption()</span> or
+                  <span class="keyword cmdname">*menuoptionenum()</span> command to reference a valid attribute
+                name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_vsm_1hh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find enumeration &lt;enumeration&gt; for
+                  <span class="keyword cmdname">*menuoptionenum()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*menuoptionenum()</span> command referenced an &lt;enumeration&gt;
+                that does not have an existing <span class="keyword cmdname">*enumeration()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*menuoptionenum()</span> command to reference a valid
+                enumeration.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_c3b_g3h_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Enumeration attribute &lt;attribute&gt; contains value &lt;value&gt; beyond limit of
+                &lt;maximum&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">&lt;attribute&gt; holds a &lt;value&gt; &gt; &lt;maximum&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">Both *menuoptionenum() and <span class="keyword cmdname">*menufield()</span> commands referencing
+                &lt;attribute&gt; may exist in the template file. If this is the case, the user can
+                type in &lt;value&gt; &gt; &lt;maximum&gt;. An input translator may have also created
+                &lt;attribute&gt; with the invalid &lt;value&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">If this occurs in a <span class="keyword">HyperMesh</span>-developed template,
+                contact <span class="keyword">HyperMesh</span> support with the error. User generated
+                templates can ensure that the value is within a certain range by using
+                  <span class="keyword cmdname">*menuif()</span> and <span class="keyword cmdname">*menuattributeset()</span> commands.
+                Here is an example of how to limit an attribute's value to between 1 and
+                5.<pre class="pre codeblock"><code>*menuif([$ATTRIBUTE_NAME &lt; 1])
+*menuattributeset($ATTRIBUTE_NAME,1)
+*menuendif()
+*menuif([$ATTRIBUTE_NAME &gt; 5])
+*menuattributeset($ATTRIBUTE_NAME,5)
+*menuendif()</code></pre></td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_zsm_n3h_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find attribute named &lt;attribute&gt;, skipping.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menufield()</span> command referenced the attribute named
+                &lt;attribute&gt; for which no <span class="keyword cmdname">*defineattribute()</span> command
+                exists.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*menufield()</span> command to reference a valid
+                attribute name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_fsk_w3h_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Default value specified for always on attribute &lt;attribute&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menudefaultvalue()</span> command modifies &lt;attribute&gt; that
+                does not have a valid on/off value. The <span class="keyword cmdname">*menudefaultvalue()</span>
+                command will be ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">The <span class="keyword cmdname">*menudefaultvalue()</span> command in the template may have
+                been added after the template was used on the current database, a different template
+                with the same <span class="keyword cmdname">*codename()</span> was used to edit the entity, or
+                &lt;attribute&gt; was created with an invalid status by an input translator.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_fqz_1jh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Failed to created attribute &lt;attribute&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_tsk_gjh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Initial value expression for &lt;attribute&gt; could not be evaluated.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The expression specified in <span class="keyword cmdname">*menuinitialvalue()</span> returned an
+                error code. The &lt;attribute&gt; is created with the value 0 or a zero length string,
+                depending on string.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">This error should only occur if you using the card editor on multiple
+                entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">If you need the <span class="keyword cmdname">*menuinitialvalue()</span> command to be executed,
+                abort the editing on the current set of entities and edit them one at a
+                time.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_urk_kjh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Initial value for &lt;attribute&gt; only valid for integer, real, or
+                string.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menuinitialvalue()</span> command references an attribute that
+                was not of type integer, real, or string.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Remove the <span class="keyword cmdname">*menuinitialvalue()</span> command that references
+                &lt;attribute&gt;.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_xlg_4jh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Attribute &lt;attribute&gt; has different entity type (&lt;entity&gt;) than
+                template.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menuentitytype()</span> command conflicts with the entity type
+                stored on &lt;attribute&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Cause</td>
+
+              <td class="entry nocellnorowborder">The <span class="keyword cmdname">*menuentitytype()</span> command modifying &lt;attribute&gt; in
+                the template may have been changed after the template was used on the current
+                database, two or more <span class="keyword cmdname">*menufield()</span> commands referencing
+                &lt;attribute&gt; with differing <span class="keyword cmdname">*menuentitytype()</span> commands exists
+                in the template file, a different template with the same
+                  <span class="keyword cmdname">*codename()</span> was used to edit the entity, or &lt;attribute&gt; was
+                created with an invalid entity type by an input translator.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">If a user-generated input translator is being used, make sure that attribute's
+                entity type created by the translator matches that of the template file. Also check
+                for and remove multiple <span class="keyword cmdname">*menufield()/*menuentitytype()</span> commands
+                referencing the same attribute in the block.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_j3l_vjh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Failed to created entity attribute &lt;attribute&gt;</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_jqm_yjh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Enumerated and legal input specified for &lt;attribute&gt;, legal ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Both <span class="keyword cmdname">*menulegalvalue()</span> and <span class="keyword cmdname">*menuenum()</span>
+                commands modify the same <span class="keyword cmdname">*menufield()</span> command. The
+                  <span class="keyword cmdname">*menulegalvalue()</span> commands are ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Remove either the <span class="keyword cmdname">*menuenum()</span> command or all of the
+                  <span class="keyword cmdname">*menulegalvalue()</span> modifiers from the
+                  <span class="keyword cmdname">*menufield()</span> in question.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_qcd_fkh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Enumerated and restricted input specified for &lt;attribute&gt;, restricted
+                ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Both <span class="keyword cmdname">*menurestrictedvalue()</span> and
+                  <span class="keyword cmdname">*menuenum()</span> commands modify the same
+                  <span class="keyword cmdname">*menufield()</span> command. The
+                  <span class="keyword cmdname">*menurestrictedvalue()</span> commands are ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Remove either the <span class="keyword cmdname">*menuenum()</span> command or all
+                  <span class="keyword cmdname">*menurestrictedvalue()</span> modifiers from the
+                  <span class="keyword cmdname">*menufield()</span> in question.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_qxg_kkh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Restricted and legal input specified for &lt;attribute&gt;, restricted
+                ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Both <span class="keyword cmdname">*menurestrictedvalue()</span> and
+                  <span class="keyword cmdname">*menulegalvalue()</span> commands modify the same
+                  <span class="keyword cmdname">*menufield()</span> command. The
+                  <span class="keyword cmdname">*menurestrictedvalue()</span> commands are ignored.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Remove either all <span class="keyword cmdname">*menulegalvalue()</span> commands or all
+                  <span class="keyword cmdname">*menurestrictedvalue()</span> modifiers from the *menufield() in
+                question.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_zgj_pkh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">menulegalvalue</span> unsupported for storage type of
+                &lt;attribute&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menulegalvalue()</span> command modifies a
+                  <span class="keyword cmdname">*menufield()</span> command that references an attribute that is not
+                of type real, integer, or string.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Remove the <span class="keyword cmdname">*menulegalvalue()</span> modifier from the
+                  <span class="keyword cmdname">*menufield()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_h2b_tkh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Illegal unsigned integer value returned for &lt;data&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An expression or data member value could not be displayed as an unsigned
+                integer. The string "ERROR" is displayed in red for this field.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the display type of this <span class="keyword cmdname">*menufield()</span> command to real
+                or exponential.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_mcp_vkh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Illegal integer value returned for &lt;data&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An expression or data member value could not be displayed as an integer. The
+                string "ERROR" is displayed in red for this field.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the display type of this <span class="keyword cmdname">*menufield()</span> command to real
+                or exponential.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_zh4_ykh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Illegal hexadecimal value returned for &lt;data&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An expression or data member value could not be displayed as a hexadecimal
+                number. The string "ERROR" is displayed in red for this field.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the display type of this <span class="keyword cmdname">*menufield()</span> command to real
+                or exponential.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_z2b_blh_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">No string data returned for &lt;data&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An expression or data member value could not be displayed as a string. The
+                string "ERROR" is displayed in red for this field.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the display type of this <span class="keyword cmdname">*menufield()</span> command to
+                something other than string.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_b5b_qql_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">beginrepeat - Expression &lt;<span class="ph synph">expression</span>&gt; could not be evaluated,
+                skipping repeat block.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">&lt;<span class="ph synph">expression</span>&gt; could not be evaluated for multiple
+                entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Reduce set of entities to use card editor until &lt;<span class="ph synph">expression</span>&gt;
+                is resolvable.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_st3_5ql_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Illegal repeat value return for &lt;<span class="ph synph">expression</span>&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*beginrepeat()</span> or <span class="keyword cmdname">*beginrepeat2d()</span>
+                command containing &lt;<span class="ph synph">expression</span>&gt; returned a value too large or too
+                small. The repeat block is skipped.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">It is possible to get this error with valid data. Usually it is caused by a bad
+                  <span class="keyword cmdname">*menupointerset()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_drp_xql_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Illegal repeat 2d value return for &lt;<span class="ph synph">expression</span>&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*beginrepeat()</span> or <span class="keyword cmdname">*beginrepeat2d()</span>
+                command containing &lt;<span class="ph synph">expression</span>&gt; returned a value too large or too
+                small. The repeat block is skipped.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">It is possible to get this error with valid data. Usually it is caused by a bad
+                  <span class="keyword cmdname">*menupointerset()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_b1k_brl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid pointer name &lt;<span class="ph synph">pointer</span>&gt; in
+                  <span class="keyword cmdname">*menupointerset()</span> command, ignoring.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The &lt;<span class="ph synph">pointer</span>&gt; specified in the
+                  <span class="keyword cmdname">*menupointerset()</span> command was not between pointer1 and
+                pointer20.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the invalid pointer to a valid pointer name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_fpz_drl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid counter name &lt;<span class="ph synph">counter</span>&gt; in
+                  <span class="keyword cmdname">*menucounterset()</span> command, ignoring.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The &lt;<span class="ph synph">counter</span>&gt; specified in the
+                  <span class="keyword cmdname">*menucounterset()</span> command was not between pointer1 and
+                pointer20.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the invalid pointer to a valid counter name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_m2c_2rl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Error evaluating data for &lt;<span class="ph synph">counter</span>&gt;, setting to 0.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The expression in a <span class="keyword cmdname">*menucounterset()</span> command could not be
+                evaluated for this set of entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Reduce the set of entities you are editing until the expression in
+                  <span class="keyword cmdname">*menucounterset()</span> command can be evaluated.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_dxd_2rl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid variable name &lt;<span class="ph synph">variable</span>&gt; in
+                  <span class="keyword cmdname">*menuvariableset()</span> command, ignoring.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The &lt;<span class="ph synph">variable</span>&gt; specified in the
+                  <span class="keyword cmdname">*menuvariableset()</span> command was not between variable1 and
+                variable20.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the invalid variable to a valid variable name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_okf_2rl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Error evaluating data for &lt;<span class="ph synph">variable</span>&gt;, setting to 0.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The expression in a <span class="keyword cmdname">*menuvariableset()</span> command could not be
+                evaluated for this set of entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Abort editing the current set of entities, reduce the set of entities you are
+                editing until the expression in <span class="keyword cmdname">*menuvariableset()</span> command is
+                evaluated.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_dzg_2rl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Unable to find attribute &lt;<span class="ph synph">attribute</span>&gt; in
+                  <span class="keyword cmdname">*menuattributeset()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*menuattributeset()</span> command references an illegal
+                attribute name.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the attribute referenced by the <span class="keyword cmdname">*menuattributeset()</span>
+                command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_cmk_qrl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find selected item &lt;<span class="ph synph">id</span>&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The current model and
+                template file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_i1m_qrl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Could not find tag attribute &lt;<span class="ph synph">attribute</span>&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">A <span class="keyword cmdname">*cardmenuitem()</span> command references an attribute that has
+                no <span class="keyword cmdname">*defineattribute()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change &lt;<span class="ph synph">attribute</span>&gt; so that it references a valid attribute,
+                or add a <span class="keyword cmdname">*defineattribute()</span> command for
+                  &lt;<span class="ph synph">attribute</span>&gt;.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_ymn_qrl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="ph synph">menuenum</span> references undefined enumeration
+                  &lt;<span class="ph synph">name</span>&gt;.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An enumeration called &lt;<span class="ph synph">name</span>&gt; was not previously defined in
+                the template file.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change &lt;<span class="ph synph">name</span>&gt; to match a valid enumeration name.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_zz4_qrl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Output command reached before <span class="keyword cmdname">*beginmenu()</span> for this
+                entity.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The <span class="keyword cmdname">*output()</span> command for this entity block, signifying the
+                end of the block, was reached before a <span class="keyword cmdname">*beginmenu()</span> command.
+                Either the <span class="keyword cmdname">*beginmenu()</span> does not exist in this entity block, or
+                it was placed after the <span class="keyword cmdname">*output()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add or move the <span class="keyword cmdname">*beginmenu()/*endmenu()</span> section before the
+                  <span class="keyword cmdname">*format()</span> command for this block.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_r4q_qrl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">2d array attribute &lt;<span class="ph synph">attribute</span>&gt; found outside of
+                  <span class="keyword cmdname">*repeat2d block()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Attributes of type arrayofreal2d and arrayofinteger2d can only be referenced in
+                a <span class="keyword cmdname">*beginrepeat2d()/*endrepeat2d()</span> section.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Move the reference to &lt;<span class="ph synph">attribute</span>&gt; into a
+                  <span class="keyword cmdname">*beginrepeat2d()/ *endrepeat2d()</span> section.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_jl3_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">2d array attribute &lt;<span class="ph synph">attribute</span>&gt; not resized properly (out of
+                bounds).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor causing the array attribute
+                to have the wrong size.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_yzj_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Unknown attribute type &lt;<span class="ph synph">type number</span>&gt; found in attribute
+                table.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor causing the array attribute
+                to have the wrong size.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_spl_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*endmenu()</span> command not reached for this entity.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The end of the template file was reached before the
+                  <span class="keyword cmdname">*endmenu()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add a <span class="keyword cmdname">*endmenu()</span> command to match the last
+                  <span class="keyword cmdname">*beginmenu()</span> command in template file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_bdn_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*menuif()</span> missing <span class="keyword cmdname">menuelse()/menuendif()</span>
+                command, aborting.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The end of the template file was reached before a
+                  <span class="keyword cmdname">*menuelse()</span> or <span class="keyword cmdname">*menuendif()</span> command for a
+                  <span class="keyword cmdname">*menuif()</span> statement.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add a <span class="keyword cmdname">*menuendif()</span> command to match the
+                  <span class="keyword cmdname">*menuif()</span> command. Since the <span class="keyword cmdname">*menuif()</span>
+                commands can be nested, it may not be obvious which <span class="keyword cmdname">*menuif()</span> is
+                missing a <span class="keyword cmdname">*menuelse()</span> or <span class="keyword cmdname">*menuendif()</span>
+                command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_br4_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*menuendif()</span> command not found to terminate
+                  <span class="keyword cmdname">*menuelse()</span> block.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The end of the template file was reached before a
+                  <span class="keyword cmdname">*menuendif()</span> command was found to terminate a
+                  <span class="keyword cmdname">*menuif()</span> and <span class="keyword cmdname">*menuelse()</span> statement.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add a <span class="keyword cmdname">*menuendif()</span> command to match the
+                  <span class="keyword cmdname">*menuif()</span> command. Since the <span class="keyword cmdname">*menuif()</span>
+                commands can be nested, it may not be obvious which <span class="keyword cmdname">*menuif()</span> is
+                missing a <span class="keyword cmdname">*menuelse()</span> or <span class="keyword cmdname">*menuendif()</span>
+                command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_ogq_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Menu does not own pointer returned by strrgy.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An internal error has occurred in the card editor.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Contact <span class="keyword">HyperMesh</span> support. The data and template
+                file are required to further investigate the problem.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_sgs_fsl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Option attribute &lt;<span class="ph synph">attribute</span>&gt; not of type integer.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">&lt;<span class="ph synph">attribute</span>&gt; referenced in a <span class="keyword cmdname">*menuoption()</span>
+                or <span class="keyword cmdname">*menuoptionenum()</span> command was not an integer
+                attribute.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Changed the <span class="keyword cmdname">*menuoption()</span> or
+                  <span class="keyword cmdname">*menuoptionenum()</span> command so that it references an integer
+                attribute.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_jx5_1tl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Negative optioncount reached in case search block, aborting.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Too many <span class="keyword cmdname">*menuoptionend()</span> commands exist in this block.
+                There should be one <span class="keyword cmdname">*menuoptionend()</span> command per
+                  <span class="keyword cmdname">*menuoption()</span> or <span class="keyword cmdname">*menuoptionenum()</span>
+                command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Locate and remove the extra <span class="keyword cmdname">*menuoptionend()</span>
+                commands.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_nww_1tl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid attribute &lt;<span class="ph synph">attribute</span>&gt; referenced in
+                  <span class="keyword cmdname">*beginrepeat()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The name &lt;<span class="ph synph">attribute</span>&gt; does not match a name in a
+                  <span class="keyword cmdname">*defineattribute()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change &lt;<span class="ph synph">attribute</span>&gt; to match the name of a valid
+                attribute.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_hzx_1tl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*beginrepeat()</span> attribute &lt;<span class="ph synph">attribute</span>&gt; is
+                not type integer.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Attributes specified in the <span class="keyword cmdname">*beginrepeat()</span> command must be
+                of type integer.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*beginrepeat()</span> command to reference an integer
+                attribute.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_sxz_1tl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">No <span class="keyword cmdname">*endrepeat()</span> for zero length array.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The end of the template file was reached before a
+                  <span class="keyword cmdname">*endrepeat()</span> command was found to match a
+                  <span class="keyword cmdname">*beginrepeat()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add a <span class="keyword cmdname">*endrepeat()</span> command to match the
+                  <span class="keyword cmdname">*beginrepeat()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_kz1_btl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*endrepeat()</span> found without matching
+                  <span class="keyword cmdname">*beginrepeat()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An extra <span class="keyword cmdname">*endrepeat()</span> command exists in this block. There
+                should be one <span class="keyword cmdname">*endrepeat()</span> command per
+                  <span class="keyword cmdname">*beginrepeat()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Locate and remove the extra <span class="keyword cmdname">*endrepeat()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_rdd_btl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*beginrepeat2d()</span> found outside of
+                  <span class="keyword cmdname">*beingrepeat()</span> block.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">All <span class="keyword cmdname">*beginrepeat2d()</span> commands must occur within a
+                  <span class="keyword cmdname">*beginrepeat()/*endrepeat()</span> block.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Move the <span class="keyword cmdname">*beginrepeat2d()/*endrepeat2d()</span> block so that it
+                occurs in a <span class="keyword cmdname">*beginrepeat()/*endrepeat()</span> block.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_rh2_btl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">Invalid attribute &lt;<span class="ph synph">attribute</span>&gt; referenced in
+                  <span class="keyword cmdname">*beginrepeat2d()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The name &lt;<span class="ph synph">attribute</span>&gt; does not match a name in a
+                  <span class="keyword cmdname">*defineattribute()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change &lt;<span class="ph synph">attribute</span>&gt; to match the name of a valid
+                attribute.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_fgh_btl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*beginrepeat2d()</span> attribute &lt;<span class="ph synph">attribute</span>&gt; is
+                not type integer.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">Attributes specified in the <span class="keyword cmdname">*beginrepeat2d()</span> command must be
+                of type integer.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Change the <span class="keyword cmdname">*beginrepeat2d()</span> command to reference an integer
+                attribute.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_lk3_btl_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder">No <span class="keyword cmdname">*endrepeat()</span> for zero length array.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">The end of the template file was reached before a
+                  <span class="keyword cmdname">*endrepeat()</span> command was found to match a
+                  <span class="keyword cmdname">*beginrepeat()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Add an <span class="keyword cmdname">*endrepeat()</span> command to match the
+                  <span class="keyword cmdname">*beginrepeat()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="card_previewer-error_messages__table_pr3_b5l_xw" class="table" frame="void" border="0" rules="none"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder">Message</td>
+
+              <td class="entry nocellnorowborder"><span class="keyword cmdname">*endrepeat2d()</span> found without matching
+                  <span class="keyword cmdname">*beginrepeat2d()</span>.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Meaning</td>
+
+              <td class="entry nocellnorowborder">An extra <span class="keyword cmdname">*endrepeat2d()</span> command exists in this block. There
+                should be one <span class="keyword cmdname">*endrepeat2d()</span> command per
+                  <span class="keyword cmdname">*beginrepeat2d()</span> command.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder">Solution</td>
+
+              <td class="entry nocellnorowborder">Locate and remove the extra <span class="keyword cmdname">*endrepeat2d()</span> command.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+    </section>
+
+  </div>
+
+</article></main></div>
+                        
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist linklist"><strong>See Also</strong><br /><div class="related_link"><a class="navheader_parent_path" href="../../../topics/reference/hm/previewing_cards_r.htm" title="Card images are described by a template file block. You can display the card image using the card previewer.">Previewing Cards</a></div></div></nav></div>
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../../intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="../../../technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="../../../oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../../../oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>

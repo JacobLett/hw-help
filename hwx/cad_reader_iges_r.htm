@@ -1,0 +1,1514 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Entities supported by the IGES reader. Circular arc (100) Composite curve (102) Conic arc (104) Copius data (106) Plane (108) Line (110) Parametric spline curve (112) Parametric spline surface (114) ..." /><meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="IGES Reader" /><meta name="indexterms" content="iges supported entities, iges import options, iges supported metadata" /><meta name="DC.subject" content="iges supported entities, iges import options, iges supported metadata" /><meta name="keywords" content="iges supported entities, iges import options, iges supported metadata" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="cad_reader_iges_r" /><title>IGES Reader</title><!--  Generated with Oxygen version 18.1, build number 2016102619.  --><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css" />
+          
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_expand.css" />
+        
+        <!-- Table of Contents Plugin for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-toc.css" />
+
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.11.3.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tiles/aquamarine/skin.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <div>
+    <script type="text/javascript" src="MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+</div>
+    <link rel="stylesheet" type="text/css" href="skin_2017.css" /></head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" data-spy="scroll" data-target="#toc">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.htm" class=" wh_logo hidden-xs "><img src="hw_logo_2017.png" alt="User's Guide" /></a>
+                    <div class=" wh_publication_title "><a href="index.htm"><span class="title">User's Guide</span></a></div>
+                    
+                </div>
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm" data-id="toc">Table of Contents</a></span><ul><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm" data-id="reference_xd2_syf_xt">What's New</a></span><ul><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_2017_1x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x.1 Release Notes</a></span></li><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_2017x_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 2017x Release Notes</a></span></li><li><span class="topicref"><a href="topics/release_notes/release_notes_hw_14x120_r.htm" data-id="reference_yqk_zt4_vw"><span class="keyword">HyperWorks</span> 14x.120 Release Notes</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/get_started_r.htm" data-id="reference_rnl_kny_5x">Get Started</a></span><ul><li><span class="topicref"><a href="http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/tutorials_r.htm" data-id="reference_xd2_syf_xt">Tutorials</a></span><ul><li><span class="topicref"><a href="http://www.altairhyperworks.com/training/testing/hw14x/introduction.htm" target="_blank">Training Videos</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/workspace_r.htm" data-id="workspace">Workspace</a></span><ul><li><span class="topicref"><a href="topics/user_interface/browser_model_overview_c.htm" data-id="concept_u5d_z3c_zq">Model Browser</a></span></li><li><span class="topicref"><a href="topics/user_interface/property_editor_overview_c.htm" data-id="concept_wh5_jlf_vq"><span class="keyword">Entity Editor</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/ribbon_r.htm" data-id="reference_h1r_zrz_qr"><span class="keyword">Ribbons</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/menubar_overview_r.htm" data-id="reference_hnb_lrz_qr">Menu Bar</a></span></li><li><span class="topicref"><a href="topics/user_interface/modeling_window_overview_r.htm" data-id="reference_tnn_rrz_qr">Modeling Window</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm" data-id="file_management">File Management</a></span><ul><li><span class="topicref"><a href="topics/file_management/model_create_t.htm" data-id="task_mfy_wfc_zq"><span class="ph" id="ph_zzg_pkt_xv">Creating Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/model_open_t.htm" data-id="task_cjn_vwb_zq"><span class="ph" id="ph_mcq_clt_xv">Opening Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/file_import_t.htm" data-id="task_rsz_4hg_tt">Importing Files</a></span></li><li><span class="topicref"><a href="topics/file_management/analysis_results_load_t.htm" data-id="task_qgs_ht3_rz">Loading Results</a></span></li><li><span class="topicref"><a href="topics/file_management/script_command_file_run_t.htm" data-id="task_hdx_jw3_rz">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="topics/file_management/model_save_t.htm" data-id="task_uhq_szb_zq"><span class="ph" id="ph_p34_rlt_xv">Saving Models</span></a></span></li><li><span class="topicref"><a href="topics/file_management/fe_export_t.htm" data-id="task_oh5_shg_tt">Exporting FE Data</a></span></li><li><span class="topicref"><a href="topics/file_management/solver_interface_change_t.htm" data-id="task_st5_syw_tz">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="topics/file_management/screen_capture_save_t.htm" data-id="task_j2t_kfj_rz">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="topics/file_management/file_formats_supported_r.htm" data-id="reference_mfd_4k2_jr">Supported File Formats</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm" data-id="reference_esg_qwq_35">Supported CAD Readers</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/view_controls_r.htm" data-id="view_controls">View Controls</a></span><ul><li><span class="topicref"><a href="topics/user_interface/view_show_hide_isolate_t.htm#task_kmb_v5d_sw" data-id="task_kmb_v5d_sw">Showing, Hiding, Isolating <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="view_store_recall_t.htm#view_store_recall_t" data-id="view_store_recall_t">Storing and Recalling Custom Views</a></span></li><li><span class="topicref"><a href="view_adjust_t.htm#view_adjust_t" data-id="view_adjust_t">Rotate, Pan, Zoom, Fit, Center</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/settings_display_geometry_r.htm" data-id="reference_wv5_1kg_tt">Geometry Display Settings</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/settings_display_mesh_r.htm" data-id="reference_wgp_vjg_tt">Mesh Display Settings</a></span></li><li><span class="topicref"><a href="topics/preferences/settings_display_color_r.htm">Model Color Settings</a></span></li><li><span class="topicref"><a href="Chunk2086168889.htm#Chunk2086168889" data-id="Chunk2086168889">Creating and Viewing Section Cuts</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/find_search_r.htm" data-id="reference_n2r_sl4_vv">Find and Search</a></span><ul><li><span class="topicref"><a href="topics/user_interface/entity_search_t.htm" data-id="search">Finding and Searching for <span class="keyword">Entities</span></a></span></li><li><span class="topicref"><a href="topics/user_interface/tools_search_t.htm" data-id="task_n2k_p1k_rz">Searching for Tools and Panels</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span><ul><li><span class="topicref"><a href="topics/user_interface/context_menu_modeling_window_select_options.htm#reference_mvx_jdz_wt">Window Selection Settings</a></span></li></ul></li><li><span class="topicref"><a href="topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt" data-id="task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr" data-id="task_g1x_m2d_lr">Measure</a></span></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/geometry_create_r.htm" data-id="reference_m5g_ryf_xt">Create Geometry</a></span><ul><li><span class="topicref"><a href="point_t.htm#point_t" data-id="point_t">Creating and Editing Points</a></span></li><li><span class="topicref"><a href="line_t.htm#line_t" data-id="line_t">Creating and Editing Lines</a></span></li><li><span class="topicref"><a href="point_extract_t.htm#point_extract_t" data-id="point_extract_t">Interpolating Points and Finding Curve Center</a></span></li><li><span class="topicref"><a href="circle_t.htm#circle_t" data-id="circle_t">Creating and Editing Circles</a></span></li><li><span class="topicref"><a href="surface_t.htm#surface_t" data-id="surface_t">Patching, Extending, and Offsetting Surfaces</a></span></li><li><span class="topicref"><a href="geometry_solid_create_t.htm#geometry_solid_create_t" data-id="geometry_solid_create_t">Creating Solid Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/geometry_cleanup_r.htm" data-id="geometry_cleanup">Geometry Cleanup</a></span><ul><li><span class="topicref"><a href="topics/pre_processing/geometry/surface_imprint_t.htm#task_eyh_r1h_kr" data-id="task_eyh_r1h_kr">Imprinting Surfaces</a></span></li><li><span class="topicref"><a href="split_t.htm#split_t" data-id="split_t">Splitting Surface Edges and Surfaces</a></span></li><li><span class="topicref"><a href="stitch_t.htm#stitch_t" data-id="stitch_t">Stitching Surfaces and Suppressing Edges</a></span></li><li><span class="topicref"><a href="defeature_t.htm#defeature_t" data-id="defeature_t">Removing Rounds, Fillets, Cutouts, Holes</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/geometry_auto_cleanup_t.htm" data-id="task_wz5_jbs_rz">Automatically Cleaning Up Geometry</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/midsurface_r.htm" data-id="midsurface">Midsurface</a></span><ul><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_extract_t.htm#task_uhh_cd1_mr" data-id="task_uhh_cd1_mr">Extracting Midsurfaces</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_plate_edit_t.htm#task_lwn_gjg_tt" data-id="task_lwn_gjg_tt">Editing Midsurface Plates</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_thickness_apply_t.htm#task_mw2_5kv_ty" data-id="task_mw2_5kv_ty">Applying Thickness to Midsurface</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/midsurface_plate_types_r.htm" data-id="reference_ujg_ksm_j5">Plate &amp; Surface Types</a></span></li></ul></li><li class=" has-children "><span class="topicref"><a href="topics/chapter_heads/mesh_r.htm" data-id="mesh">Mesh</a></span><ul><li><span class="topicref"><a href="surface_mesh_t.htm#surface_mesh_t" data-id="surface_mesh_t">Creating and Editing 2D Surface Mesh</a></span></li><li><span class="tool"><a href="edit_elements_t.htm#edit_elements_t" data-id="edit_elements_t">Editing Elements</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/mesh_morph_t.htm#task_ikm_hyj_wy" data-id="task_ikm_hyj_wy">Morphing Mesh</a></span></li><li><span class="topicref"><a href="topics/pre_processing/meshing/2d_element_quality_review_t.htm#task_ar1_hb3_tz">Reviewing Element Quality</a></span></li></ul></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm" data-id="keyboard_shortcuts_mouse_controls">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                <div class=" wh_indexterms_link "><a href="indexTerms.htm" title="Index"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div class=" wh_breadcrumb "><ol class="hidden-print"><li><span class="home"><a href="index.htm"><span>Home</span></a></span></li><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm">File Management</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span></li><li class="active"><span class="topicref">IGES Reader</span></li></ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <nav role="navigation" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar" id="wh_side_toc">
+                        <div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">Table of Contents</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="topics/chapter_heads/whats_new_r.htm">What's New</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/get_started_r.htm">Get Started</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/tutorials_r.htm">Tutorials</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/workspace_r.htm">Workspace</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/file_management_r.htm">File Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="topics/file_management/model_create_t.htm">Creating Models</a></span></li><li><span class="topicref"><a href="topics/file_management/model_open_t.htm">Opening Models</a></span></li><li><span class="topicref"><a href="topics/file_management/file_import_t.htm">Importing Files</a></span></li><li><span class="topicref"><a href="topics/file_management/analysis_results_load_t.htm">Loading Results</a></span></li><li><span class="topicref"><a href="topics/file_management/script_command_file_run_t.htm">Running Command Files and Scripts</a></span></li><li><span class="topicref"><a href="topics/file_management/model_save_t.htm">Saving Models</a></span></li><li><span class="topicref"><a href="topics/file_management/fe_export_t.htm">Exporting FE Data</a></span></li><li><span class="topicref"><a href="topics/file_management/solver_interface_change_t.htm">Changing Solver Interfaces</a></span></li><li><span class="topicref"><a href="topics/file_management/screen_capture_save_t.htm">Saving Screen Captures</a></span></li><li><span class="topicref"><a href="topics/file_management/file_formats_supported_r.htm">Supported File Formats</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_readers_supported_r.htm">Supported CAD Readers</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="cad_reader_acis_r.htm#cad_reader_acis_r">ACIS Reader</a></span></li><li><span class="topicref"><a href="cad_reader_catia_r.htm#cad_reader_catia_r">CATIA Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_catia_composite_link_r.htm">CATIA Composites Link Reader</a></span></li><li><span class="topicref"><a href="cad_reader_creo_r.htm#cad_reader_creo_r">Creo Reader</a></span></li><li><span class="topicref"><a href="cad_reader_dxf_r.htm#cad_reader_dxf_r">DXF Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_fibersim_r.htm#reference_c32_tzq_35">FiberSim Reader</a></span></li><li class="active"><span class="topicref">IGES Reader</span></li><li><span class="topicref"><a href="cad_reader_inspire_r.htm#cad_reader_inspire_r">Inspire Reader</a></span></li><li><span class="topicref"><a href="cad_reader_intergraph_r.htm#cad_reader_intergraph_r">Intergraph Reader</a></span></li><li><span class="topicref"><a href="cad_reader_jt_r.htm#cad_reader_jt_r">JT Reader</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/cad_reader_nx_r.htm">NX Reader</a></span></li><li><span class="topicref"><a href="cad_reader_parasolid_r.htm#cad_reader_parasolid_r">Parasolid Reader</a></span></li><li><span class="topicref"><a href="cad_reader_pdgs_r.htm#cad_reader_pdgs_r">PDGS Reader</a></span></li><li><span class="topicref"><a href="cad_reader_solidworks_r.htm#cad_reader_solidworks_r">SolidWorks Reader</a></span></li><li><span class="topicref"><a href="cad_reader_step_r.htm#cad_reader_step_r">STEP Reader</a></span></li><li><span class="topicref"><a href="cad_reader_tribon_r.htm#cad_reader_tribon_r">Tribon Reader</a></span></li><li><span class="topicref"><a href="cad_reader_vdafs_r.htm#cad_reader_vdafs_r">VDAFS Reader</a></span></li></ul></li></ul></li><li><span class="topicref"><a href="topics/chapter_heads/view_controls_r.htm">View Controls</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/find_search_r.htm">Find and Search</a></span></li><li><span class="topicref"><a href="topics/user_interface/selection_t.htm#task_cst_rhg_vw">Selection</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/entity_translate_rotate_t.htm#task_wct_mtw_bt">Translate and Rotate</a></span></li><li><span class="topicref"><a href="topics/pre_processing/geometry/measure_length_angles_t.htm#task_g1x_m2d_lr">Measure</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/geometry_create_r.htm">Create Geometry</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/geometry_cleanup_r.htm">Geometry Cleanup</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/midsurface_r.htm">Midsurface</a></span></li><li><span class="topicref"><a href="topics/chapter_heads/mesh_r.htm">Mesh</a></span></li><li><span class="topicref"><a href="topics/preferences/keyboard_shortcuts_mouse_controls_global_r-1.htm">Keyboard Shortcuts and Mouse Controls</a></span></li></ul></li></ul></div>
+                    </nav>
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="topic_content">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="cad_reader_iges_r"><h1 class="title topictitle1" id="ariaid-title1">IGES Reader</h1>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title2" id="reference_cvw_znr_35">
+  <h2 class="title topictitle2" id="ariaid-title2"><span class="keyword">IGES</span> Supported Entities</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Entities supported by the <span class="keyword">IGES</span> reader.</p>
+
+    <section class="section">
+      <div class="p">
+        <ul class="ul" id="reference_cvw_znr_35__ul_jcn_qpt_35">
+          <li class="li">Circular arc (100)</li>
+
+          <li class="li">Composite curve (102)</li>
+
+          <li class="li">Conic arc (104)</li>
+
+          <li class="li">Copius data (106)</li>
+
+          <li class="li">Plane (108)</li>
+
+          <li class="li">Line (110)</li>
+
+          <li class="li">Parametric spline curve (112)</li>
+
+          <li class="li">Parametric spline surface (114)</li>
+
+          <li class="li">Point (116)</li>
+
+          <li class="li">Ruled surface (118, form 1 only)</li>
+
+          <li class="li">Surface of revolution (120)</li>
+
+          <li class="li">Tabulated cylinder (122)</li>
+
+          <li class="li">Direction (123)</li>
+
+          <li class="li">Transformation matrix (124)</li>
+
+          <li class="li">Flash (125)</li>
+
+          <li class="li">Rational B-spline curve (126)</li>
+
+          <li class="li">Rational B-spline surface (128)</li>
+
+          <li class="li">Offset surface (140)</li>
+
+          <li class="li">Boundary (141)</li>
+
+          <li class="li">Curve on a parametric surface (142)</li>
+
+          <li class="li">Bounded surface (143)</li>
+
+          <li class="li">Trimmed (parametric) surface (144)</li>
+
+          <li class="li">Manifold solid B-rep object (186)</li>
+
+          <li class="li">Plane surface (190)</li>
+
+          <li class="li">Right circular cylindrical surface (192)</li>
+
+          <li class="li">Right circular conical surface (194)</li>
+
+          <li class="li">Spherical surface (196)</li>
+
+          <li class="li">Toroidal surface (198)</li>
+
+          <li class="li">Angular dimension (202)</li>
+
+          <li class="li">Diameter dimension (206)</li>
+
+          <li class="li">General label (210)</li>
+
+          <li class="li">General note (212)</li>
+
+          <li class="li">Leader (214)</li>
+
+          <li class="li">Linear dimension (216)</li>
+
+          <li class="li">Radius dimension (222)</li>
+
+          <li class="li">General symbol (228)</li>
+
+          <li class="li">Sectioned area (230)</li>
+
+          <li class="li">Line font definition (304)</li>
+
+          <li class="li">Subfigure definition (308)</li>
+
+          <li class="li">Color definition (314)</li>
+
+          <li class="li">Form 7 group without back pointers (402)</li>
+
+          <li class="li">Drawing (404)</li>
+
+          <li class="li">Form 15 name (406)</li>
+
+          <li class="li">Singular subfigure instance (408)</li>
+
+          <li class="li">View (410)</li>
+
+          <li class="li">Vertex (502)</li>
+
+          <li class="li">Edge (504)</li>
+
+          <li class="li">Loop (508)</li>
+
+          <li class="li">Face (510)</li>
+
+          <li class="li">Shell (514)</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title3" id="reference_q41_f4r_35">
+  <h2 class="title topictitle2" id="ariaid-title3"><span class="keyword">IGES</span> Import Options</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="keyword">IGES</span> reader uses the
+      <span class="ph filepath">iges_reader.ini</span> file. The first section of this file contains
+    instructions for reading each type of <span class="keyword">IGES</span> entity. It is
+    recommended that you do not change this section. The second section controls the options for the
+    translator.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_smt_gqy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@CheckFacet</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e295">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e298">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e295 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e298 ">Based on the success of the normal faceting operation, more cleanup attempts
+                may be required. One option is to mesh it in advance to check the faceting. This may
+                slow down the import due to the possible use of meshing operations, but should
+                result in cleaner surfaces (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e295 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e298 ">Do not check the faceting and apply normal cleanup.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_amh_mqy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ColorsAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e344">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e347">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e344 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e347 ">
+                <p class="lines">Read color attributes of geometric entities as metadata.</p>
+
+                <p class="lines"><code class="ph codeph">COLOR_RGB</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e344 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e347 ">Do not read color attributes (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_mch_4qy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportForVisualizationOnly</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1568">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1571">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">
+                <p class="lines">Import the model for visualization purposes only.</p>
+
+                <p class="lines">This skips many of the import steps (cleanup, stitching, solid creation, and so on) to provide a faster import. The resulting model may not be suitable for other uses.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1568 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1571 ">Import the model in the normal fashion (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_b51_pqy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportFreeCurves</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1623">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1626">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1623 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1626 ">Import free curves (wireframe entities) into the model (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1623 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1626 ">Do not import free curves.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_mnd_qqy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportFreePoints</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1673">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e1676">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1673 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1676 ">Import free points into the model (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1673 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e1676 ">Do not import free points.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_kkw_yqy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportLayers</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e554">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e557">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e554 "><code class="ph codeph">Layers to skip</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e557 ">
+                <p class="lines">Enables the specification of layer numbers to import, in order to skip unwanted layers.</p>
+
+                <p class="lines">To specify layer groupings, enter  a hyphen between the beginning and ending values of the desired group.  Groups are separated by commas.</p>
+
+                <p class="lines">Example:  <code class="ph codeph">@ImportLayers = "1,2-5,100-200"</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_nbg_dry_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ImportType</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e604">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e607">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e604 "><code class="ph codeph">ASSEMBLY</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e607 ">Generate an assembly tree corresponding to the one contained in the file
+                (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e604 "><code class="ph codeph">LAYERS_ONLY</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e607 ">Create components based on the layer (=level) structure of the file.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e604 "><code class="ph codeph">LAYERS_AND_GROUPS</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e607 ">Create components corresponding to layers and groups contained in the
+                file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_pnn_2ry_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@MetadataPrefix</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2686">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e2689">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2686 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e2689 ">The string is prefixed to all metadata names. No prefix is used by
+                default.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_ird_mry_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@PropertyAsGroup</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e702">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e705">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e702 "><code class="ph codeph">NEVER_MANAGE</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e705 ">Do not generate special metadata (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e702 "><code class="ph codeph">MANAGE_CORRECT_ONLY</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e705 ">
+                <p class="lines">Read group ID and name as metadata. </p>
+
+                <p class="lines">This is useful for special cases where the group ID and name have special meaning, such as to indicate a property ID and name. This applies to <span class="keyword">IGES</span> entity type #402, form number #7.</p>
+
+                <p class="lines"><code class="ph codeph">GROUP_ID</code></p>
+
+                <p class="lines"><code class="ph codeph">GROUP_NAME</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_txv_sry_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@ReadAsIndependent</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e768">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e771">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e768 ">
+                <p class="lines"><code class="ph codeph">INDEPENDENT</code></p>
+
+                <p class="lines"><code class="ph codeph">PHYSICALLY_DEPENDENT</code></p>
+
+                <p class="lines"><code class="ph codeph">LOGICALLY_DEPENDENT</code></p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d10657e771 ">
+                <p class="lines">Enable the import of three types of independent entities.</p>
+
+                <p class="lines">Use a semicolon to separate multiple values. When more than one value is used, both independent and logically dependent entities are treated as independent. Generally, this option should only be used for a particular vendor that marks some entities as dependent when they are imported. The reader imports the entities according to the value specified in the file. The default is <code class="ph codeph">INDEPENDENT</code>.</p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_tgl_2sy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SkipConnectivityComputation</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e827">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e830">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e827 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e830 ">
+                <p class="lines">Import the model without computing connectivity. The surfaces will not be connected.</p>
+
+                <p class="lines">This option speeds up import, but may not be suitable for any other purpose than visualization.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e827 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e830 ">Import the model in the normal fashion (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_ukf_gsy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SkipCreationOfSolid</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3643">Value</th>
+
+              <th class="entry nocellnorowborder" id="reference_q41_f4r_35__d10e3646">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Read surfaces, but do not create solid entities.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3643 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_q41_f4r_35__d10e3646 ">Create solid entities (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_ryc_fsy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@SkipEntities</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e932">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e935">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e932 "><code class="ph codeph">Entity types and subtypes to skip</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e935 ">
+                <p class="lines">Specific entity types, or even subtypes (that is entity types with specific form numbers) that should be skipped during import.</p>
+
+                <p class="lines">The list of types uses semicolons as separators.</p>
+
+                <p class="lines">Example: <code class="ph codeph">@SkipEntities = "ENTTYPE1;ENTTYPE2.FORM2"</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_v3q_rsy_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TagsAsMetadata</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e982">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e985">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e982 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e985 ">
+                <p class="lines">Read tags of supported entities as metadata (default).</p>
+
+                <p class="lines"><code class="ph codeph">TAG</code></p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e982 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e985 ">Do not read tags.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_wsv_sty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@Transform402form16</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1038">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1041">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1038 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1041 ">
+                <p class="lines">Entities referenced by an entity type #402 from #16 are transformed from 2D local space into 3D absolute space.</p>
+
+                <p class="lines">Early <span class="keyword">IGES</span> files from <span class="keyword">SolidWorks</span> require such an operation.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1038 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1041 ">(default)</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_vv2_tty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TraverseGroups</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1099">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1102">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1099 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1102 ">The reader attempts to traverse group entities (default).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1099 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1102 ">Ignore references to entities within a group.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_n41_5ty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TrimRevolvedWithModelSpaceCurves</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1148">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1151">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1148 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1151 ">Attempt to compute the boundary definition by projecting 3D trimming curves (if
+                such curves are available) onto the surface only for revolution surface entities
+                (type #120).</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1148 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1151 ">Use parameter space trimming loops whenever possible. Given an <span class="keyword">IGES</span> file containing correct data, this option is faster and
+                more robust than reading object space loops (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_kzn_5ty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TrimWithModelSpaceCurves</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1201">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1204">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1201 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1204 ">Attempt to compute the boundary definition by projecting 3D trimming curves (if
+                such curves are available) onto the surface. This is useful if the parameter space
+                trimming loops in the file contain incorrect geometry data.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1201 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1204 ">Use parameter space trimming loops whenever possible. Given an <span class="keyword">IGES</span> file containing correct data, this option is faster and
+                more robust than reading object space loops (default).</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_a3z_5ty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@TrimWithPreferredRepresentation</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1253">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1256">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1253 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1256 ">
+                <p class="lines">Attempt to create the boundary definition using 2D or 3D curves, based on the preferred representation provided by entity type #142.</p>
+
+                <p class="lines">This option can be overridden by either <code class="ph codeph">@TrimRevolvedWithModelSpaceCurves = on</code> or <code class="ph codeph">@TrimWithModelSpaceCurves = on</code>.</p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1253 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1256 ">(default)</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_hwq_vty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@UseAnsys128Format</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1314">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1317">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1314 "><code class="ph codeph">on</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1317 ">Attempt to read Ansys NURBS surface format.</td>
+
+            </tr>
+
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1314 "><code class="ph codeph">off</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1317 ">(default)</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_q41_f4r_35__table_sqy_vty_35" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">@vendors</code></span><colgroup><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1363">Value</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1366">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1363 "><code class="ph codeph">List of vendor names</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1366 ">
+                <p class="lines">Use vendor information to search the global section of the file to determine if it is from a particular vendor. Each vendor name is separated by semicolons and all spaces in the vendor name must be replaced by an underscore. </p>
+
+                <p class="lines">Example: <code class="ph codeph">@vendors = "vendor1;vendor2;vendor3"</code></p>
+
+                <p class="lines">After a vendor has been added to the list, options for that particular vendor can be specified. If a file is recognized as coming from a particular vendor, settings for that vendor take priority over "general" settings. </p>
+
+                <p class="lines">Example: <code class="ph codeph">@&lt;vendor&gt;.&lt;option&gt; = "&lt;value&gt;"</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+<?workdir /C:\Users\dgallo\Desktop\oxygen_dita_temp\topics\pre_processing\geometry?><?workdir-uri file:/C:/Users/dgallo/Desktop/oxygen_dita_temp/topics/pre_processing/geometry/?><?path2project ..\..\..\?><?path2project-uri ../../../?><article class="topic reference nested1" aria-labelledby="ariaid-title4" id="reference_km2_k4r_35">
+  <h2 class="title topictitle2" id="ariaid-title4"><span class="keyword">IGES</span> Supported Metadata</h2>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Metadata generated from the <span class="keyword">IGES</span> reader.</p>
+
+    <section class="section">
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_bb1_f1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">AUTHOR</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1470">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1473">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1476">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1470 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1473 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1476 ">The author block as read from the 'G' section of the file. This is generated
+                only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_kcg_f1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">AUTHORS_ORGANIZATION</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1517">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1520">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1523">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1517 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1520 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1523 ">The author's organization block from the 'S' section of the file. This is
+                generated only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_grw_31g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">COLOR_RGB</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1564">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1567">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1570">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1564 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1567 ">
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1570 ">
+                <p class="lines">Three RGB values, ranging from 0 to 255, indicating the color of the entity in the CAD model.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@ColorsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_rfp_x1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">COMMENT_BLOCK</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1625">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1628">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1631">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1625 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1628 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1631 ">The comment block from the 'S' section of the file. This is generated only when
+                the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_ld4_y1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">DRAFTING_STANDARD</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1672">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1675">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1678">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1672 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1675 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1678 ">The drafting standard block from the 'G' section of the file. This is generated
+                only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_jqy_bbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">FILE_NAME</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1720">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1723">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1726">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1720 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1723 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1726 ">The file name block from the 'G' section of the file. This is generated only
+                when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_eth_z1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">GROUP_ID</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1767">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1770">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1773">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1767 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1770 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1773 ">
+                <p class="lines">The <span class="keyword">IGES</span> entity type #402, form number #7 group ID as read from the CAD model, if one exists.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@PropertyAsGroup = ManageCorrectOnly</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_vcz_z1g_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">GROUP_NAME</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1825">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1828">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1831">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1825 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1828 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1831 ">
+                <p class="lines">The <span class="keyword">IGES</span> entity type #402, form number #7 group name as read from the CAD model, if one exists.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@PropertyAsGroup = ManageCorrectOnly</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_ssm_1bg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">IGES_VERSION</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1883">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1886">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1889">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1883 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1886 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1889 ">The <span class="keyword">IGES</span> version block from the 'G' section of
+                the file. This is generated only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_q4k_dbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">IMPORT_DATE</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e1933">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1936">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e1939">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e1933 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1936 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e1939 ">The import date block from the 'G' section of the file. This is generated only
+                when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_lny_dbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">MODELUNIT</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1773">Type</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1776">Entities</th>
+
+              <th class="entry nocellnorowborder" id="reference_km2_k4r_35__d6e1779">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1773 "><code class="ph codeph">integer</code></td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1776 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="reference_km2_k4r_35__d6e1779 "> Model units specified in the CAD file.<ul class="sl simple">
+                  <li class="sli">1 = inches</li>
+
+                  <li class="sli">2 = millimeters</li>
+
+                  <li class="sli">4 = feet</li>
+
+                  <li class="sli">5 = miles</li>
+
+                  <li class="sli">6 = meters</li>
+
+                  <li class="sli">7 = kilometers</li>
+
+                  <li class="sli">8 = mils</li>
+
+                  <li class="sli">9 = microns</li>
+
+                  <li class="sli">10 = centimeters</li>
+
+                  <li class="sli">11 = microinches</li>
+
+                  <li class="sli">12 = decimeters</li>
+
+                  <li class="sli">13 = yards</li>
+
+                </ul>
+<p class="lines">This is always generated.</p>
+</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_rdn_2bg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">MODIFICATION_DATE</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2070">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2073">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2076">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2070 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2073 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2076 ">The modification date block from the 'G' section of the file. This is generated
+                only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_q1c_fbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">PREPROCESSOR_VERSION</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2117">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2120">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2123">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2117 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2120 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2123 ">The preprocessor version block from the 'G' section of the file. This is
+                generated only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_l2t_fbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">PRODUCT_IDENTIFICATION</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2164">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2167">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2170">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2164 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2167 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2170 ">The product identification block from the 'G' section of the file. This is
+                generated only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_mrf_gbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">RECEIVING_PRODUCT_ID</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2211">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2214">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2217">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2211 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2214 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2217 ">The receiving product ID block from the 'G' section of the file. This is
+                generated only when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_okr_gbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">SYSTEM_ID</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2258">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2261">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2264">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2258 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2261 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2264 ">The system ID block from the 'G' section of the file. This is generated only
+                when the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_szj_hbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">TAG</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2305">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2308">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2311">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2305 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2308 ">
+                <p class="lines">points</p>
+
+                <p class="lines">lines</p>
+
+                <p class="lines">surfs</p>
+
+              </td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2311 ">
+                <p class="lines">The tag (name) of the entity as read from the CAD model, if one exists.</p>
+
+                <p class="lines">Generated when <code class="ph codeph">@TagsAsMetadata = on</code></p>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_km2_k4r_35__table_kpy_hbg_j5" class="table" frame="void" border="1" rules="all"><span class="desc tabledesc"><code class="ph codeph">UNITS</code></span><colgroup><col /><col /><col /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry nocellnorowborder" id="d10657e2370">Type</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2373">Entities</th>
+
+              <th class="entry nocellnorowborder" id="d10657e2376">Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry nocellnorowborder" headers="d10657e2370 "><code class="ph codeph">string</code></td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2373 ">comps</td>
+
+              <td class="entry nocellnorowborder" headers="d10657e2376 ">The units block from the 'G' section of the file. This is generated only when
+                the block is found in the file.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
+</article>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                     <nav id="toc" data-spy="affix" data-toggle="toc" data-offset-top="205"></nav>
+                     </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div> <nav id="footer" class="navbar navbar-default wh_footer invisible">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1993-2017. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="intellectual_property_rights_notice_hyperworks_r.htm">Intellectual Property Rights Notice</a>  |  <a href="technical_support_hyperworks_r.htm">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap-toc.js" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="oxygen-webhelp/template/resources/js/wt_expand.js" type="text/javascript"></script>
+        
+    </body>
+</html>
