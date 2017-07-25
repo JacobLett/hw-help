@@ -47,7 +47,7 @@ $(document).ready(function () {
     $('#topic_navigation_links .navprev>a').addClass("glyphicon glyphicon-arrow-left");
     $('#topic_navigation_links .navnext>a').addClass("glyphicon glyphicon-arrow-right");
     $('.wh_print_link a').addClass('glyphicon glyphicon-print');
-	
+
 	// Hide sideTOC when it is empty
     var sideToc = $('#wh_side_toc');
     if (sideToc !== undefined) {
@@ -149,14 +149,14 @@ function highlightSearchTerm() {
 
         $body.removeHighlight();
         $relatedLinks.removeHighlight();
-    
+
         var jsonString = decodeURIComponent(String(getParameter('hl')));
         debug("jsonString: ", jsonString);
-        
+
         if (jsonString !== undefined && jsonString != "") {
             var words = jsonString.split(',');
             debug("words: ", words);
-            
+
             for (var i = 0; i < words.length; i++) {
                 debug('highlight(' + words[i] + ');');
                 $body.highlight(words[i]);
@@ -220,4 +220,33 @@ $(".wh_top_menu a").click(function (event) {
     } else {
         return true;
     }
+});
+
+//change toggle arrow
+  $('.panel a').click(function() {
+    $('.glyphicon').toggleClass( 'glyphicon-menu-down glyphicon-menu-up' );
+  })
+//START STICKY ITEMS HERE
+$('.wh_search_input').affix({
+  offset: {
+    top: $('.wh_search_input').offset().top
+  }
+})
+
+$('.wh_side_toc').affix({
+  offset: {
+    top: $('.wh_side_toc').offset().top
+  }
+
+})
+
+//keeps the width of the menu once it switches to fixed
+function handlestickynavwidth() {
+  var width = $('#wh_side_toc').width() - 28;
+   $(".wh_side_toc").css("width", width);
+}
+
+$(window).on({
+    scroll: handlestickynavwidth, // on scroll
+    resize: handlestickynavwidth // on resize
 });
