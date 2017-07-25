@@ -1004,9 +1004,16 @@ div[class="note tip"] > .ul {
 
 .eqn-inline { font-style: italic;}
 
+/*** change breadcrumb seperator ***/
+.wh_breadcrumb li:not(:last-of-type):after {
+  content: ">";
+  padding:0 10px;
+}
+
 /** Styles for sticky scroll ***/
+
 .wh_search_input {
-  width: 100%;
+  width: 100% !important; /** overwrite inline style ***/
   z-index: 999;
   background: #e1ebf5;
 }
@@ -1017,6 +1024,10 @@ div[class="note tip"] > .ul {
 }
 
 .wh_side_toc.affix {
+  top: 88px;
+}
+
+#toc.affix {
   top: 88px;
 }
 /*** style for long navs **/

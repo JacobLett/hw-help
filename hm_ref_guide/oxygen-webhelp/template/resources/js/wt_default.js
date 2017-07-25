@@ -235,15 +235,27 @@ $('.wh_search_input').affix({
 
 $('.wh_side_toc').affix({
   offset: {
-    top: $('.wh_side_toc').offset().top
+    top: $('.wh_side_toc').offset().top - 110
   }
-
 })
+
+$('#toc').affix({
+  offset: {
+    top: $('#toc').offset().top - 99
+  }
+})
+
+
 
 //keeps the width of the menu once it switches to fixed
 function handlestickynavwidth() {
-  var width = $('#wh_side_toc').width() - 28;
-   $(".wh_side_toc").css("width", width);
+  var sideTocWidth = $('#wh_side_toc').width() - 28;
+   $(".wh_side_toc").css("width", sideTocWidth);
+
+   var tocWidth = $('#tocHolder').width() - 28;
+    $("#toc").css("width", tocWidth);
+
+
 }
 
 $(window).on({
