@@ -1021,15 +1021,21 @@ div[class="note tip"] > .ul {
 
 .wh_search_input.affix {
   top: 0;
+  padding:20px 0 15px 0;
 }
 
 .wh_side_toc.affix {
-  top: 88px;
+  top: 67px;
 }
 
 #toc.affix {
   top: 88px;
 }
+
+/*** padding on TOC plugin ***/
+nav[data-toggle='toc'] .nav > li > a, #toc p {
+    padding: 4px 10px;
+  }
 /*** style for long navs **/
 .panel ul.nav-list {
   max-height: 350px;
